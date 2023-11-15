@@ -39,9 +39,7 @@ const Navbar3 = () => {
                                     <a href="/about">About</a>
                                 </li>
                                 <li onMouseEnter={toogleHover} onMouseLeave={toogleHover} className='flex cursor-pointer'>
-                                    <a href="/something">
                                         On Hover
-                                    </a>
                                     <span className='my-auto'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`${onhover ? 'rotate-180 transition-all duration-500' : ''} mx-1`}><path d="m6 9 6 6 6-6" /></svg>
                                     </span>
@@ -63,9 +61,7 @@ const Navbar3 = () => {
                                     <a href="/price">Price</a>
                                 </li>
                                 <li onClick={toogleClick} className='flex cursor-pointer'>
-                                    <a href="/something">
                                         On Click
-                                    </a>
                                     <span className='my-auto'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`${onclick ? 'rotate-180 transition-all duration-500' : ''} mx-1`}><path d="m6 9 6 6 6-6" /></svg>
                                     </span>

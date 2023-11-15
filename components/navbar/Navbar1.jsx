@@ -19,27 +19,27 @@ const Navbar1 = () => {
                     <div className='my-auto hidden md:block'>
                         <ul className='flex flex-wrap space-x-10'>
                             <li>
-                                <a href="/">Home</a>
+                                <a href="/" className=' hover:border-b-2 border-blue-600'>Home</a>
                             </li>
                             <li>
-                                <a href="/about">About</a>
+                                <a href="/about" className='hover:border-b-2 border-blue-600'>About</a>
                             </li>
                             <li>
-                                <a href="/service">Service</a>
+                                <a href="/service" className='hover:border-b-2 border-blue-600'>Service</a>
                             </li>
                             <li>
-                                <a href="/price">Price</a>
+                                <a href="/price" className='hover:border-b-2 border-blue-600'>Price</a>
                             </li>
                             <li>
-                                <a href="/contact">Contact</a>
+                                <a href="/contact" className='hover:border-b-2 border-blue-600'>Contact</a>
                             </li>
                         </ul>
                     </div>
                     <div className='hidden md:flex flex-wrap space-x-3'>
-                        <button className='border px-5 py-2 rounded-xl'>
+                        <button className='border px-5 py-1 rounded-xl'>
                             Log In
                         </button>
-                        <button className='bg-black text-white px-5 py-2 rounded-xl'>
+                        <button className='bg-blue-700 text-white px-5 py-1 rounded-xl'>
                             Sign In
                         </button>
                     </div>
