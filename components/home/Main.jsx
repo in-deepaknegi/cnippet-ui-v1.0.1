@@ -6,7 +6,7 @@ import Navbar3 from '@/components/navbar/Navbar3'
 
 const Main = () => {
     return (
-        <main className='p-10 m-10'>
+        <main className=''>
             <Navbar1 />
             <Navbar2 />
             <Navbar3 />
