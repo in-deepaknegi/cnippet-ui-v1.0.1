@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Main = () => {
+const Hero = () => {
 
     return (
         <section className="bg-white">
@@ -37,4 +37,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Hero

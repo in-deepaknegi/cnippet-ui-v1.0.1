@@ -1,13 +1,15 @@
 import React from 'react'
 import Navbar from '@/components/Navbar'
-import Main from '@/pages/components/Main'
+import Hero from '@/pages/components/Hero'
+import List from '@/pages/components/List'
 import Footer from '@/components/Footer'
 
 const Components = () => {
     return (
         <main>
             <Navbar />
-            <Main/>
+            <Hero/>
+            <List />
             <Footer />
         </main>
     )
