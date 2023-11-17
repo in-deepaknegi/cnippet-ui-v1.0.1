@@ -15,8 +15,9 @@ const Navbar = () => {
         <header className="absolute inset-x-0 top-0 z-50">
             <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
-                    <a href="/" className="-m-1.5 p-1.5">
-                        <span className="">CnippetUi</span>
+                    <a href="/" className="-m-1.5 p-1.5 text-2xl">
+                        Cnippet
+                        <span className="">Ui</span>
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -30,8 +31,8 @@ const Navbar = () => {
                     </button>
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12">
-                    <a href="/products" className="text-sm font-semibold leading-6 text-gray-900">Product</a>
-                    <a href="/features" className="text-sm font-semibold leading-6 text-gray-900">Features</a>
+                    <a href="/components" className="text-sm font-semibold leading-6 text-gray-900">Components</a>
+                    <a href="/features" className="text-sm font-semibold leading-6 text-gray-900">Templates</a>
                     <a href="/contact" className="text-sm font-semibold leading-6 text-gray-900">Contacts</a>
                     <a href="/about" className="text-sm font-semibold leading-6 text-gray-900">About</a>
                 </div>
