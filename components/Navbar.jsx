@@ -13,9 +13,9 @@ const Navbar = () => {
 
     return (
         <header className="absolute inset-x-0 top-0 z-50">
-            <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <nav className="flex items-center justify-between p-7 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
-                    <a href="/" className="-m-1.5 p-1.5 text-2xl">
+                    <a href="/" className="-m-1.5 p-1.5 text-2xl font-medium">
                         Cnippet
                         <span className="">Ui</span>
                     </a>
@@ -36,8 +36,12 @@ const Navbar = () => {
                     <a href="/contact" className="text-sm font-semibold leading-6 text-gray-900">Contacts</a>
                     <a href="/about" className="text-sm font-semibold leading-6 text-gray-900">About</a>
                 </div>
-                <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+                <div className="hidden lg:ml-8 lg:flex lg:items-center lg:border-l lg:border-black lg:pl-8">
+                    <a href="/login">Sign in</a>
+                    <a className="inline-flex justify-center rounded-lg text-sm font-semibold py-2 px-4 bg-slate-900 text-white hover:bg-slate-700 -my-2.5 ml-8" href="/get-pro">
+                        <span>Get pro <span aria-hidden="true">→</span>
+                        </span>
+                    </a>
                 </div>
             </nav>
 
@@ -51,7 +55,7 @@ const Navbar = () => {
                             </a>
                             <button
                                 onClick={toggleMobileMenu}
-                                type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700">
+                                type="button" className="-m-2.5 rounded-md p-4 text-gray-700">
                                 <span className="sr-only">Close menu</span>
                                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
