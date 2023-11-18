@@ -13,7 +13,7 @@ const Hero = () => {
         setActiveTab2(index);
     };
     const changeTab3 = (index) => {
-        setActiveTab2(index);
+        setActiveTab3(index);
     };
 
     return (
