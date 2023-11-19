@@ -1,7 +1,13 @@
 import React from 'react'
+import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import Hero from '@/pages/ui/navbar/Hero';
 import Footer from '@/components/Footer';
+
+export const metadata: Metadata = {
+    title: 'Navbar',
+    description: 'Navbar page',
+}
 
 const Nav = () => {
     return (
