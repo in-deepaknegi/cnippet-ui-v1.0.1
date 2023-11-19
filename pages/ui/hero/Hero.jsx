@@ -1,6 +1,8 @@
 "use client"
 import React, { useState } from 'react'
 import Hero1 from '@/public/hero1.jpg';
+import Hero2 from '@/public/hero2.jpg';
+
 import Image from 'next/image';
 
 const Hero = () => {
@@ -85,7 +87,7 @@ const Hero = () => {
                                                         <h1 className='text-6xl font-semibold'>
                                                             Data to enrich your online bussiness
                                                         </h1>
-                                                        <p className='mt-6 text-lg'>
+                                                        <p className='mt-6 text-lg text-gray-600 font-light'>
                                                             Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
                                                         </p>
                                                         <div className="mt-10 flex gap-x-6">
@@ -98,7 +100,7 @@ const Hero = () => {
                                                 </div>
                                                 <div className='relative lg:col-span-6 lg:mr-8 xl:inset-0 xl:left-0 xl:mr-0'>
                                                     <Image
-                                                        src={Hero1}
+                                                        src={Hero2}
                                                         alt='hero image 1'
                                                         className='aspect-[3/2] w-full object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full'
                                                     />
