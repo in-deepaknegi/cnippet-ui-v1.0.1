@@ -74,7 +74,7 @@ const Hero = () => {
                                 {activeTab1 === 0 ? (
                                     <>
                                         <section className='rounded-2xl bg-white'>
-                                            <div className="isolate px-6 py-24 sm:py-32 lg:px-8">
+                                            <div className="isolate px-6 py-16 md:py-32 lg:px-8">
                                                 <div className="mx-auto max-w-2xl text-center">
                                                     <h2 className="text-3xl font-bold tracking-tight text-blue-700 sm:text-4xl">Contact sales</h2>
                                                     <p className="mt-2 text-lg leading-8 text-gray-600">Aute magna irure deserunt veniam aliqua magna enim voluptate.</p>
@@ -119,9 +119,9 @@ const Hero = () => {
 
                                                 </form>
                                             </div>
-                                            <div className='border-t py-10'>
-                                                <div className='grid grid-cols-2 mx-28'>
-                                                    <div className='flex flex-col space-y-3 text-center px-16'>
+                                            <div className='border-t py-4 lg:py-10'>
+                                                <div className='grid grid-cols-1 space-y-5 md:grid-cols-2 md:space-y-0 mx-4 md:mx-28'>
+                                                    <div className='flex flex-col space-y-3 text-center px-5 md:px-16'>
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" className='mx-auto text-blue-500' viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
                                                         <h2 className='text-2xl text-slate-600 font-semibold'>Email us</h2>
                                                         <p className='text-slate-500 text-center'>
@@ -131,7 +131,7 @@ const Hero = () => {
                                                             hello@example.com
                                                         </a>
                                                     </div>
-                                                    <div className='flex flex-col space-y-3 text-center px-16'>
+                                                    <div className='flex flex-col space-y-3 text-center px-5 md:px-16'>
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" className='mx-auto text-blue-500' viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
                                                         <h2 className='text-2xl text-slate-600 font-semibold'>
                                                             Call us:
@@ -193,7 +193,7 @@ const Hero = () => {
                                     <>
                                         <section className='isolate relative'>
                                             <div className='mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2'>
-                                                <div className='relative mt-24 px-6 lg:px-8'>
+                                                <div className='relative mt-12 px-6 md:mt-24 lg:px-8'>
                                                     <div className='mx-auto max-w-xl lg:mx-0 lg:max-w-lg'>
                                                         <h2 className='text-4xl font-medium'>Get in touch</h2>
                                                         <p className='mt-4 text-gray-700'>
@@ -222,7 +222,7 @@ const Hero = () => {
                                                         </dl>
                                                     </div>
                                                 </div>
-                                                <form className="form space-y-5 max-w-xl mx-auto my-24">
+                                                <form className="form space-y-5 max-w-xl px-6 mx-auto my-10 md:my-24">
                                                     <div>
                                                         <label htmlFor="name" >Your name</label>
                                                         <input
@@ -255,7 +255,7 @@ const Hero = () => {
                                                         and our
                                                         <span className='text-blue-700'>
                                                             <a href="/privacy"> privacy policy </a>
-                                                        </span> which explains how we may collect, use and disclose your personal information including to third parties.
+                                                        </span>.
                                                     </p>
 
                                                     <button type="submit" className="py-3 px-5 text-sm font-medium text-center bg-blue-700 text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary-300">Send message</button>
@@ -311,7 +311,7 @@ const Hero = () => {
                                     <>
                                         <section className='isolate relative overflow-hidden rounded-2xl'>
                                             <div className='mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2'>
-                                                <div className='max-w-lg mx-auto my-auto'>
+                                                <div className='max-w-lg mx-auto px-6 my-10 md:my-auto'>
                                                     <div>
                                                         <h2 className='text-4xl font-medium'>Let&apos;s work together</h2>
                                                         <p className='mt-4 text-base text-gray-700'>
@@ -351,7 +351,7 @@ const Hero = () => {
                                                             and our
                                                             <span className='text-blue-700'>
                                                                 <a href="/privacy"> privacy policy </a>
-                                                            </span> which explains how we may collect, use and disclose your personal information including to third parties.
+                                                            </span>. 
                                                         </p>
 
                                                         <button type="submit" className="py-3 px-5 text-sm font-medium text-center bg-blue-700 text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary-300">Send message</button>
@@ -361,7 +361,7 @@ const Hero = () => {
                                                     <Image
                                                         src={Contact1}
                                                         alt='contact - 1'
-                                                        className='bg-cover h-screen'
+                                                        className='bg-cover h-screen md:h-[120vh]'
                                                     />
                                                 </div>
                                             </div>
