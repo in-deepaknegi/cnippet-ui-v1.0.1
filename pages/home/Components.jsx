@@ -101,9 +101,9 @@ const Components = () => {
                                 />
                             </div>
                             <h4 className='mt-4 text-sm font-medium text-slate-900 group-hover:text-indigo-600'>
-                                <a href="/">
+                                <a href="/components/application-ui/contact">
                                     <span className='absolute -inset-2.5 z-10'></span>
-                                    <span className='relative'>Navbar</span>
+                                    <span className='relative'>Contact</span>
                                 </a>
                             </h4>
                             <p className='relative mt-1.5 text-xs font-medium text-slate-500'>4 components</p>
