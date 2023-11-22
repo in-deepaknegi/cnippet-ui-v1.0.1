@@ -1,7 +1,13 @@
 "use client"
 import React, { useState } from 'react'
-import Profile1 from '@/public/profile1.jpg'
 import Image from 'next/image';
+import Profile1 from '@/public/profile1.jpg'
+import Profile2 from '@/public/profile2.jpg'
+import Profile3 from '@/public/profile3.jpg'
+import Profile4 from '@/public/profile4.jpg'
+import Profile5 from '@/public/profile5.jpg'
+import Profile6 from '@/public/profile6.jpg'
+
 
 const Hero = () => {
     const [activeTab1, setActiveTab1] = useState(0);
@@ -78,7 +84,7 @@ const Hero = () => {
                                                 <figure className='grid grid-cols-3 items-center gap-8'>
                                                     <div className='w-16 lg:w-72'>
                                                         <Image
-                                                            src={Profile1}
+                                                            src={Profile6}
                                                             alt='profile 1'
                                                             className='w-full h-auto rounded-full aspect-square object-cover'
                                                         />
@@ -239,10 +245,132 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
                                 {activeTab3 === 0 ? (
                                     <>
-                                        <footer>
-                                            footer
-                                        </footer>
-                                        {/* <div className='bg-gray-100 h-[10rem]'></div> */}
+                                        <section className='relative isolate bg-white py-16 lg:py-10 rounded-2xl'>
+                                            <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+                                                <div className='mx-auto max-w-xl text-center'>
+                                                    <h2 className='text-2xl text-blue-700 font-semibold'>Testimonials</h2>
+                                                    <p className='mt-4 text-4xl font-medium'>We have worked with thousands of amazing people</p>
+                                                </div>
+                                                <div className='mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-8 lg:grid-cols-3'>
+                                                    <div className='space-y-8'>
+                                                        <figure className='rounded-lg bg-gray-50 p-6 shadow-xl ring-1 ring-gray-200'>
+                                                            <blockquote className='text-sm text-gray-700'>
+                                                                <p>
+                                                                    &quot;Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.&quot;
+                                                                </p>
+                                                            </blockquote>
+                                                            <figcaption className='mt-6 flex items-center gap-6'>
+                                                                <Image
+                                                                    src={Profile1}
+                                                                    alt='profile-1 photo'
+                                                                    className='w-10 h-10 rounded-full object-cover'
+                                                                />
+                                                                <div className='text-sm'>
+                                                                    <div className='font-semibold text-gray-800'>Leslie Alexander</div>
+                                                                    <div className='text-gray-600'>@lesliealexander</div>
+                                                                </div>
+                                                            </figcaption>
+                                                        </figure>
+                                                        <figure className='rounded-lg bg-gray-50 p-6 shadow-xl ring-1 ring-gray-200'>
+                                                            <blockquote className='text-sm text-gray-700'>
+                                                                <p>
+                                                                    &quot;Temporibus ea molestiae impedit adipisci perspiciatis illo aliquid. Quis ut ratione et voluptatem et. Nostrum explicabo iste unde beatae.&quot;
+                                                                </p>
+                                                            </blockquote>
+                                                            <figcaption className='mt-6 flex items-center gap-6'>
+                                                                <Image
+                                                                    src={Profile2}
+                                                                    alt='profile-1 photo'
+                                                                    className='w-10 h-10 rounded-full object-cover'
+                                                                />
+                                                                <div className='text-sm'>
+                                                                    <div className='font-semibold text-gray-800'>Lindsay Walton</div>
+                                                                    <div className='text-gray-600'>@lindsaywalton</div>
+                                                                </div>
+                                                            </figcaption>
+                                                        </figure>
+                                                       
+                                                    </div>
+                                                    <div className='space-y-8'>
+                                                        <figure className='rounded-lg bg-gray-50 p-6 shadow-xl ring-1 ring-gray-200'>
+                                                            <blockquote className='text-sm text-gray-700'>
+                                                                <p>
+                                                                    &quot;Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.&quot;
+                                                                </p>
+                                                            </blockquote>
+                                                            <figcaption className='mt-6 flex items-center gap-6'>
+                                                                <Image
+                                                                    src={Profile3}
+                                                                    alt='profile-1 photo'
+                                                                    className='w-10 h-10 rounded-full object-cover'
+                                                                />
+                                                                <div className='text-sm'>
+                                                                    <div className='font-semibold text-gray-800'>Emily Selman</div>
+                                                                    <div className='text-gray-600'>@emilyselman</div>
+                                                                </div>
+                                                            </figcaption>
+                                                        </figure>
+                                                        <figure className='rounded-lg bg-gray-50 p-6 shadow-xl ring-1 ring-gray-200'>
+                                                            <blockquote className='text-sm text-gray-700'>
+                                                                <p>
+                                                                    &quot;Aliquid dolore praesentium ratione. Cumque ea officia repellendus laboriosam. Vitae quod id explicabo non sunt.&quot;
+                                                                </p>
+                                                            </blockquote>
+                                                            <figcaption className='mt-6 flex items-center gap-6'>
+                                                                <Image
+                                                                    src={Profile4}
+                                                                    alt='profile-1 photo'
+                                                                    className='w-10 h-10 rounded-full object-cover'
+                                                                />
+                                                                <div className='text-sm'>
+                                                                    <div className='font-semibold text-gray-800'>Floyd Miles</div>
+                                                                    <div className='text-gray-600'>@floydmiles</div>
+                                                                </div>
+                                                            </figcaption>
+                                                        </figure>
+                                                        
+                                                    </div>
+                                                    <div className='space-y-8'>
+                                                        <figure className='rounded-lg bg-gray-50 p-6 shadow-xl ring-1 ring-gray-200'>
+                                                            <blockquote className='text-sm text-gray-700'>
+                                                                <p>
+                                                                    &quot;Aliquid dolore praesentium ratione. Cumque ea officia repellendus laboriosam. Vitae quod id explicabo non sunt.&quot;
+                                                                </p>
+                                                            </blockquote>
+                                                            <figcaption className='mt-6 flex items-center gap-6'>
+                                                                <Image
+                                                                    src={Profile5}
+                                                                    alt='profile-1 photo'
+                                                                    className='w-10 h-10 rounded-full object-cover'
+                                                                />
+                                                                <div className='text-sm'>
+                                                                    <div className='font-semibold text-gray-800'>Leonard Kras</div>
+                                                                    <div className='text-gray-600'>@leonardkras</div>
+                                                                </div>
+                                                            </figcaption>
+                                                        </figure>
+                                                        <figure className='rounded-lg bg-gray-50 p-6 shadow-xl ring-1 ring-gray-200'>
+                                                            <blockquote className='text-sm text-gray-700'>
+                                                                <p>
+                                                                    &quot;Temporibus ea molestiae impedit adipisci perspiciatis illo aliquid. Quis ut ratione et voluptatem et. Nostrum explicabo iste unde beatae.&quot;
+                                                                </p>
+                                                            </blockquote>
+                                                            <figcaption className='mt-6 flex items-center gap-6'>
+                                                                <Image
+                                                                    src={Profile6}
+                                                                    alt='profile-1 photo'
+                                                                    className='w-10 h-10 rounded-full object-cover'
+                                                                />
+                                                                <div className='text-sm'>
+                                                                    <div className='font-semibold text-gray-800'>Catthy Mueller</div>
+                                                                    <div className='text-gray-600'>@catthymueller</div>
+                                                                </div>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
                                     </>
                                 ) : (
                                     <div>code</div>
