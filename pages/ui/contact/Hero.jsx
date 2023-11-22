@@ -1,5 +1,7 @@
 "use client"
 import React, { useState } from 'react'
+import Image from 'next/image';
+import Contact1 from '@/public/contact1.jpg'
 
 const Hero = () => {
     const [activeTab1, setActiveTab1] = useState(0);
@@ -307,10 +309,63 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
                                 {activeTab3 === 0 ? (
                                     <>
-                                        <footer>
-                                            footer
-                                        </footer>
-                                        {/* <div className='bg-gray-100 h-[10rem]'></div> */}
+                                        <section className='isolate relative overflow-hidden rounded-2xl'>
+                                            <div className='mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2'>
+                                                <div className='max-w-lg mx-auto my-auto'>
+                                                    <div>
+                                                        <h2 className='text-4xl font-medium'>Let&apos;s work together</h2>
+                                                        <p className='mt-4 text-base text-gray-700'>
+                                                            Proin volutpat consequat porttitor cras nullam gravida at orci molestie a eu arcu sed ut tincidunt magna.
+                                                        </p>
+                                                    </div>
+                                                    <form className="mt-4 form space-y-5">
+                                                        <div>
+                                                            <label htmlFor="name" >Your name</label>
+                                                            <input
+                                                                type="name"
+                                                                id="name"
+                                                                placeholder="name" required />
+                                                        </div>
+                                                        <div>
+                                                            <label htmlFor="email" >Your email</label>
+                                                            <input
+                                                                type="email"
+                                                                id="email"
+                                                                placeholder="name@gmail.com"
+                                                                required />
+                                                        </div>
+
+                                                        <div className="sm:col-span-2">
+                                                            <label htmlFor="message" >Your message</label>
+                                                            <textarea
+                                                                id="message"
+                                                                rows="5"
+                                                                placeholder="Leave a comment..."></textarea>
+                                                        </div>
+
+                                                        <p className='text-sm text-gray-500'>
+                                                            By submitting this form you agree to our
+                                                            <span className='text-blue-700'>
+                                                                <a href="/terms"> terms and conditions </a>
+                                                            </span>
+                                                            and our
+                                                            <span className='text-blue-700'>
+                                                                <a href="/privacy"> privacy policy </a>
+                                                            </span> which explains how we may collect, use and disclose your personal information including to third parties.
+                                                        </p>
+
+                                                        <button type="submit" className="py-3 px-5 text-sm font-medium text-center bg-blue-700 text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary-300">Send message</button>
+                                                    </form>
+                                                </div>
+                                                <div>
+                                                    <Image
+                                                        src={Contact1}
+                                                        alt='contact - 1'
+                                                        className='bg-cover h-screen'
+                                                    />
+                                                </div>
+                                            </div>
+                                        </section>
                                     </>
                                 ) : (
                                     <div>code</div>
