@@ -9,7 +9,6 @@ import Profile5 from '@/public/profile5.jpg';
 import Profile6 from '@/public/profile6.jpg';
 
 
-
 const people = [
     {
         name: 'Leslie Alexander',
@@ -180,10 +179,29 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
                                 {activeTab2 === 0 ? (
                                     <>
-                                        <footer>
-                                            footer
-                                        </footer>
-                                        {/* <div className='bg-gray-100 h-[10rem]'></div> */}
+                                        <section className='bg-white py-24 sm:py-32 rounded-2xl'>
+                                            <div className='mx-auto max-w-7xl px-5 lg:px-8'>
+                                                <div className='mx-auto max-w-2xl lg:mx-0'>
+                                                    <h2 className='text-4xl font-semibold'>Our Team</h2>
+                                                    <p className='mt-5 text-lg text-gray-700'>
+                                                        We&apos;re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.
+                                                    </p>
+                                                </div>
+                                                <ul role='list' className='mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2'>
+                                                    {people.map((person) => (
+                                                        <li key={person.name}>
+                                                            <Image
+                                                                src={person.imageUrl}
+                                                                alt='person'
+                                                                className='aspect-[3/2] w-full rounded-2xl object-cover'
+                                                            />
+                                                            <h3 className="mt-6 text-lg font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
+                                                            <p className="text-sm font-semibold leading-6 text-blue-700">{person.role}</p>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        </section>
                                     </>
                                 ) : (
                                     <div>code</div>
