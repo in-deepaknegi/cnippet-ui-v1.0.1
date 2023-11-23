@@ -311,7 +311,7 @@ const Hero = () => {
                                     <>
                                         <section className='isolate relative overflow-hidden rounded-2xl'>
                                             <div className='mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2'>
-                                                <div className='max-w-lg mx-auto px-6 my-10 md:my-auto'>
+                                                <div className='max-w-lg mx-auto my-10 md:my-auto'>
                                                     <div>
                                                         <h2 className='text-4xl font-medium'>Let&apos;s work together</h2>
                                                         <p className='mt-4 text-base text-gray-700'>

@@ -7,6 +7,9 @@ import Profile3 from '@/public/profile3.jpg';
 import Profile4 from '@/public/profile4.jpg';
 import Profile5 from '@/public/profile5.jpg';
 import Profile6 from '@/public/profile6.jpg';
+import Twitter from '@/public/twitter.svg';
+import Facebook from '@/public/facebook.svg';
+import Instagram from '@/public/instagram.svg';
 
 
 const people = [
@@ -14,21 +17,41 @@ const people = [
         name: 'Leslie Alexander',
         role: 'Co-Founder / CEO',
         imageUrl: Profile6,
+        social: {
+            twitter: 'https://twitter.com/username',
+            facebook: 'https://facebook.com/username',
+            instagram: 'https://instagram.com/username',
+        },
     },
     {
         name: 'Michael Foster',
         role: 'Co-Founder / CTO',
         imageUrl: Profile5,
+        social: {
+            twitter: 'https://twitter.com/username',
+            facebook: 'https://facebook.com/username',
+            instagram: 'https://instagram.com/username',
+        },
     },
     {
         name: 'Lindsay Walton',
         role: 'Front-end Developer',
         imageUrl: Profile2,
+        social: {
+            twitter: 'https://twitter.com/username',
+            facebook: 'https://facebook.com/username',
+            instagram: 'https://instagram.com/username',
+        },
     },
     {
         name: 'Courtney Henry',
         role: 'Designer',
         imageUrl: Profile3,
+        social: {
+            twitter: 'https://twitter.com/username',
+            facebook: 'https://facebook.com/username',
+            instagram: 'https://instagram.com/username',
+        },
     },
 ]
 
@@ -102,34 +125,32 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
                                 {activeTab1 === 0 ? (
                                     <>
-                                        <section>
-                                            <div className="bg-white py-24 sm:py-32">
-                                                <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-                                                    <div className="max-w-2xl">
-                                                        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
-                                                        <p className="mt-6 text-lg leading-8 text-gray-600">
-                                                            Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper
-                                                            suspendisse.
-                                                        </p>
-                                                    </div>
-                                                    <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-                                                        {people.map((person) => (
-                                                            <li key={person.name}>
-                                                                <div className="flex items-center gap-x-6">
-                                                                    <Image
-                                                                        src={person.imageUrl}
-                                                                        alt='person'
-                                                                        className='h-20 w-20 rounded-full object-cover'
-                                                                    />
-                                                                    <div>
-                                                                        <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
-                                                                        <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                        ))}
-                                                    </ul>
+                                        <section className='bg-white py-24 sm:py-32 rounded-2xl'>
+                                            <div className='mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3'>
+                                                <div className='max-w-2xl'>
+                                                    <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>Meet our leadership</h2>
+                                                    <p className='mt-6 text-lg leading-8 text-gray-600'>
+                                                        Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper
+                                                        suspendisse.
+                                                    </p>
                                                 </div>
+                                                <ul role='list' className='grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2'>
+                                                    {people.map((person) => (
+                                                        <li key={person.name}>
+                                                            <div className='flex items-center gap-x-6'>
+                                                                <Image
+                                                                    src={person.imageUrl}
+                                                                    alt='person'
+                                                                    className='h-20 w-20 rounded-full object-cover'
+                                                                />
+                                                                <div>
+                                                                    <h3 className='text-base font-semibold leading-7 tracking-tight text-gray-900'>{person.name}</h3>
+                                                                    <p className='text-sm font-semibold leading-6 text-indigo-600'>{person.role}</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    ))}
+                                                </ul>
                                             </div>
                                         </section>
                                     </>
@@ -144,7 +165,7 @@ const Hero = () => {
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
-                                    <a href="">
+                                    <a href=''>
                                         Simple navbar with menu in center and button in right
                                     </a>
                                 </h2>
@@ -249,16 +270,68 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
                                 {activeTab3 === 0 ? (
                                     <>
-                                        <footer>
-                                            footer
-                                        </footer>
-                                        {/* <div className='bg-gray-100 h-[10rem]'></div> */}
+                                        <section className='bg-white py-16 sm:py-20 rounded-2xl'>
+                                            <div className='mx-auto max-w-7xl px-5 lg:px-8'>
+                                                <div className='mx-auto max-w-2xl lg:mx-0'>
+                                                    <h2 className='text-4xl font-semibold'>Meet out team</h2>
+                                                    <p className='mt-5 text-lg text-gray-700'>
+                                                        We&apos;re a dynamic group of individuals who are passionate about what we do.
+                                                    </p>
+                                                </div>
+                                                <ul role='list' className='mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
+                                                    {people.map((person) => (
+                                                        <li key={person.name} className='mx-auto'>
+                                                            <Image
+                                                                src={person.imageUrl}
+                                                                alt='person'
+                                                                className='w-[15rem] h-[15rem] aspect-square rounded-full object-cover'
+                                                            />
+                                                            <h3 className='mt-6 text-lg text-center font-semibold leading-7 tracking-tight text-gray-900'>{person.name}</h3>
+                                                            <p className='text-sm text-center font-semibold leading-6 text-blue-700'>{person.role}</p>
+
+                                                            {/* Social media icons */}
+                                                            <div className='flex justify-center mt-4 space-x-4'>
+                                                                {person.social && person.social.twitter && (
+                                                                    <a href={person.social.twitter}>
+                                                                        <Image
+                                                                            src={Twitter}
+                                                                            alt='twitter'
+                                                                            className='w-7 h-7'
+                                                                        />
+                                                                    </a>
+                                                                )}
+                                                                {person.social && person.social.facebook && (
+                                                                    <a href={person.social.facebook}>
+                                                                        <Image
+                                                                            src={Facebook}
+                                                                            alt='facebook'
+                                                                            className='w-7 h-7'
+                                                                        />
+                                                                    </a>
+                                                                )}
+                                                                {person.social && person.social.instagram && (
+                                                                    <a href={person.social.instagram}>
+                                                                        <Image
+                                                                            src={Instagram}
+                                                                            alt='instagram'
+                                                                            className='w-7 h-7'
+                                                                        />
+                                                                    </a>
+                                                                )}
+                                                            </div>
+                                                        </li>
+                                                    ))}
+
+                                                </ul>
+                                            </div>
+                                        </section>
                                     </>
                                 ) : (
                                     <div>code</div>
                                 )}
                             </div>
                         </div>
+
                     </section>
                 </div>
             </div>
