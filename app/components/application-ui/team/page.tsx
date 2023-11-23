@@ -5,8 +5,8 @@ import Footer from '@/components/Footer';
 import Hero from '@/pages/ui/team/Hero';
 
 export const metadata: Metadata = {
-    title: 'Testimonial',
-    description: 'Navbar page',
+    title: 'UI - Team',
+    description: 'Team components page',
 }
 
 const page = () => {

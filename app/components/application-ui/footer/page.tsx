@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-    title: 'Footer',
+    title: 'UI - Footer',
     description: 'Footer page',
 }
 
