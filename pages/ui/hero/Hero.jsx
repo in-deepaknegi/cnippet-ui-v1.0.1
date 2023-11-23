@@ -195,6 +195,7 @@ const Hero = () => {
                                                                     <Image
                                                                         src={Hero2}
                                                                         alt='hero image 2'
+                                                                        priority={false}
                                                                         className='w-full h-full aspect-[2/3] rounded-2xl bg-gray-50 object-cover shadow-xl'
                                                                     />
                                                                 </div>
@@ -204,7 +205,7 @@ const Hero = () => {
                                                                     <Image
                                                                         src={Hero3}
                                                                         alt='hero image 2'
-                                                                        priority={true}
+                                                                        priority={false}
                                                                         className='w-full h-full aspect-[2/3] rounded-2xl bg-gray-50 object-cover shadow-xl'
                                                                     />
                                                                 </div>
@@ -212,7 +213,7 @@ const Hero = () => {
                                                                     <Image
                                                                         src={Hero4}
                                                                         alt='hero image 2'
-                                                                        priority={true}
+                                                                        priority={false}
                                                                         className='mt-8 w-full h-full aspect-[2/3] rounded-2xl bg-gray-50 object-cover shadow-xl'
                                                                     />
                                                                 </div>
@@ -222,7 +223,7 @@ const Hero = () => {
                                                                     <Image
                                                                         src={Hero5}
                                                                         alt='hero image 2'
-                                                                        priority={true}
+                                                                        priority={false}
                                                                         className='w-full h-full aspect-[2/3] rounded-2xl bg-gray-50 object-cover shadow-xl'
                                                                     />
                                                                 </div>
@@ -230,7 +231,7 @@ const Hero = () => {
                                                                     <Image
                                                                         src={Hero6}
                                                                         alt='hero image 2'
-                                                                        priority={true}
+                                                                        priority={false}
                                                                         className='mt-8 w-full h-full aspect-[2/3] rounded-2xl bg-gray-50 object-cover shadow-xl'
                                                                     />
                                                                 </div>
