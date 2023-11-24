@@ -300,15 +300,6 @@ const Hero = () => {
                                                                         />
                                                                     </a>
                                                                 )}
-                                                                {person.social && person.social.facebook && (
-                                                                    <a href={person.social.facebook}>
-                                                                        <Image
-                                                                            src={Facebook}
-                                                                            alt='facebook'
-                                                                            className='w-7 h-7'
-                                                                        />
-                                                                    </a>
-                                                                )}
                                                                 {person.social && person.social.instagram && (
                                                                     <a href={person.social.instagram}>
                                                                         <Image
@@ -318,10 +309,18 @@ const Hero = () => {
                                                                         />
                                                                     </a>
                                                                 )}
+                                                                {person.social && person.social.facebook && (
+                                                                    <a href={person.social.facebook}>
+                                                                        <Image
+                                                                            src={Facebook}
+                                                                            alt='facebook'
+                                                                            className='w-7 h-7'
+                                                                        />
+                                                                    </a>
+                                                                )}
                                                             </div>
                                                         </li>
                                                     ))}
-
                                                 </ul>
                                             </div>
                                         </section>

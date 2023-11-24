@@ -38,7 +38,7 @@ const Navbar = () => {
                 </div>
                 <div className='hidden lg:ml-8 lg:flex lg:items-center lg:border-l lg:border-black lg:pl-8'>
                     <a href='/login'>Sign in</a>
-                    <a className='inline-flex justify-center rounded-lg text-sm font-semibold py-2 px-4 bg-slate-900 text-white hover:bg-slate-700 -my-2.5 ml-8' href='/get-pro'>
+                    <a className='inline-flex justify-center rounded-lg text-sm font-semibold py-2 px-4 bg-primary text-white -my-2.5 ml-8' href='/get-pro'>
                         <span>Get pro <span aria-hidden='true'>→</span>
                         </span>
                     </a>

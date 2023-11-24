@@ -32,7 +32,7 @@ const Hero = () => {
                     </nav>
                 </div>
                 <div className='mt-10 space-y-28 pb-px'>
-                    <section>
+                    <section id='footer-1'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>

@@ -131,7 +131,7 @@ const Components = () => {
                 </ul>
             </div>
             <div className="pointer-events-none relative z-10 -mt-5 flex justify-center">
-                <a className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700 pointer-events-auto" href="/components">
+                <a className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-primary text-white pointer-events-auto" href="/components">
                     <span>Show more...</span>
                 </a>
             </div>
