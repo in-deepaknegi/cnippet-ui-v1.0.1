@@ -169,7 +169,7 @@ const Hero = () => {
                                                         <Image
                                                             src={Profile1}
                                                             alt='profile 1'
-                                                            className='absolute w-[25%] top-[-3rem] left-[2rem] object-cover rounded-3xl shadow-xl shadow-gray-400'
+                                                            className='absolute w-[25%] top-[-1.5rem] left-[2rem] object-cover rounded-3xl shadow-xl shadow-gray-600'
                                                         />
                                                     </div>
                                                     <div className='col-span-2 font-sans z-10'>
