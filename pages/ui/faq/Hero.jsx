@@ -1,6 +1,21 @@
 "use client"
 import React, { useState } from 'react'
 
+const Data = [
+    {
+        question: "What's the best thing about Switzerland",
+        answer: "You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+        question: "What do you call someone with no body and no nose?",
+        answer: "Nobody knows. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+        question: "Why do you never see elephants hiding in trees?",
+        answer: "Because they're so good at it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
+    }
+]
+
 const Hero = () => {
     const [activeTab1, setActiveTab1] = useState(0);
     const [activeTab2, setActiveTab2] = useState(0);
@@ -15,6 +30,12 @@ const Hero = () => {
     const changeTab3 = (index) => {
         setActiveTab3(index);
     };
+
+    const [active, setActive] = useState(null);
+
+    const toggleActive = (index) => {
+        setActive(active === index ? null : index)
+    }
 
     return (
         <section className='relative overflow-hidden pt-[5.75rem]'>
@@ -154,18 +175,57 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
-                                {activeTab2 === 0 ? (
-                                    <>
-                                        <footer>
-                                            footer
-                                        </footer>
-                                        {/* <div className='bg-gray-100 h-[10rem]'></div> */}
-                                    </>
-                                ) : (
-                                    <div>code</div>
-                                )}
-                            </div>
+                            {activeTab2 === 0 ? (
+                                <section className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                                    <div className='mx-auto max-w-4xl px-6 py-16 sm:pt-24 lg:px-8 lg:py-20'>
+                                        <div className=''>
+                                            <div className='border-b border-gray-300 pb-3'>
+                                                <h2 className='text-2xl font-bold leading-10 text-gray-800'>Frequently asked questions</h2>
+                                                <p className='mt-2 leading-7 text-gray-500'>
+                                                    Can&apos;t find the answer you&apos;re looking for? Reach out to our
+                                                    <a href="/contact" className='text-blue-600'> customer support </a>
+                                                    team.
+                                                </p>
+                                            </div>
+                                            <div className='mt-8 lg:mt-10'>
+
+                                                <dl className='space-y-9'>
+                                                    {Data.map((item, index) => (
+                                                        <div key={index}>
+                                                            <dt>
+                                                                <button
+                                                                    onClick={() => toggleActive(index)}
+                                                                    className='flex w-full items-start justify-between text-left'>
+                                                                    <span className='text-base font-semibold leading-7 text-gray-900'>
+                                                                        {item.question}
+                                                                    </span>
+                                                                    <span>
+                                                                        {active === index ? (
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /></svg>
+                                                                        ) : (
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="M12 5v14" /></svg>
+                                                                        )}
+                                                                    </span>
+                                                                </button>
+                                                            </dt>
+                                                            {active === index && (
+                                                                <dd className='mt-2 text-base leading-7 text-gray-600'>
+                                                                    {item.answer}
+                                                                </dd>
+                                                            )}
+                                                        </div>
+                                                    ))}
+                                                </dl>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            ) : (
+                                <section className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                                    code
+                                </section>
+                            )}
                         </div>
                     </section>
 
