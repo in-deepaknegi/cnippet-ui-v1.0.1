@@ -53,7 +53,7 @@ const Hero = () => {
                     </nav>
                 </div>
                 <div className='mt-10 space-y-28 pb-px'>
-                    <section id='footer-1'>
+                    <section id='faq-1'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -103,43 +103,30 @@ const Hero = () => {
                                             </div>
                                             <div className='mt-10 col-span-7 lg:mt-0'>
                                                 <dl className='space-y-9'>
-                                                    <div>
-                                                        <dt className='text-base font-semibold leading-7 text-gray-900'>
-                                                            How do you make holy water?
-                                                        </dt>
-                                                        <dd className='mt-2 text-base leading-7 text-gray-600'>
-                                                            You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-                                                        </dd>
-                                                    </div>
-                                                    <div>
-                                                        <dt className='text-base font-semibold leading-7 text-gray-900'>
-                                                            What&apos;s the best thing about Switzerland?
-                                                        </dt>
-                                                        <dd className='mt-2 text-base leading-7 text-gray-600'>
-                                                            I don&apos;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-                                                        </dd>
-                                                    </div>
-                                                    <div>
-                                                        <dt className='text-base font-semibold leading-7 text-gray-900'>
-                                                            What do you call someone with no body and no nose?
-                                                        </dt>
-                                                        <dd className='mt-2 text-base leading-7 text-gray-600'>
-                                                            Nobody knows. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-                                                        </dd>
-                                                    </div>
-
+                                                    {Data.map((item) => (
+                                                        <div key={item}>
+                                                            <dt className='text-base font-semibold leading-7 text-gray-900'>
+                                                                {item.question}
+                                                            </dt>
+                                                            <dd className='mt-2 text-base leading-7 text-gray-600'>
+                                                                {item.answer}
+                                                            </dd>
+                                                        </div>
+                                                    ))}
                                                 </dl>
                                             </div>
                                         </div>
                                     </div>
                                 </section>
                             ) : (
-                                <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>code</div>
+                                <section className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                                    Code
+                                </section>
                             )}
                         </div>
                     </section>
 
-                    <section>
+                    <section id='faq-2'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -188,7 +175,6 @@ const Hero = () => {
                                                 </p>
                                             </div>
                                             <div className='mt-8 lg:mt-10'>
-
                                                 <dl className='space-y-9'>
                                                     {Data.map((item, index) => (
                                                         <div key={index}>
@@ -216,7 +202,6 @@ const Hero = () => {
                                                         </div>
                                                     ))}
                                                 </dl>
-
                                             </div>
                                         </div>
                                     </div>
