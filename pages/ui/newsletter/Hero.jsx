@@ -181,7 +181,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section id='newsletter-3'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -219,12 +219,23 @@ const Hero = () => {
 
                             <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
                                 {activeTab3 === 0 ? (
-                                    <>
-                                        <footer>
-                                            footer
-                                        </footer>
-                                        {/* <div className='bg-gray-100 h-[10rem]'></div> */}
-                                    </>
+                                    <section className='py-16 rounded-2xl lg:py-24'>
+                                        <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+                                            <div className='relative isolate overflow-hidden bg-black px-6 py-24 shadow-xl sm:rounded-3xl sm:px-24'>
+                                                <h2 className='mx-auto max-w-2xl text-center text-3xl font-bold tracking-wide text-gray-100 sm:text-4xl'>Get notified when we&apos;re launching</h2>
+                                                <p className='mt-4 mx-auto max-w-xl text-center text-3xl text-gray-200 sm:text-base'>
+                                                    Reprehenderit ad esse et non officia in nulla. Id proident tempor incididunt nostrud nulla et culpa.
+                                                </p>
+                                                <form action='' className='mt-6 mx-auto max-w-md col-span-5 lg:py-2'>
+                                                    <div className='flex gap-x-3'>
+                                                        <label htmlFor='email-address' className='sr-only'>Email address</label>
+                                                        <input id='email-address' name='email' type='email' autoComplete='email' required className='min-w-0 flex-auto rounded-lg border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/70 sm:text-sm sm:leading-6' placeholder='Enter your email' />
+                                                        <button type='submit' className='flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500'>Subscribe</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </section>
                                 ) : (
                                     <div>code</div>
                                 )}
