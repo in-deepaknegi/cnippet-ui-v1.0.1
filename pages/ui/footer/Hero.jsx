@@ -68,13 +68,12 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab1 === 0 ? (
                                     <>
-                                        <footer>
+                                        <footer className=' border rounded-2xl'>
                                             Footer
                                         </footer>
-                                        {/* <div className='bg-gray-100 h-[10rem]'></div> */}
                                     </>
                                 ) : (
                                     <div>code</div>
@@ -83,7 +82,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section id='footer-2'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -119,13 +118,12 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab2 === 0 ? (
                                     <>
-                                        <footer>
+                                        <footer className='border rounded-2xl'>
                                             footer
                                         </footer>
-                                        {/* <div className='bg-gray-100 h-[10rem]'></div> */}
                                     </>
                                 ) : (
                                     <div>code</div>
@@ -134,7 +132,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section id='footer-3'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -170,13 +168,12 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab3 === 0 ? (
                                     <>
-                                        <footer>
+                                        <footer className='border rounded-2xl'>
                                             footer
                                         </footer>
-                                        {/* <div className='bg-gray-100 h-[10rem]'></div> */}
                                     </>
                                 ) : (
                                     <div>code</div>

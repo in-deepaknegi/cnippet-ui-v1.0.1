@@ -34,7 +34,7 @@ const Hero = () => {
                     </nav>
                 </div>
                 <div className='mt-10 space-y-28 pb-px'>
-                    <section>
+                    <section id='contact-1'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -70,10 +70,10 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab1 === 0 ? (
                                     <>
-                                        <section className='rounded-2xl bg-white'>
+                                        <section className='border rounded-2xl bg-white'>
                                             <div className="isolate px-6 py-16 md:py-32 lg:px-8">
                                                 <div className="mx-auto max-w-2xl text-center">
                                                     <h2 className="text-3xl font-bold tracking-tight text-blue-700 sm:text-4xl">Contact sales</h2>
@@ -152,7 +152,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section id='contact-2'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -188,10 +188,10 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab2 === 0 ? (
                                     <>
-                                        <section className='isolate relative'>
+                                        <section className='isolate relative border rounded-2xl'>
                                             <div className='mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2'>
                                                 <div className='relative mt-12 px-6 md:mt-24 lg:px-8'>
                                                     <div className='mx-auto max-w-xl lg:mx-0 lg:max-w-lg'>
@@ -270,7 +270,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section id='contact-3'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -306,10 +306,10 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab3 === 0 ? (
                                     <>
-                                        <section className='isolate relative overflow-hidden rounded-2xl'>
+                                        <section className='isolate relative overflow-hidden border rounded-2xl'>
                                             <div className='mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2'>
                                                 <div className='max-w-lg mx-auto my-10 md:my-auto'>
                                                     <div>
@@ -351,7 +351,7 @@ const Hero = () => {
                                                             and our
                                                             <span className='text-blue-700'>
                                                                 <a href="/privacy"> privacy policy </a>
-                                                            </span>. 
+                                                            </span>.
                                                         </p>
 
                                                         <button type="submit" className="py-3 px-5 text-sm font-medium text-center bg-blue-700 text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary-300">Send message</button>

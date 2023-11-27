@@ -32,7 +32,7 @@ const Hero = () => {
                     </nav>
                 </div>
                 <div className='mt-10 space-y-28 pb-px'>
-                    <section>
+                    <section id='navbar-1'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -68,10 +68,10 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab1 === 0 ? (
                                     <>
-                                        <header className="">
+                                        <header className='border rounded-2xl'>
                                             <nav className="flex items-center justify-between p-7 lg:px-8" aria-label="Global">
                                                 <div className="flex lg:flex-1">
                                                     <a href="/" className="-m-1.5 p-1.5 text-2xl font-medium">
@@ -94,7 +94,6 @@ const Hero = () => {
                                                 </div>
                                             </nav>
                                         </header>
-                                        {/* <div className='bg-gray-100 h-[10rem]'></div> */}
                                     </>
                                 ) : (
                                     <div>code</div>
@@ -103,7 +102,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section id='navbar-2'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -139,10 +138,10 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab2 === 0 ? (
                                     <>
-                                        <header className="">
+                                        <header className='border rounded-2xl'>
                                             <nav className="flex items-center justify-between p-7 lg:px-8">
                                                 <div className="flex">
                                                     <a href="/" className="-m-1.5 p-1.5 text-2xl font-medium">
@@ -165,7 +164,6 @@ const Hero = () => {
                                                 </div>
                                             </nav>
                                         </header>
-                                        {/* <div className='bg-gray-100 h-[10rem]'></div> */}
                                     </>
                                 ) : (
                                     <div>code</div>
@@ -174,7 +172,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section id='navbar-3'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -210,10 +208,10 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab3 === 0 ? (
                                     <>
-                                        <header className="">
+                                        <header className='border rounded-2xl'>
                                             <nav className="flex items-center justify-between p-7 lg:px-8">
                                                 <div className="flex lg:flex-none">
                                                     <a href="/" className="-m-1.5 p-1.5 text-2xl font-medium">
@@ -236,7 +234,6 @@ const Hero = () => {
                                                 </div>
                                             </nav>
                                         </header>
-                                        {/* <div className='bg-gray-100 h-[10rem]'></div> */}
                                     </>
                                 ) : (
                                     <div>code</div>

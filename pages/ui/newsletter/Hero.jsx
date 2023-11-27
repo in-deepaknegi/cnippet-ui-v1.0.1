@@ -68,10 +68,10 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab1 === 0 ? (
                                     <>
-                                        <div className="relative isolate overflow-hidden bg-white rounded-2xl py-16 sm:py-24 lg:py-32">
+                                        <div className="relative isolate overflow-hidden bg-white border rounded-2xl py-16 sm:py-24 lg:py-32">
                                             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                                                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                                                     <div className="max-w-xl lg:max-w-lg">
@@ -151,9 +151,9 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab2 === 0 ? (
-                                    <section className='py-16 sm:py-24 lg:py-32'>
+                                    <section className='py-16 sm:py-24 lg:py-32 border rounded-2xl'>
                                         <div className='mx-auto grid max-w-7xl grid-cols-1 px-6 lg:grid-cols-12 lg:gap-8 lg:px-8'>
                                             <div className='max-w-xl text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:col-span-7'>
                                                 <h2 className='inline sm:block lg:inline'>Want product news and updated?</h2>
@@ -217,9 +217,9 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab3 === 0 ? (
-                                    <section className='py-16 rounded-2xl lg:py-24'>
+                                    <section className='py-16 lg:py-24 border rounded-2xl'>
                                         <div className='mx-auto max-w-7xl px-6 lg:px-8'>
                                             <div className='relative isolate overflow-hidden bg-black px-6 py-24 shadow-xl sm:rounded-3xl sm:px-24'>
                                                 <h2 className='mx-auto max-w-2xl text-center text-3xl font-bold tracking-wide text-gray-100 sm:text-4xl'>Get notified when we&apos;re launching</h2>

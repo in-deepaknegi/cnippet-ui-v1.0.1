@@ -46,7 +46,7 @@ const Hero = () => {
                     </nav>
                 </div>
                 <div className='mt-10 space-y-28 pb-px'>
-                    <section>
+                    <section id='hero-1'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -82,10 +82,10 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl overflow-hidden'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab1 === 0 ? (
                                     <>
-                                        <section className='relative bg-white '>
+                                        <section className='relative bg-white border rounded-2xl overflow-hidden'>
                                             <div className='grid max-w-7xl grid-cols-12 mx-auto lg:gap-8'>
                                                 <div className='px-6 pb-24 pt-10 sm:pb-32 col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6'>
                                                     <div className='mx-auto max-w-2xl lg:mx-6'>
@@ -117,7 +117,6 @@ const Hero = () => {
                                                 </div>
                                             </div>
                                         </section>
-                                        {/* <div className='bg-gray-100 h-[10rem]'></div> */}
                                     </>
                                 ) : (
                                     <div>code</div>
@@ -126,7 +125,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section id='hero-2'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -162,10 +161,10 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab2 === 0 ? (
                                     <>
-                                        <section className='relative isolate'>
+                                        <section className='relative isolate border rounded-2xl'>
                                             <div className='overflow-hidden'>
                                                 <div className='mx-auto max-w-7xl px-6 pb-16 pt-16 lg:px-8'>
                                                     <div className='mx-auto max-w-2xl gap-14 lg:mx-0 lg:flex lg:max-w-none lg:text-center'>
@@ -249,7 +248,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section id='hero-3'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -285,10 +284,10 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab4 === 0 ? (
                                     <>
-                                        <section className='relative isolate'>
+                                        <section className='relative isolate border rounded-2xl overflow-hidden'>
                                             <div className='overflow-hidden'>
                                                 <div className='mx-auto max-w-7xl px-6 pb-16 lg:px-8'>
                                                     <div className='mx-auto max-w-2xl gap-14 lg:mx-0 lg:flex lg:max-w-none lg:text-center'>
@@ -379,7 +378,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section id='hero-4'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -415,10 +414,10 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab3 === 0 ? (
                                     <>
-                                        <section className='relative isolate overflow-hidden'>
+                                        <section className='relative isolate border rounded-2xl overflow-hidden'>
                                             <Image
                                                 src={Hero3}
                                                 alt='hero image 3'

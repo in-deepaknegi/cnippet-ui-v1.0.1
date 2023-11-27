@@ -86,7 +86,7 @@ const Hero = () => {
                     </nav>
                 </div>
                 <div className='mt-10 space-y-28 pb-px'>
-                    <section>
+                    <section id='team-1'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -122,10 +122,10 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab1 === 0 ? (
                                     <>
-                                        <section className='bg-white py-24 sm:py-32 rounded-2xl'>
+                                        <section className='bg-white py-24 sm:py-32 border rounded-2xl'>
                                             <div className='mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3'>
                                                 <div className='max-w-2xl'>
                                                     <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>Meet our leadership</h2>
@@ -161,7 +161,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section id='team-2'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -197,10 +197,10 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab2 === 0 ? (
                                     <>
-                                        <section className='bg-white py-24 sm:py-32 rounded-2xl'>
+                                        <section className='bg-white py-24 sm:py-32 border rounded-2xl'>
                                             <div className='mx-auto max-w-7xl px-5 lg:px-8'>
                                                 <div className='mx-auto max-w-2xl lg:mx-0'>
                                                     <h2 className='text-4xl font-semibold'>Our Team</h2>
@@ -231,7 +231,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section id='team-3'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -267,10 +267,10 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab3 === 0 ? (
                                     <>
-                                        <section className='bg-white py-16 sm:py-20 rounded-2xl'>
+                                        <section className='bg-white py-16 sm:py-20 border rounded-2xl'>
                                             <div className='mx-auto max-w-7xl px-5 lg:px-8'>
                                                 <div className='mx-auto max-w-2xl lg:mx-0'>
                                                     <h2 className='text-4xl font-semibold'>Meet out team</h2>

@@ -89,40 +89,45 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            {activeTab1 === 0 ? (
-                                <section className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
-                                    <div className='mx-auto max-w-7xl px-6 py-16 sm:pt-24 lg:px-8 lg:py-20'>
-                                        <div className='lg:grid lg:grid-cols-12 lg:gap-8'>
-                                            <div className='col-span-5'>
-                                                <h2 className='text-2xl font-bold leading-10 text-gray-800'>Frequently asked questions</h2>
-                                                <p className='mt-4 leading-7 text-gray-500'>
-                                                    Can&apos;t find the answer you&apos;re looking for? Reach out to our
-                                                    <a href="/contact" className='text-blue-600'> customer support </a>
-                                                    team.
-                                                </p>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
+                                {activeTab1 === 0 ? (
+                                    <>
+                                        <section className='border rounded-2xl'>
+                                            <div className='mx-auto max-w-7xl px-6 py-16 sm:pt-24 lg:px-8 lg:py-20'>
+                                                <div className='lg:grid lg:grid-cols-12 lg:gap-8'>
+                                                    <div className='col-span-5'>
+                                                        <h2 className='text-2xl font-bold leading-10 text-gray-800'>Frequently asked questions</h2>
+                                                        <p className='mt-4 leading-7 text-gray-500'>
+                                                            Can&apos;t find the answer you&apos;re looking for? Reach out to our
+                                                            <a href="/contact" className='text-blue-600'> customer support </a>
+                                                            team.
+                                                        </p>
+                                                    </div>
+                                                    <div className='mt-10 col-span-7 lg:mt-0'>
+                                                        <dl className='space-y-9'>
+                                                            {Data.map((item) => (
+                                                                <div key={item}>
+                                                                    <dt className='text-base font-semibold leading-7 text-gray-900'>
+                                                                        {item.question}
+                                                                    </dt>
+                                                                    <dd className='mt-2 text-base leading-7 text-gray-600'>
+                                                                        {item.answer}
+                                                                    </dd>
+                                                                </div>
+                                                            ))}
+                                                        </dl>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div className='mt-10 col-span-7 lg:mt-0'>
-                                                <dl className='space-y-9'>
-                                                    {Data.map((item) => (
-                                                        <div key={item}>
-                                                            <dt className='text-base font-semibold leading-7 text-gray-900'>
-                                                                {item.question}
-                                                            </dt>
-                                                            <dd className='mt-2 text-base leading-7 text-gray-600'>
-                                                                {item.answer}
-                                                            </dd>
-                                                        </div>
-                                                    ))}
-                                                </dl>
-                                            </div>
-                                        </div>
+                                        </section>
+                                    </>
+                                ) : (
+                                    <div>
+                                        code
                                     </div>
-                                </section>
-                            ) : (
-                                <section className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
-                                    Code
-                                </section>
-                            )}
+                                )}
+                            </div>
+
                         </div>
                     </section>
 
@@ -162,59 +167,63 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            {activeTab2 === 0 ? (
-                                <section className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
-                                    <div className='mx-auto max-w-4xl px-6 py-16 sm:pt-24 lg:px-8 lg:py-20'>
-                                        <div className=''>
-                                            <div className='border-b border-gray-300 pb-3'>
-                                                <h2 className='text-2xl font-bold leading-10 text-gray-800'>Frequently asked questions</h2>
-                                                <p className='mt-2 leading-7 text-gray-500'>
-                                                    Can&apos;t find the answer you&apos;re looking for? Reach out to our
-                                                    <a href="/contact" className='text-blue-600'> customer support </a>
-                                                    team.
-                                                </p>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
+                                {activeTab2 === 0 ? (
+                                    <>
+                                        <section className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                                            <div className='mx-auto max-w-4xl px-6 py-16 sm:pt-24 lg:px-8 lg:py-20'>
+                                                <div className=''>
+                                                    <div className='border-b border-gray-300 pb-3'>
+                                                        <h2 className='text-2xl font-bold leading-10 text-gray-800'>Frequently asked questions</h2>
+                                                        <p className='mt-2 leading-7 text-gray-500'>
+                                                            Can&apos;t find the answer you&apos;re looking for? Reach out to our
+                                                            <a href="/contact" className='text-blue-600'> customer support </a>
+                                                            team.
+                                                        </p>
+                                                    </div>
+                                                    <div className='mt-8 lg:mt-10'>
+                                                        <dl className='space-y-9'>
+                                                            {Data.map((item, index) => (
+                                                                <div key={index}>
+                                                                    <dt>
+                                                                        <button
+                                                                            onClick={() => toggleActive(index)}
+                                                                            className='flex w-full items-start justify-between text-left'>
+                                                                            <span className='text-base font-semibold leading-7 text-gray-900'>
+                                                                                {item.question}
+                                                                            </span>
+                                                                            <span>
+                                                                                {active === index ? (
+                                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /></svg>
+                                                                                ) : (
+                                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="M12 5v14" /></svg>
+                                                                                )}
+                                                                            </span>
+                                                                        </button>
+                                                                    </dt>
+                                                                    {active === index && (
+                                                                        <dd className='mt-2 text-base leading-7 text-gray-600'>
+                                                                            {item.answer}
+                                                                        </dd>
+                                                                    )}
+                                                                </div>
+                                                            ))}
+                                                        </dl>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div className='mt-8 lg:mt-10'>
-                                                <dl className='space-y-9'>
-                                                    {Data.map((item, index) => (
-                                                        <div key={index}>
-                                                            <dt>
-                                                                <button
-                                                                    onClick={() => toggleActive(index)}
-                                                                    className='flex w-full items-start justify-between text-left'>
-                                                                    <span className='text-base font-semibold leading-7 text-gray-900'>
-                                                                        {item.question}
-                                                                    </span>
-                                                                    <span>
-                                                                        {active === index ? (
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /></svg>
-                                                                        ) : (
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="M12 5v14" /></svg>
-                                                                        )}
-                                                                    </span>
-                                                                </button>
-                                                            </dt>
-                                                            {active === index && (
-                                                                <dd className='mt-2 text-base leading-7 text-gray-600'>
-                                                                    {item.answer}
-                                                                </dd>
-                                                            )}
-                                                        </div>
-                                                    ))}
-                                                </dl>
-                                            </div>
-                                        </div>
+                                        </section>
+                                    </>
+                                ) : (
+                                    <div>
+                                        code
                                     </div>
-                                </section>
-                            ) : (
-                                <section className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
-                                    code
-                                </section>
-                            )}
+                                )}
+                            </div>
                         </div>
                     </section>
 
-                    <section>
+                    <section id='faq-3'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -250,13 +259,12 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab3 === 0 ? (
                                     <>
-                                        <footer>
-                                            footer
-                                        </footer>
-                                        {/* <div className='bg-gray-100 h-[10rem]'></div> */}
+                                        <section className='border rounded-2xl'>
+                                            FAQ
+                                        </section>
                                     </>
                                 ) : (
                                     <div>code</div>

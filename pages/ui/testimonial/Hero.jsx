@@ -40,7 +40,7 @@ const Hero = () => {
                     </nav>
                 </div>
                 <div className='mt-10 space-y-28 pb-px'>
-                    <section>
+                    <section id='testimonial-1'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -76,10 +76,10 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab1 === 0 ? (
                                     <>
-                                        <section className='isolate overflow-hidden bg-white rounded-2xl px-6 lg:px-8'>
+                                        <section className='isolate overflow-hidden bg-white border rounded-2xl px-6 lg:px-8'>
                                             <div className='relative mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-5xl'>
                                                 <figure className='grid grid-cols-3 items-center gap-8'>
                                                     <div className='w-16 lg:w-72'>
@@ -123,7 +123,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section id='testimonial-2'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -159,10 +159,10 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab2 === 0 ? (
                                     <>
-                                        <section className='isolate overflow-hidden bg-white rounded-2xl px-6 lg:px-8'>
+                                        <section className='isolate overflow-hidden bg-white border rounded-2xl px-6 lg:px-8'>
                                             <div className='relative mx-auto max-w-2xl bg-black rounded-3xl my-16 sm:my-24 lg:max-w-6xl'>
                                                 <figure className='grid grid-cols-3 items-center gap-8 py-20 px-4'>
                                                     <div className='static w-16 lg:w-72'>
@@ -206,7 +206,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section id='testimonial-3'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -242,10 +242,10 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab3 === 0 ? (
                                     <>
-                                        <section className='relative isolate bg-white py-16 lg:py-10 rounded-2xl'>
+                                        <section className='relative isolate bg-white py-16 lg:py-10 border rounded-2xl'>
                                             <div className='mx-auto max-w-7xl px-6 lg:px-8'>
                                                 <div className='mx-auto max-w-xl text-center'>
                                                     <h2 className='text-2xl text-blue-700 font-semibold'>Testimonials</h2>
