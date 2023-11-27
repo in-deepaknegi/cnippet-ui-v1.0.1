@@ -49,7 +49,13 @@ const component = [
         name: 'Newsletter',
         source: '/components/application-ui/newsletter',
         imageURL: Nav,
-        number: '4 components',
+        number: '3 components',
+    },
+    {
+        name: 'Feature',
+        source: '/components/application-ui/feature',
+        imageURL: Nav,
+        number: '3 components',
     },
 ]
 

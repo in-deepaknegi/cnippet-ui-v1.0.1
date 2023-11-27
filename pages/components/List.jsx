@@ -25,31 +25,37 @@ const component = [
         name: 'Testimonials',
         source: '/components/application-ui/testimonial',
         imageURL: Nav,
-        number: '4 components',
+        number: '3 components',
     },
     {
         name: 'Contact',
         source: '/components/application-ui/contact',
         imageURL: Nav,
-        number: '4 components',
+        number: '3 components',
     },
     {
         name: 'Team',
         source: '/components/application-ui/team',
         imageURL: Nav,
-        number: '4 components',
+        number: '3 components',
     },
     {
         name: 'FAQ',
         source: '/components/application-ui/faq',
         imageURL: Nav,
-        number: '4 components',
+        number: '2 components',
     },
     {
         name: 'Newsletter',
         source: '/components/application-ui/newsletter',
         imageURL: Nav,
-        number: '4 components',
+        number: '3 components',
+    },
+    {
+        name: 'Feature',
+        source: '/components/application-ui/feature',
+        imageURL: Nav,
+        number: '3 components',
     },
 ]
 
