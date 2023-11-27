@@ -57,6 +57,12 @@ const component = [
         imageURL: Nav,
         number: '3 components',
     },
+    {
+        name: 'Pricing',
+        source: '/components/application-ui/pricing',
+        imageURL: Nav,
+        number: '3 components',
+    },
 ]
 
 const List = () => {

@@ -1,12 +1,12 @@
 import React from 'react'
 import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
-import Hero from '@/pages/ui/testimonial/Hero';
+import Hero from '@/pages/ui/pricing/Hero';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-    title: 'UI - Testimonial',
-    description: 'Navbar page',
+    title: 'UI - Pricing',
+    description: 'Pricing page',
 }
 
 const page = () => {
