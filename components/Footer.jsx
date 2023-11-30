@@ -22,6 +22,9 @@ const Footer = () => {
                         <li>
                             <a href='#' className='hover:underline'>Contact</a>
                         </li>
+                        <li>
+                            <a href='/design' className='hover:underline'>Design</a>
+                        </li>
                     </ul>
                 </div>
                 <hr className='my-6 border-gray-200 sm:mx-auto lg:my-8' />
