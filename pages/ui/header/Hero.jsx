@@ -71,8 +71,13 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab1 === 0 ? (
                                     <>
-                                        <section className='border rounded-2xl'>
-                                            Header Section
+                                        <section className='bg-white px-6 py-24 lg:py-32 lg:px-8 border rounded-2xl'>
+                                            <div className='mx-auto max-w-2xl text-center'>
+                                                <h2 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl '>Support center</h2>
+                                                <p className='mt-6 text-lg leading-8 text-gray-600'>
+                                                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+                                                </p>
+                                            </div>
                                         </section>
                                     </>
                                 ) : (
@@ -121,8 +126,16 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab2 === 0 ? (
                                     <>
-                                        <section className='border rounded-2xl'>
-                                            Header Section
+                                        <section className='bg-white px-6 py-24 lg:py-32 lg:px-8 border rounded-2xl'>
+                                            <div className='mx-auto max-w-2xl text-center'>
+                                                <p className='text-base font-semibold leading-7 text-blue-700'>
+                                                    Get the help you need
+                                                </p>
+                                                <h2 className='mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>Support center</h2>
+                                                <p className='mt-6 text-lg leading-8 text-gray-600'>
+                                                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+                                                </p>
+                                            </div>
                                         </section>
                                     </>
                                 ) : (
@@ -171,8 +184,16 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab3 === 0 ? (
                                     <>
-                                        <section className='border rounded-2xl'>
-                                            Header Section
+                                        <section className='bg-white px-6 py-24 lg:py-32 lg:px-8 border rounded-2xl'>
+                                            <div className='max-w-2xl text-left'>
+                                                <p className='text-base font-semibold leading-7 text-blue-700'>
+                                                    Get the help you need
+                                                </p>
+                                                <h2 className='mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>Support center</h2>
+                                                <p className='mt-6 text-lg leading-8 text-gray-600'>
+                                                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+                                                </p>
+                                            </div>
                                         </section>
                                     </>
                                 ) : (
