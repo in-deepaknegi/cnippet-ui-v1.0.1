@@ -15,6 +15,7 @@ const Hero = () => {
     const [activeTab2, setActiveTab2] = useState(0);
     const [activeTab3, setActiveTab3] = useState(0);
     const [activeTab4, setActiveTab4] = useState(0);
+    const [activeTab5, setActiveTab5] = useState(0);
 
     const changeTab1 = (index) => {
         setActiveTab1(index);
@@ -28,7 +29,9 @@ const Hero = () => {
     const changeTab4 = (index) => {
         setActiveTab4(index);
     };
-
+    const changeTab5 = (index) => {
+        setActiveTab5(index);
+    };
 
     return (
         <section className='relative overflow-hidden pt-[5.75rem]'>
@@ -263,14 +266,14 @@ const Hero = () => {
                             <div className='ml-6 flex items-center'>
                                 <div className='flex space-x-1 rounded-lg bg-slate-100 p-0.5'>
                                     <button
-                                        onClick={() => changeTab4(0)}
-                                        className={`flex items-center rounded-md py-[0.45rem] pl-2 pr-2 text-sm font-semibold lg:pr-3 ${activeTab4 === 0 ? 'bg-white shadow' : ''}`}>
+                                        onClick={() => changeTab3(0)}
+                                        className={`flex items-center rounded-md py-[0.45rem] pl-2 pr-2 text-sm font-semibold lg:pr-3 ${activeTab3 === 0 ? 'bg-white shadow' : ''}`}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0950f6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" /><circle cx="12" cy="12" r="3" /></svg>
                                         <span className='sr-only lg:not-sr-only lg:ml-2 text-stone-900'>Preview</span>
                                     </button>
                                     <button
-                                        onClick={() => changeTab4(1)}
-                                        className={`flex items-center rounded-md py-[0.45rem] pl-2 pr-2 text-sm font-semibold lg:pr-3 ${activeTab4 === 1 ? 'bg-white shadow' : ''}`}>
+                                        onClick={() => changeTab3(1)}
+                                        className={`flex items-center rounded-md py-[0.45rem] pl-2 pr-2 text-sm font-semibold lg:pr-3 ${activeTab3 === 1 ? 'bg-white shadow' : ''}`}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3e75f4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg>
                                         <span className='sr-only lg:not-sr-only lg:ml-2 text-stone-900'>Code</span>
                                     </button>
@@ -285,7 +288,7 @@ const Hero = () => {
                             </div>
 
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
-                                {activeTab4 === 0 ? (
+                                {activeTab3 === 0 ? (
                                     <>
                                         <section className='relative isolate border rounded-2xl overflow-hidden'>
                                             <div className='overflow-hidden'>
@@ -393,14 +396,14 @@ const Hero = () => {
                             <div className='ml-6 flex items-center'>
                                 <div className='flex space-x-1 rounded-lg bg-slate-100 p-0.5'>
                                     <button
-                                        onClick={() => changeTab3(0)}
-                                        className={`flex items-center rounded-md py-[0.45rem] pl-2 pr-2 text-sm font-semibold lg:pr-3 ${activeTab3 === 0 ? 'bg-white shadow' : ''}`}>
+                                        onClick={() => changeTab4(0)}
+                                        className={`flex items-center rounded-md py-[0.45rem] pl-2 pr-2 text-sm font-semibold lg:pr-3 ${activeTab4 === 0 ? 'bg-white shadow' : ''}`}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0950f6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" /><circle cx="12" cy="12" r="3" /></svg>
                                         <span className='sr-only lg:not-sr-only lg:ml-2 text-stone-900'>Preview</span>
                                     </button>
                                     <button
-                                        onClick={() => changeTab3(1)}
-                                        className={`flex items-center rounded-md py-[0.45rem] pl-2 pr-2 text-sm font-semibold lg:pr-3 ${activeTab3 === 1 ? 'bg-white shadow' : ''}`}>
+                                        onClick={() => changeTab4(1)}
+                                        className={`flex items-center rounded-md py-[0.45rem] pl-2 pr-2 text-sm font-semibold lg:pr-3 ${activeTab4 === 1 ? 'bg-white shadow' : ''}`}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3e75f4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg>
                                         <span className='sr-only lg:not-sr-only lg:ml-2 text-stone-900'>Code</span>
                                     </button>
@@ -415,7 +418,7 @@ const Hero = () => {
                             </div>
 
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
-                                {activeTab3 === 0 ? (
+                                {activeTab4 === 0 ? (
                                     <>
                                         <section className='relative isolate border rounded-2xl overflow-hidden'>
                                             <Image
@@ -453,6 +456,109 @@ const Hero = () => {
                         </div>
                     </section>
 
+                    <section id='hero-5'>
+                        <div className='grid grid-cols-[1fr,auto] items-center'>
+                            <div className='flex min-w-0'>
+                                <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
+                                    <a href="">
+                                        Simple centered with backgroud image
+                                    </a>
+                                </h2>
+                                <p className='ml-3 hidden whitespace-nowrap rounded-lg bg-slate-100 px-2 py-0.5 text-xs font-semibold leading-6 text-slate-700 lg:block'>
+                                    Requires JS
+                                </p>
+                            </div>
+                            <div className='ml-6 flex items-center'>
+                                <div className='flex space-x-1 rounded-lg bg-slate-100 p-0.5'>
+                                    <button
+                                        onClick={() => changeTab5(0)}
+                                        className={`flex items-center rounded-md py-[0.45rem] pl-2 pr-2 text-sm font-semibold lg:pr-3 ${activeTab5 === 0 ? 'bg-white shadow' : ''}`}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0950f6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" /><circle cx="12" cy="12" r="3" /></svg>
+                                        <span className='sr-only lg:not-sr-only lg:ml-2 text-stone-900'>Preview</span>
+                                    </button>
+                                    <button
+                                        onClick={() => changeTab5(1)}
+                                        className={`flex items-center rounded-md py-[0.45rem] pl-2 pr-2 text-sm font-semibold lg:pr-3 ${activeTab5 === 1 ? 'bg-white shadow' : ''}`}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3e75f4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg>
+                                        <span className='sr-only lg:not-sr-only lg:ml-2 text-stone-900'>Code</span>
+                                    </button>
+                                </div>
+                                <div className='ml-6 mr-3 hidden h-5 w-px bg-slate-900 sm:block'></div>
+                                <div className='relative hidden sm:block text-slate-900 font-medium sm:text-sm pl-3.5 pr-[1.875rem]'>
+                                    NextJs
+                                </div>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9c9c9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2" /><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" /></svg>
+                                </button>
+                            </div>
+
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
+                                {activeTab5 === 0 ? (
+                                    <>
+                                        <section className='isolate border rounded-2xl overflow-hidden py-24 lg:py-32'>
+                                            <div className='mx-auto max-w-7xl px-6 lg:flex lg:px-8'>
+                                                <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-12 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8'>
+                                                    <div className='lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8'>
+                                                        <div className="hidden sm:mb-8 sm:flex">
+                                                            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                                                                Announcing our next round of funding. <a href="#" className="font-semibold text-indigo-600"><span className="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+                                                            </div>
+                                                        </div>
+                                                        <h1 className='text-6xl font-semibold'>
+                                                            Data to enrich your online bussiness
+                                                        </h1>
+                                                        <p className='mt-6 text-lg text-gray-600 font-light'>
+                                                            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+                                                        </p>
+                                                        <div className="mt-10 flex gap-x-6">
+                                                            <a href="#" className="rounded-md bg-purple-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Browse Components</a>
+                                                            <a href="#" className="text-sm font-semibold leading-6 text-gray-900 my-auto">
+                                                                Explore templates <span aria-hidden="true">→</span></a>
+                                                        </div>
+                                                    </div>
+                                                    <div className='flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents'>
+                                                        <div className='w-full mt-10 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:items-end lg:mt-0'>
+                                                            <Image
+                                                                src={Hero5}
+                                                                alt='hero3'
+                                                                className='aspect-[7/5] w-[35rem] max-w-none rounded-2xl object-cover'
+                                                            />
+                                                        </div>
+
+                                                        <div className='hidden lg:col-span-2 lg:col-end-2 lg:ml-[-13rem] lg:flex lg:w-[35rem] lg:items-start lg:flex-end lg:gap-x-8'>
+                                                            <div className='-order-last flex w-64 flex-none justify-end self-end lg:w-auto'>
+                                                                <Image
+                                                                    src={Hero4}
+                                                                    alt='hero 4'
+                                                                    className='aspect-[4/3] w-96 max-w-none flex-none rounded-2xl object-cover object-bottom'
+                                                                />
+                                                            </div>
+                                                            <div className='flex w-96 flex-auto justify-end lg:w-auto lg:flex-none'>
+                                                                <Image
+                                                                    src={Hero3}
+                                                                    alt='hero 4'
+                                                                    className='aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl object-cover object-bottom'
+                                                                />
+                                                            </div>
+                                                            <div className='hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none'>
+                                                                <Image
+                                                                    src={Hero2}
+                                                                    alt='hero 4'
+                                                                    className='aspect-[4/3] w-96 max-w-none flex-none rounded-2xl object-cover object-center'
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </>
+                                ) : (
+                                    <div>code</div>
+                                )}
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </section>

@@ -225,7 +225,7 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab2 === 0 ? (
                                     <>
                                         <section className='bg-white py-24 sm:py-32 border rounded-2xl'>
@@ -241,12 +241,12 @@ const Hero = () => {
                                                     <div className='grid grid-cols-2 gap-x-1 rounded-full p-1 text-center text-xs font-semibold leading-5 ring-1 ring-gray-300'>
                                                         <div
                                                             onClick={toggleBillingPeriod}
-                                                            className={`cursor-pointer rounded-full px-[0.625rem] py-1 ${isYearly ? 'text-gray-500' : 'bg-blue-700 text-white'}`}>
+                                                            className={`cursor-pointer rounded-full px-[0.625rem] py-1 ${isYearly ? 'text-gray-500' : 'bg-indigo-600 text-white'}`}>
                                                             Monthly
                                                         </div>
                                                         <div
                                                             onClick={toggleBillingPeriod}
-                                                            className={`cursor-pointer rounded-full px-[0.625rem] py-1 ${isYearly ? 'bg-blue-700 text-white' : 'text-gray-500'}`}>
+                                                            className={`cursor-pointer rounded-full px-[0.625rem] py-1 ${isYearly ? 'bg-indigo-600 text-white' : 'text-gray-500'}`}>
                                                             Yearly
                                                         </div>
                                                     </div>
@@ -268,7 +268,7 @@ const Hero = () => {
                                                                     {isYearly ? '/year' : '/month'}
                                                                 </span>
                                                             </p>
-                                                            <a href="" className='mt-6 block rounded-md bg-blue-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-xl'>
+                                                            <a href="" className='mt-6 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-xl'>
                                                                 Buy plan
                                                             </a>
                                                             <ul className='mt-8 text-sm leading-6 space-y-4 xl:mt-10'>
@@ -328,11 +328,24 @@ const Hero = () => {
                                 </button>
                             </div>
 
-                            <div className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab3 === 0 ? (
                                     <>
-                                        <section className='border rounded-2xl'>
-                                            Pricing
+                                        <section className='bg-white py-24 sm:py-32 border rounded-2xl'>
+                                            <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+                                                <div className='mx-auto max-w-4xl text-center'>
+                                                    <h2 className='text-base font-semibold leading-7 text-blue-600'>Pricing</h2>
+                                                    <p className='mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl'>Pricing plans for teams of all sizes</p>
+                                                </div>
+                                                <p className='mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600'>
+                                                    Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.
+                                                </p>
+
+                                                <div>
+                                                    
+                                                </div>
+                                               
+                                            </div>
                                         </section>
                                     </>
                                 ) : (
