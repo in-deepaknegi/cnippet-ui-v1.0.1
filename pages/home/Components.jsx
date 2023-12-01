@@ -22,6 +22,12 @@ const component = [
         number: '4 components',
     },
     {
+        name: 'Header section',
+        source: '/components/application-ui/header',
+        imageURL: Nav,
+        number: '4 components',
+    },
+    {
         name: 'Testimonials',
         source: '/components/application-ui/testimonial',
         imageURL: Nav,
