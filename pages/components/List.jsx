@@ -69,6 +69,12 @@ const component = [
         imageURL: Nav,
         number: '3 components',
     },
+    {
+        name: 'Blogs',
+        source: '/components/application-ui/blog',
+        imageURL: Nav,
+        number: '3 components',
+    },
 ]
 
 const List = () => {
