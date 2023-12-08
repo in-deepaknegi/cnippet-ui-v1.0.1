@@ -5,8 +5,8 @@ const Hero = () => {
     return (
         <section className="bg-white">
             <div className="relative isolate px-6 pt-14 lg:px-8 h-screen">
-                <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-                    <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-700 to-fuchsia-400  opacity-30 sm:left-[calc(50%-30rem)] sm:w-[60.1875rem]" ></div>
+                <div className="absolute inset-x-0 -z-10 transform-gpu overflow-hidden -top-44 blur-3xl" aria-hidden="true">
+                    <div className="relative left-[calc(80%-18rem)] aspect-[1155/678] w-[36.125rem] bg-gradient-to-tr bg-opacity-50 from-fuchsia-300 to-fuchsia-100 sm:right-0 sm:w-[50.1875rem]" ></div>
                 </div>
 
                 <div className="mx-auto max-w-2xl py-20">
@@ -29,8 +29,8 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className="absolute inset-x-0 top-[calc(100%-20rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-                    <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-b from-blue-700 to-fuchsia-400  opacity-30 sm:left-[calc(50%+36rem)] sm:w-[50.1875rem]" ></div>
+                <div className="absolute inset-x-0 top-[calc(100%-20rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[45vh]" aria-hidden="true">
+                    <div className="relative left-[calc(50%-11rem)] aspect-[1155/778] w-[36.125rem] rotate-45 bg-gradient-to-tr from-blue-500 to-rose-300 bg-opacity-40 sm:left-0 sm:w-[32.1875rem]" ></div>
                 </div>
             </div>
         </section>

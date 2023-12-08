@@ -79,7 +79,7 @@ const component = [
 
 const Components = () => {
     return (
-        <section className='mx-auto w-full px-4 sm:px-6 lg:px-8'>
+        <section className='relative isolate z-10 mx-auto w-full px-4 sm:px-6 lg:px-8'>
             <div className='max-w-2xl'>
                 <h2 className='text-base font-semibold leading-7 text-indigo-600'>Components</h2>
                 <p className='mt-4 text-4xl font-extrabold tracking-tight text-slate-900'>
