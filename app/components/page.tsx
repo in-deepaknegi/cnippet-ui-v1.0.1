@@ -2,7 +2,8 @@ import React from 'react'
 import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Hero from '@/pages/components/Hero'
-import List from '@/pages/components/List'
+import Application from '@/pages/components/ApplicationUi'
+import Ecommerce from '@/pages/components/Ecommerce'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
@@ -15,7 +16,8 @@ const Components = () => {
         <main>
             <Navbar />
             <Hero/>
-            <List />
+            <Application />
+            <Ecommerce />
             <Footer />
         </main>
     )

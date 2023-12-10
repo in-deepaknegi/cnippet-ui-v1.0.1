@@ -4,8 +4,8 @@ import Nav from '../../public/navbars.png'
 
 const component = [
     {
-        name: 'Navbar',
-        source: '/components/application-ui/navbar',
+        name: 'Product Overview',
+        source: '/components/ecommerce/product-overview',
         imageURL: Nav,
         number: '3 components',
     },
@@ -15,71 +15,15 @@ const component = [
         imageURL: Nav,
         number: '2 components',
     },
-    {
-        name: 'Hero Header',
-        source: '/components/application-ui/hero',
-        imageURL: Nav,
-        number: '4 components',
-    },
-    {
-        name: 'Header section',
-        source: '/components/application-ui/header',
-        imageURL: Nav,
-        number: '4 components',
-    },
-    {
-        name: 'Testimonials',
-        source: '/components/application-ui/testimonial',
-        imageURL: Nav,
-        number: '3 components',
-    },
-    {
-        name: 'Contact',
-        source: '/components/application-ui/contact',
-        imageURL: Nav,
-        number: '3 components',
-    },
-    {
-        name: 'Team',
-        source: '/components/application-ui/team',
-        imageURL: Nav,
-        number: '3 components',
-    },
-    {
-        name: 'FAQ',
-        source: '/components/application-ui/faq',
-        imageURL: Nav,
-        number: '2 components',
-    },
-    {
-        name: 'Newsletter',
-        source: '/components/application-ui/newsletter',
-        imageURL: Nav,
-        number: '3 components',
-    },
-    {
-        name: 'Feature',
-        source: '/components/application-ui/feature',
-        imageURL: Nav,
-        number: '3 components',
-    },
-    {
-        name: 'Pricing',
-        source: '/components/application-ui/pricing',
-        imageURL: Nav,
-        number: '3 components',
-    },
-    {
-        name: 'Blogs',
-        source: '/components/application-ui/blog',
-        imageURL: Nav,
-        number: '3 components',
-    },
 ]
 
-const List = () => {
+const Ecommerce = () => {
     return (
-        <section className='mx-auto w-full px-4 sm:px-6 lg:px-8'>
+        <section className='mx-auto mt-20 w-full px-4 sm:px-6 lg:px-8'>
+            <h2 className="text-xl font-bold text-slate-900">Ecommerce</h2>
+            <p className="mt-3 text-sm leading-7 text-slate-500">
+                Checkout forms, shopping carts, product views — everything you need to build your next ecommerce front-end.
+            </p>
             <div className='relative mt-10 md:mt-8'>
                 <ul className='grid grid-cols-[repeat(auto-fill,minmax(12rem, 1fr))] gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
                     {component.map((component) => (
@@ -108,4 +52,4 @@ const List = () => {
     )
 }
 
-export default List
+export default Ecommerce

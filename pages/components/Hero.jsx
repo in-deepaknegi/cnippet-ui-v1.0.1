@@ -5,6 +5,7 @@ const Hero = () => {
     return (
         <section className="bg-white">
             <div className="relative isolate px-6 pt-14 lg:px-8 h-screen">
+                
                 <div className="absolute inset-x-0 -z-10 transform-gpu overflow-hidden -top-44 blur-3xl" aria-hidden="true">
                     <div className="relative left-[calc(80%-18rem)] aspect-[1155/678] w-[36.125rem] bg-gradient-to-tr bg-opacity-50 from-fuchsia-300 to-fuchsia-100 sm:right-0 sm:w-[50.1875rem]" ></div>
                 </div>
