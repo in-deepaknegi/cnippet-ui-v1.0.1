@@ -10,8 +10,8 @@ const component = [
         number: '3 components',
     },
     {
-        name: 'Footer',
-        source: '/components/application-ui/footer',
+        name: 'Product List',
+        source: '/components/ecommerce/product-list',
         imageURL: Nav,
         number: '2 components',
     },
