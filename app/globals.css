@@ -16,4 +16,8 @@
   textarea {
     @apply shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5;
   }
+  .bg-stripes-white {
+    background-image: linear-gradient(135deg,#ffffffbf 10%,#0000 0,#0000 50%,#ffffffbf 0,#ffffffbf 60%,#0000 0,#0000);
+    background-size: 7.07px 7.07px;
+}
 }
