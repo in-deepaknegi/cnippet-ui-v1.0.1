@@ -15,7 +15,7 @@ const products = [
         imageSrc: Product1,
         imageAlt: "Front of men's Bag#4",
         price: '$35',
-        color: 'Black',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ const products = [
         imageSrc: Product2,
         imageAlt: "Front of men's Bag#4",
         price: '$35',
-        color: 'Black',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ const products = [
         imageSrc: Product3,
         imageAlt: "Front of men's Bag#4",
         price: '$35',
-        color: 'Black',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
     },
     {
         id: 4,
@@ -42,7 +42,7 @@ const products = [
         imageSrc: Product4,
         imageAlt: "Front of men's Bag",
         price: '$35',
-        color: 'Black',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
     },
     // More products...
 ]
@@ -62,13 +62,6 @@ const Hero = () => {
         setActiveTab3(index);
     };
 
-
-    const [active, setActive] = useState(null);
-
-    const toggleActive = (index) => {
-        setActive(active === index ? null : index)
-    }
-
     return (
         <section className='relative overflow-hidden pt-[5.75rem]'>
             <div className='relative mx-auto mt-20 w-full px-4 sm:px-6 lg:px-8'>
@@ -85,7 +78,7 @@ const Hero = () => {
                     </nav>
                 </div>
                 <div className='mt-10 space-y-28 pb-px'>
-                    <section id='overview-1'>
+                    <section id='list-1'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -147,7 +140,7 @@ const Hero = () => {
                                                                                 {product.name}
                                                                             </a>
                                                                         </h3>
-                                                                        <p className="mt-1 text-sm text-gray-500">{product.color}</p>
+                                                                        <p className="mt-1 text-sm text-gray-500">{product.desc}</p>
                                                                     </div>
                                                                     <p className="text-sm font-medium text-gray-900">{product.price}</p>
                                                                 </div>
@@ -165,7 +158,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section id='overview-2'>
+                    <section id='list-2'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -204,8 +197,46 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab2 === 0 ? (
                                     <>
-                                        <section className='relative isolate border rounded-2xl'>
-                                            ccc
+                                        <section className='relative isolate overflow-hidden border rounded-2xl'>
+                                            <div className="bg-white">
+                                                <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+                                                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
+
+                                                    <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                                                        {products.map((product) => (
+                                                            <div key={product.id} className=' pointer-events-none' >
+                                                                <div className='relative'>
+                                                                    <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80">
+                                                                        <Image
+                                                                            src={product.imageSrc}
+                                                                            alt={product.imageAlt}
+                                                                            className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                                                                        />
+                                                                    </div>
+                                                                    <div className="mt-4">
+                                                                        <div className='flex justify-between'>
+                                                                            <h3 className="text-sm text-gray-700">
+                                                                                <a href={product.href}>
+                                                                                    <span aria-hidden="true" className="absolute inset-0" />
+                                                                                    {product.name}
+                                                                                </a>
+                                                                            </h3>
+                                                                            <p className="text-sm font-medium text-gray-900">{product.price}</p>
+                                                                        </div>
+                                                                        <p className="mt-4 text-sm text-gray-500">{product.desc}</p>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div className='mt-4'>
+                                                                    <a href="/" className='relative flex items-center justify-center bg-gray-100 py-2 rounded-lg pointer-events-auto text-sm font-medium hover:bg-gray-200'>
+                                                                        Add to bag
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </section>
                                     </>
                                 ) : (
@@ -215,7 +246,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section id='overview-3'>
+                    <section id='list-3'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
