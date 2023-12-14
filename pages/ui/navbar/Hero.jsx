@@ -301,7 +301,7 @@ const Hero = () => {
                                                                 Get free delivery on orders over $100
                                                             </a>
                                                         </div>
-                                                        <div className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end'>
+                                                        <div className='hidden lg:flex lg:flex-1 lg:gap-2 lg:items-center lg:justify-end'>
                                                             <a href="/" className='text-gray-100 text-sm'>Sign In</a>
                                                             <span className='h-4 w-[1px] bg-gray-200 mx-2'></span>
                                                             <a href="/" className='text-gray-100 text-sm'>Create an account</a>
@@ -326,7 +326,7 @@ const Hero = () => {
                                                         <a href="/help" className='text-gray-700'>Help</a>
                                                         <span className='h-5 w-[1px] bg-gray-500'></span>
                                                         <a href="">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" className='w-5 h-5 text-gray-600'><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path></svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" className='w-6 h-6 text-gray-400'><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path></svg>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -392,7 +392,7 @@ const Hero = () => {
                                                                 Get free delivery on orders over $100
                                                             </a>
                                                         </div>
-                                                        <div className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end'>
+                                                        <div className='hidden lg:flex lg:flex-1 lg:gap-2 lg:items-center lg:justify-end'>
                                                             <a href="/" className='text-gray-100 text-sm'>Sign In</a>
                                                             <span className='h-4 w-[1px] bg-gray-200 mx-2'></span>
                                                             <a href="/" className='text-gray-100 text-sm'>Create an account</a>
