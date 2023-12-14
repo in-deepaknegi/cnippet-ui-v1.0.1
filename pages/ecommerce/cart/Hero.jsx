@@ -26,25 +26,6 @@ const products = [
         price: '$35',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
     },
-    {
-        id: 3,
-        name: 'Bag#3 ',
-        href: '#',
-        imageSrc: Product3,
-        imageAlt: "Front of men's Bag#4",
-        price: '$35',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    },
-    {
-        id: 4,
-        name: 'Bag#4 ',
-        href: '#',
-        imageSrc: Product4,
-        imageAlt: "Front of men's Bag",
-        price: '$35',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    },
-    // More products...
 ]
 
 const Hero = () => {
@@ -60,6 +41,12 @@ const Hero = () => {
     };
     const changeTab3 = (index) => {
         setActiveTab3(index);
+    };
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleCart = () => {
+        setIsOpen(!isOpen);
     };
 
     return (
@@ -117,8 +104,125 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab1 === 0 ? (
                                     <>
-                                        <section className='relative isolate overflow-hidden border rounded-2xl'>
-                                           cart
+                                        <section className="relative overflow-hidden bg-white border rounded-2xl">
+                                            <div className=''>
+                                                <nav className="flex items-center justify-between p-7 lg:px-8">
+                                                    <div className="flex">
+                                                        <a href="/" className="-m-1.5 p-1.5 text-2xl font-medium">
+                                                            Cnippet
+                                                            <span className="">UI</span>
+                                                        </a>
+                                                    </div>
+                                                    <div className="hidden lg:flex lg:gap-x-12">
+                                                        <a href="/components" className="text-sm font-semibold leading-6 text-gray-900">Components</a>
+                                                        <a href="/features" className="text-sm font-semibold leading-6 text-gray-900">Templates</a>
+                                                        <a href="/contact" className="text-sm font-semibold leading-6 text-gray-900">Contacts</a>
+                                                        <a href="/about" className="text-sm font-semibold leading-6 text-gray-900">About</a>
+                                                    </div>
+                                                    <button
+                                                        onClick={toggleCart}
+                                                        className='relative flex gap-1'
+                                                    >
+                                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" className='w-6 h-6 text-gray-400'><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path></svg>
+                                                         <span className='my-auto text-sm font-semibold text-gray-700'>2</span>
+
+                                                    </button>
+                                                </nav>
+                                            </div>
+
+                                            {/* Cart menu */}
+                                            {isOpen && (
+                                                <div className="pointer-events-auto w-screen max-w-md h-screen ml-auto">
+                                                    <div className="flex h-full flex-col bg-white border rounded-2xl shadow-xl">
+                                                        <div className="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
+                                                            <div className="flex items-start justify-between">
+                                                                <h2 className="text-lg font-medium text-gray-900">Shopping cart</h2>
+                                                                <div className="ml-3 flex h-7 items-center">
+                                                                    <button
+                                                                        type="button"
+                                                                        className="relative -m-2 p-2 text-gray-400 hover:text-gray-500"
+                                                                        onClick={() => setIsOpen(false)}
+                                                                    >
+                                                                        <span className="absolute -inset-0.5" />
+                                                                        <span className="">Close panel</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+
+                                                            <div className="mt-8">
+                                                                <div className="flow-root">
+                                                                    <ul role="list" className="-my-6 divide-y divide-gray-200">
+                                                                        {products.map((product) => (
+                                                                            <li key={product.id} className="flex py-6">
+                                                                                <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
+                                                                                    <Image
+                                                                                        src={product.imageSrc}
+                                                                                        alt={product.imageAlt}
+                                                                                        className="h-full w-full object-cover object-center"
+                                                                                    />
+                                                                                </div>
+
+                                                                                <div className="ml-4 flex flex-1 flex-col">
+                                                                                    <div>
+                                                                                        <div className="flex justify-between text-base font-medium text-gray-900">
+                                                                                            <h3>
+                                                                                                <a href={product.href}>{product.name}</a>
+                                                                                            </h3>
+                                                                                            <p className="ml-4">{product.price}</p>
+                                                                                        </div>
+                                                                                        <p className="mt-1 text-sm text-gray-500">{product.color}</p>
+                                                                                    </div>
+                                                                                    <div className="flex flex-1 items-end justify-between text-sm">
+                                                                                        <p className="text-gray-500">Qty {product.quantity}</p>
+
+                                                                                        <div className="flex">
+                                                                                            <button
+                                                                                                type="button"
+                                                                                                className="font-medium text-indigo-600 hover:text-indigo-500"
+                                                                                            >
+                                                                                                Remove
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                        ))}
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
+                                                            <div className="flex justify-between text-base font-medium text-gray-900">
+                                                                <p>Subtotal</p>
+                                                                <p>$262.00</p>
+                                                            </div>
+                                                            <p className="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
+                                                            <div className="mt-6">
+                                                                <a
+                                                                    href="#"
+                                                                    className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                                                                >
+                                                                    Checkout
+                                                                </a>
+                                                            </div>
+                                                            <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
+                                                                <p>
+                                                                    or
+                                                                    <button
+                                                                        type="button"
+                                                                        className="font-medium text-indigo-600 hover:text-indigo-500"
+                                                                        onClick={() => setIsOpen(false)}
+                                                                    >
+                                                                        Continue Shopping
+                                                                        <span aria-hidden="true"> &rarr;</span>
+                                                                    </button>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            )}
                                         </section>
                                     </>
                                 ) : (
@@ -168,7 +272,7 @@ const Hero = () => {
                                 {activeTab2 === 0 ? (
                                     <>
                                         <section className='relative isolate overflow-hidden border rounded-2xl'>
-                                           cart
+                                            cart
                                         </section>
                                     </>
                                 ) : (
@@ -218,7 +322,7 @@ const Hero = () => {
                                 {activeTab3 === 0 ? (
                                     <>
                                         <section className='relative isolate overflow-hidden border rounded-2xl'>
-                                           cart
+                                            cart
                                         </section>
                                     </>
                                 ) : (
