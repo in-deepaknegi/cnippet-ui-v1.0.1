@@ -15,6 +15,12 @@ const component = [
         imageURL: Nav,
         number: '2 components',
     },
+    {
+        name: 'Shopping Cart',
+        source: '/components/ecommerce/shopping-cart',
+        imageURL: Nav,
+        number: '3 components',
+    },
 ]
 
 const Ecommerce = () => {

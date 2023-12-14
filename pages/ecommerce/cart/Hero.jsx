@@ -66,19 +66,19 @@ const Hero = () => {
         <section className='relative overflow-hidden pt-[5.75rem]'>
             <div className='relative mx-auto mt-20 w-full px-4 sm:px-6 lg:px-8'>
                 <div className='flex flex-col'>
-                    <h1 className='mt-3 text-3xl font-extrabold tracking-tight text-slate-900'>Product List</h1>
+                    <h1 className='mt-3 text-3xl font-extrabold tracking-tight text-slate-900'>Shopping Cart</h1>
                     <nav className='order-first flex space-x-2 text-sm font-semibold'>
                         <a href="/" className='text-slate-500 hover:text-slate-600'>
                             Ecommerce
                         </a>
                         <div className='select-none text-slate-400'>/</div>
                         <a href="/" className='text-slate-500 hover:text-slate-600'>
-                            Product List
+                            Shopping Cart
                         </a>
                     </nav>
                 </div>
                 <div className='mt-10 space-y-28 pb-px'>
-                    <section id='list-1'>
+                    <section id='cart-1'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -118,37 +118,7 @@ const Hero = () => {
                                 {activeTab1 === 0 ? (
                                     <>
                                         <section className='relative isolate overflow-hidden border rounded-2xl'>
-                                            <div className="bg-white">
-                                                <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-                                                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
-
-                                                    <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-                                                        {products.map((product) => (
-                                                            <div key={product.id} className="group relative">
-                                                                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                                                                    <Image
-                                                                        src={product.imageSrc}
-                                                                        alt={product.imageAlt}
-                                                                        className="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                                                                    />
-                                                                </div>
-                                                                <div className="mt-4 flex justify-between">
-                                                                    <div>
-                                                                        <h3 className="text-sm text-gray-700">
-                                                                            <a href={product.href}>
-                                                                                <span aria-hidden="true" className="absolute inset-0" />
-                                                                                {product.name}
-                                                                            </a>
-                                                                        </h3>
-                                                                        <p className="mt-1 text-sm text-gray-500">{product.desc}</p>
-                                                                    </div>
-                                                                    <p className="text-sm font-medium text-gray-900">{product.price}</p>
-                                                                </div>
-                                                            </div>
-                                                        ))}
-                                                    </div>
-                                                </div>
-                                            </div>
+                                           cart
                                         </section>
                                     </>
                                 ) : (
@@ -158,7 +128,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section id='list-2'>
+                    <section id='cart-2'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -198,45 +168,7 @@ const Hero = () => {
                                 {activeTab2 === 0 ? (
                                     <>
                                         <section className='relative isolate overflow-hidden border rounded-2xl'>
-                                            <div className="bg-white">
-                                                <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-                                                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
-
-                                                    <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-                                                        {products.map((product) => (
-                                                            <div key={product.id} className=' pointer-events-none' >
-                                                                <div className='relative'>
-                                                                    <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80">
-                                                                        <Image
-                                                                            src={product.imageSrc}
-                                                                            alt={product.imageAlt}
-                                                                            className="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                                                                        />
-                                                                    </div>
-                                                                    <div className="mt-4">
-                                                                        <div className='flex justify-between'>
-                                                                            <h3 className="text-sm text-gray-700">
-                                                                                <a href={product.href}>
-                                                                                    <span aria-hidden="true" className="absolute inset-0" />
-                                                                                    {product.name}
-                                                                                </a>
-                                                                            </h3>
-                                                                            <p className="text-sm font-medium text-gray-900">{product.price}</p>
-                                                                        </div>
-                                                                        <p className="mt-4 text-sm text-gray-500">{product.desc}</p>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div className='mt-4'>
-                                                                    <a href="/" className='relative flex items-center justify-center bg-gray-100 py-2 rounded-lg pointer-events-auto text-sm font-medium hover:bg-gray-200'>
-                                                                        Add to bag
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        ))}
-                                                    </div>
-                                                </div>
-                                            </div>
+                                           cart
                                         </section>
                                     </>
                                 ) : (
@@ -246,7 +178,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section id='list-3'>
+                    <section id='cart-3'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -285,9 +217,9 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab3 === 0 ? (
                                     <>
-                                        <footer className='border rounded-2xl'>
-                                            footer
-                                        </footer>
+                                        <section className='relative isolate overflow-hidden border rounded-2xl'>
+                                           cart
+                                        </section>
                                     </>
                                 ) : (
                                     <div>code</div>
