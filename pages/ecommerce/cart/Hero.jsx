@@ -106,7 +106,7 @@ const Hero = () => {
                                     <>
                                         <section className="relative overflow-hidden bg-white border rounded-2xl">
                                             <div className=''>
-                                                <nav className="flex items-center justify-between p-7 lg:px-8">
+                                                <nav className="flex items-center justify-between py-5 lg:px-8">
                                                     <div className="flex">
                                                         <a href="/" className="-m-1.5 p-1.5 text-2xl font-medium">
                                                             Cnippet
@@ -123,8 +123,8 @@ const Hero = () => {
                                                         onClick={toggleCart}
                                                         className='relative flex gap-1'
                                                     >
-                                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" className='w-6 h-6 text-gray-400'><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path></svg>
-                                                         <span className='my-auto text-sm font-semibold text-gray-700'>2</span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" className='w-6 h-6 text-gray-400'><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path></svg>
+                                                        <span className='my-auto text-sm font-semibold text-gray-700'>2</span>
 
                                                     </button>
                                                 </nav>
@@ -272,7 +272,91 @@ const Hero = () => {
                                 {activeTab2 === 0 ? (
                                     <>
                                         <section className='relative isolate overflow-hidden border rounded-2xl'>
-                                            cart
+                                            <div className='mx-auto px-4 pb-24 pt-16 sm: sm:px-6 lg:max-w-7xl lg:px-8'>
+                                                <h1 className='text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl'>
+                                                    Shopping Cart
+                                                </h1>
+                                                <form action="" className='mt-12 lg:grid lg:grid-cols-12 lg:self-start lg:gap-x-12 xl:gap-x-16'>
+                                                    <section className='col-span-7'>
+                                                        <h2 className='sr-only'>Items in your shopping cart</h2>
+                                                        <ul>
+                                                            {products.map((product) => (
+                                                                <li key={product.id}
+                                                                    className='flex py-6 sm:py-10 border-b'>
+                                                                    <div className='shrink-0'>
+                                                                        <Image
+                                                                            src={product.imageSrc}
+                                                                            alt={product.imageAlt}
+                                                                            className='h-24 w-36 rounded-md object-cover object-center sm:h-48 sm:w-48'
+                                                                        />
+                                                                    </div>
+                                                                    <div className='ml-4 flex flex-1 flex-col justify-between sm:ml-6'>
+                                                                        <div className='relative pr-9 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:pr-0'>
+                                                                            <div>
+                                                                                <div className='flex justify-between'>
+                                                                                    <h3 className='text-sm'>
+                                                                                        <a href="" className='font-medium text-gray-600'>Bag#1</a>
+                                                                                    </h3>
+                                                                                </div>
+                                                                                <div className='mt-1 flex text-sm'>
+                                                                                    <p className='text-gray-600'>Sienna</p>
+                                                                                    <p className='ml-4 border-l border-gray-500 pl-4 text-gray-500'>Large</p>
+                                                                                </div>
+                                                                                <p className='mt-1 text-sm font-medium text-gray-800'>$32.00</p>
+                                                                            </div>
+                                                                            <div className='mt-4 sm:mt-0 sm:pr-9 text-gray-700'>
+                                                                                <label htmlFor="quantity" className='sr-only'>Quantity</label>
+                                                                                <select name="quantity" id="quantity" className='border rounded-lg px-1'>
+                                                                                    <option value="1">1</option>
+                                                                                    <option value="2">2</option>
+                                                                                    <option value="3">3</option>
+                                                                                    <option value="4">4</option>
+                                                                                    <option value="5">5</option>
+                                                                                </select>
+                                                                                <div className='-mt-3 absolute right-0 top-0'>
+                                                                                    <button className='inline-flex p-2 text-gray-400'>
+                                                                                        <span className='sr-only'>Remove</span>
+                                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" className='w-5'><path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"></path></svg>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            ))}
+
+                                                        </ul>
+                                                    </section>
+                                                    <div className="col-span-5 px-4 pt-28 sm:px-6">
+                                                            <div className="flex justify-between text-base font-medium text-gray-900">
+                                                                <p>Subtotal</p>
+                                                                <p>$262.00</p>
+                                                            </div>
+                                                            <p className="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
+                                                            <div className="mt-6">
+                                                                <a
+                                                                    href="#"
+                                                                    className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                                                                >
+                                                                    Checkout
+                                                                </a>
+                                                            </div>
+                                                            <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
+                                                                <p>
+                                                                    or &nbsp;
+                                                                    <button
+                                                                        type="button"
+                                                                        className="font-medium text-indigo-600 hover:text-indigo-500"
+                                                                        onClick={() => setIsOpen(false)}
+                                                                    >
+                                                                        Continue Shopping
+                                                                        <span aria-hidden="true"> &rarr;</span>
+                                                                    </button>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                </form>
+                                            </div>
                                         </section>
                                     </>
                                 ) : (
