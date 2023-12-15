@@ -71,9 +71,74 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab1 === 0 ? (
                                     <>
-                                        <footer className=' border rounded-2xl'>
-                                            Footer
-                                        </footer>
+                                        <section className='bg-white px-6 py-24 lg:py-32 lg:px-8 border rounded-2xl'>
+                                            <div className='max-w-2xl text-left'>
+                                                <p className='text-base font-semibold leading-7 text-blue-700'>
+                                                    Get familiar with our process
+                                                </p>
+                                                <h2 className='mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
+                                                    How it works
+                                                </h2>
+                                                <p className='mt-6 text-lg leading-8 text-gray-600'>
+                                                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+                                                </p>
+                                            </div>
+
+                                            <div className='mx-auto mt-6 grid grid-cols-1 gap-8 lg:mx-0 lg:grid-cols-4'>
+                                                <div>
+                                                    <time dateTime='2021-08' className='flex items-center leading-7 text-sm font-bold text-blue-700'>
+                                                        <svg viewBox="0 0 4 4" className='mr-4 h-1 w-1 flex-none' aria-hidden="true"><circle cx="2" cy="2" r="2" fill="currentColor"></circle></svg>
+                                                        Step 1
+                                                        <div className='absolute ml-2 h-[1px] w-screen bg-gray-300 sm:ml-4 lg:static lg:mr-[-1.5rem] lg:ml-8 lg:w-auto lg:flex-auto '></div>
+                                                    </time>
+                                                    <p className='mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-800'>
+                                                        Provident quia
+                                                    </p>
+                                                    <p className='mt-2 text-[0.925rem] leading-6 text-gray-600'>
+                                                        Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <time dateTime='2021-08' className='flex items-center leading-7 text-sm font-bold text-blue-700'>
+                                                        <svg viewBox="0 0 4 4" className='mr-4 h-1 w-1 flex-none' aria-hidden="true"><circle cx="2" cy="2" r="2" fill="currentColor"></circle></svg>
+                                                        Step 2
+                                                        <div className='absolute ml-2 h-[1px] w-screen bg-gray-300 sm:ml-4 lg:static lg:mr-[-1.5rem] lg:ml-8 lg:w-auto lg:flex-auto '></div>
+                                                    </time>
+                                                    <p className='mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-800'>
+                                                        Voluptate repudiandae
+                                                    </p>
+                                                    <p className='mt-2 text-[0.925rem] leading-6 text-gray-600'>
+                                                        Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <time dateTime='2021-08' className='flex items-center leading-7 text-sm font-bold text-blue-700'>
+                                                        <svg viewBox="0 0 4 4" className='mr-4 h-1 w-1 flex-none' aria-hidden="true"><circle cx="2" cy="2" r="2" fill="currentColor"></circle></svg>
+                                                        Step 3
+                                                        <div className='absolute ml-2 h-[1px] w-screen bg-gray-300 sm:ml-4 lg:static lg:mr-[-1.5rem] lg:ml-8 lg:w-auto lg:flex-auto '></div>
+                                                    </time>
+                                                    <p className='mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-800'>
+                                                        Architecto nihil
+                                                    </p>
+                                                    <p className='mt-2 text-[0.925rem] leading-6 text-gray-600'>
+                                                        Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <time dateTime='2021-08' className='flex items-center leading-7 text-sm font-bold text-blue-700'>
+                                                        <svg viewBox="0 0 4 4" className='mr-4 h-1 w-1 flex-none' aria-hidden="true"><circle cx="2" cy="2" r="2" fill="currentColor"></circle></svg>
+                                                        Step 4
+                                                        <div className='absolute ml-2 h-[1px] w-screen bg-gray-300 sm:ml-4 lg:static lg:mr-[-1.5rem] lg:ml-8 lg:w-auto lg:flex-auto '></div>
+                                                    </time>
+                                                    <p className='mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-800'>
+                                                        Geritecto velit
+                                                    </p>
+                                                    <p className='mt-2 text-[0.925rem] leading-6 text-gray-600'>
+                                                        Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
                                     </>
                                 ) : (
                                     <div>code</div>
