@@ -32,7 +32,7 @@ const Hero = () => {
                     </nav>
                 </div>
                 <div className='mt-10 space-y-28 pb-px'>
-                    <section id='footer-1'>
+                    <section id='hiw-1'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -147,7 +147,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section id='footer-2'>
+                    <section id='hiw-2'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -186,9 +186,92 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab2 === 0 ? (
                                     <>
-                                        <footer className='border rounded-2xl'>
-                                            footer
-                                        </footer>
+                                        <section className='bg-white px-6 py-24 lg:py-32 lg:px-8 border rounded-2xl'>
+                                            <div className='relative isolate flex flex-col lg:flex-row'>
+                                                <div className='max-w-xl text-left'>
+                                                    <p className='text-base font-semibold leading-7 text-blue-700'>
+                                                        Get familiar with our process
+                                                    </p>
+                                                    <h2 className='mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
+                                                        How it works
+                                                    </h2>
+                                                    <p className='mt-6 text-lg leading-8 text-gray-600'>
+                                                        Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+                                                    </p>
+                                                </div>
+                                                <div className='mt-16 text-white max-w-2xl lg:px-8 lg:mt-0'>
+                                                    <div className='mx-auto flex flex-col gap-y-8'>
+                                                        <div className='flex gap-2 md:gap-6'>
+                                                            <div className='items-center text-blue-700'>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mx-auto">
+                                                                    <path d="M5.5 8.5 9 12l-3.5 3.5L2 12l3.5-3.5Z"></path><path d="m12 2 3.5 3.5L12 9 8.5 5.5 12 2Z"></path><path d="M18.5 8.5 22 12l-3.5 3.5L15 12l3.5-3.5Z"></path><path d="m12 15 3.5 3.5L12 22l-3.5-3.5L12 15Z"></path>
+                                                                </svg>
+                                                                <div className='mt-2 h-full w-[1px] bg-gray-300 lg:static mx-auto'></div>
+                                                            </div>
+                                                            <div>
+                                                                <p className='text-sm font-bold text-blue-700'>Step 1</p>
+                                                                <p className='mt-3 text-lg font-semibold leading-8 tracking- text-gray-800'>
+                                                                    Provident quia
+                                                                </p>
+                                                                <p className='mt-2 text-[0.925rem] leading-6 text-gray-600'>
+                                                                    Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className='flex gap-2 md:gap-6'>
+                                                            <div className='items-center text-blue-700'>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mx-auto">
+                                                                    <path d="M5.5 8.5 9 12l-3.5 3.5L2 12l3.5-3.5Z"></path><path d="m12 2 3.5 3.5L12 9 8.5 5.5 12 2Z"></path><path d="M18.5 8.5 22 12l-3.5 3.5L15 12l3.5-3.5Z"></path><path d="m12 15 3.5 3.5L12 22l-3.5-3.5L12 15Z"></path>
+                                                                </svg>
+                                                                <div className='mt-2 h-full w-[1px] bg-gray-300 lg:static mx-auto'></div>
+                                                            </div>
+                                                            <div>
+                                                                <p className='text-sm font-bold text-blue-700'>Step 2</p>
+                                                                <p className='mt-3 text-lg font-semibold leading-8 tracking- text-gray-800'>
+                                                                    Voluptate repudiandae
+                                                                </p>
+                                                                <p className='mt-2 text-[0.925rem] leading-6 text-gray-600'>
+                                                                    Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className='flex gap-2 md:gap-6'>
+                                                            <div className='items-center text-blue-700'>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mx-auto">
+                                                                    <path d="M5.5 8.5 9 12l-3.5 3.5L2 12l3.5-3.5Z"></path><path d="m12 2 3.5 3.5L12 9 8.5 5.5 12 2Z"></path><path d="M18.5 8.5 22 12l-3.5 3.5L15 12l3.5-3.5Z"></path><path d="m12 15 3.5 3.5L12 22l-3.5-3.5L12 15Z"></path>
+                                                                </svg>
+                                                                <div className='mt-2 h-full w-[1px] bg-gray-300 lg:static mx-auto'></div>
+                                                            </div>
+                                                            <div>
+                                                                <p className='text-sm font-bold text-blue-700'>Step 3</p>
+                                                                <p className='mt-3 text-lg font-semibold leading-8 tracking- text-gray-800'>
+                                                                    Architecto nihil
+                                                                </p>
+                                                                <p className='mt-2 text-[0.925rem] leading-6 text-gray-600'>
+                                                                    Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className='flex gap-2 md:gap-6'>
+                                                            <div className='items-center text-blue-700'>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mx-auto">
+                                                                    <path d="M5.5 8.5 9 12l-3.5 3.5L2 12l3.5-3.5Z"></path><path d="m12 2 3.5 3.5L12 9 8.5 5.5 12 2Z"></path><path d="M18.5 8.5 22 12l-3.5 3.5L15 12l3.5-3.5Z"></path><path d="m12 15 3.5 3.5L12 22l-3.5-3.5L12 15Z"></path>
+                                                                </svg>
+                                                            </div>
+                                                            <div>
+                                                                <p className='text-sm font-bold text-blue-700'>Step 4</p>
+                                                                <p className='mt-3 text-lg font-semibold leading-8 tracking- text-gray-800'>
+                                                                    Geritecto velit
+                                                                </p>
+                                                                <p className='mt-2 text-[0.925rem] leading-6 text-gray-600'>
+                                                                    Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
                                     </>
                                 ) : (
                                     <div>code</div>
