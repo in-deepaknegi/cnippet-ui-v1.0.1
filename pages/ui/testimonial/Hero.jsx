@@ -86,7 +86,7 @@ const Hero = () => {
                                                         <Image
                                                             src={Profile6}
                                                             alt='profile 1'
-                                                            className='w-full h-auto rounded-full aspect-square object-cover'
+                                                            className='w-full h-auto rounded-full aspect-[1/1] object-cover'
                                                         />
                                                     </div>
                                                     <div className='col-span-2 font-sans'>

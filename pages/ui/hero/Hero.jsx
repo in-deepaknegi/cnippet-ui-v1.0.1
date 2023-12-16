@@ -350,16 +350,16 @@ const Hero = () => {
                                                                     <Image
                                                                         src={Hero5}
                                                                         alt='hero image 2'
-                                                                        className='mt-10 w-full h-full aspect-square rounded-2xl bg-gray-50 object-cover shadow-xl'
+                                                                        className='mt-10 w-full h-full  rounded-2xl bg-gray-50 object-cover shadow-xl'
                                                                     />
                                                                 </div>
-                                                                <div className='relative'>
+                                                                {/* <div className='relative'>
                                                                     <Image
                                                                         src={Hero6}
                                                                         alt='hero image 2'
                                                                         className='mt-10 w-full h-full aspect-square rounded-2xl bg-gray-50 object-cover shadow-xl'
                                                                     />
-                                                                </div>
+                                                                </div> */}
                                                                 <div className='relative'>
                                                                     <Image
                                                                         src={Hero2}

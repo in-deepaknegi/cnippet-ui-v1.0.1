@@ -3,14 +3,17 @@ import React, { useState } from 'react'
 
 const Data = [
     {
+        id: 1,
         question: "What's the best thing about Switzerland",
         answer: "You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
     },
     {
+        id: 2,
         question: "What do you call someone with no body and no nose?",
         answer: "Nobody knows. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
     },
     {
+        id: 3,
         question: "Why do you never see elephants hiding in trees?",
         answer: "Because they're so good at it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
     }
@@ -32,10 +35,15 @@ const Hero = () => {
     };
 
     const [active, setActive] = useState(null);
+    const [active1, setActive1] = useState(null);
 
     const toggleActive = (index) => {
         setActive(active === index ? null : index)
     }
+    const toggleActive1 = (i) => {
+        setActive1(active1 === i ? null : i)
+    }
+
 
     return (
         <section className='relative overflow-hidden pt-[5.75rem]'>
@@ -106,7 +114,7 @@ const Hero = () => {
                                                     <div className='mt-10 col-span-7 lg:mt-0'>
                                                         <dl className='space-y-9'>
                                                             {Data.map((item) => (
-                                                                <div key={item}>
+                                                                <div key={item.id}>
                                                                     <dt className='text-base font-semibold leading-7 text-gray-900'>
                                                                         {item.question}
                                                                     </dt>
@@ -184,7 +192,7 @@ const Hero = () => {
                                                     <div className='mt-8 lg:mt-10'>
                                                         <dl className='space-y-9'>
                                                             {Data.map((item, index) => (
-                                                                <div key={index}>
+                                                                <div key={item.id}>
                                                                     <dt>
                                                                         <button
                                                                             onClick={() => toggleActive(index)}
@@ -263,7 +271,47 @@ const Hero = () => {
                                 {activeTab3 === 0 ? (
                                     <>
                                         <section className='border rounded-2xl'>
-                                            FAQ
+                                            <div className='mx-auto max-w-7xl px-6 py-16 sm:pt-24 lg:px-8 lg:py-20'>
+                                                <div className='lg:grid lg:grid-cols-12 lg:gap-8'>
+                                                    <div className='col-span-5'>
+                                                        <h2 className='text-2xl font-bold leading-10 text-gray-800'>Frequently asked questions</h2>
+                                                        <p className='mt-4 leading-7 text-gray-500'>
+                                                            Can&apos;t find the answer you&apos;re looking for? Reach out to our
+                                                            <a href="/contact" className='text-blue-600'> customer support </a>
+                                                            team.
+                                                        </p>
+                                                    </div>
+                                                    <div className='col-span-7 mt-8 lg:mt-0'>
+                                                        <dl className='space-y-9'>
+                                                            {Data.map((item, i) => (
+                                                                <div key={i}>
+                                                                    <dt>
+                                                                        <button
+                                                                            onClick={() => toggleActive1(i)}
+                                                                            className='flex w-full items-start justify-between text-left'>
+                                                                            <span className='text-base font-semibold leading-7 text-gray-900'>
+                                                                                {item.question}
+                                                                            </span>
+                                                                            <span>
+                                                                                {active1 === i ? (
+                                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /></svg>
+                                                                                ) : (
+                                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="M12 5v14" /></svg>
+                                                                                )}
+                                                                            </span>
+                                                                        </button>
+                                                                    </dt>
+                                                                    {active1 === i && (
+                                                                        <dd className='mt-2 text-base leading-7 text-gray-600'>
+                                                                            {item.answer}
+                                                                        </dd>
+                                                                    )}
+                                                                </div>
+                                                            ))}
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </section>
                                     </>
                                 ) : (

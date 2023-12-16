@@ -525,7 +525,7 @@ const Hero = () => {
                                                         </div>
                                                     </div>
                                                     <div className='flex space-x-8 col-span-6'>
-                                                        <div className='relative w-full pb-[calc(100%)]'>
+                                                        <div className='relative w-full pb-[calc(100%+5rem)]'>
                                                             <div className='absolute h-full w-full inset-0'>
                                                                 <Image
                                                                     src={Hero2}
