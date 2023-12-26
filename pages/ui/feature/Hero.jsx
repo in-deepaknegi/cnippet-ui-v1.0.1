@@ -70,75 +70,8 @@ const Hero = () => {
 
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab1 === 0 ? (
-                                    <section className='bg-white py-24 border rounded-2xl sm:py-32'>
-                                        <div className='mx-auto max-w-7xl px-6 lg:px-8'>
-                                            <div className='mx-auto max-w-2xl text-center'>
-                                                <h2 className='text-base font-semibold leading-7 text-blue-700'>
-                                                    Deploy faster
-                                                </h2>
-                                                <p className='mt-2 text-3xl font-bold tracking-[-0.025em] text-gray-900 sm:text-4xl'>
-                                                    Everything you need to deploy your app
-                                                </p>
-                                                <p className='mt-6 text-lg leading-8 text-gray-600'>
-                                                    Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.
-                                                </p>
-                                            </div>
-                                            <div className='mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none'>
-                                                <dl className='grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3'>
-                                                    <div className='flex flex-col'>
-                                                        <dt className='flex text-center gap-x-3 text-base font-semibold leading-7'>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" className='w-6 h-6 text-blue-600'><path fillRule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clipRule="evenodd"></path></svg>
-                                                            Push to deploy
-                                                        </dt>
-                                                        <dd className='mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600'>
-                                                            <p className='flex-auto'>
-                                                                Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.
-                                                            </p>
-                                                            <p className='mt-6'>
-                                                                <a href="/" className='text-sm font-semibold leading-6 text-blue-700'>
-                                                                    Learn more
-                                                                    <span> →</span>
-                                                                </a>
-                                                            </p>
-                                                        </dd>
-                                                    </div>
-                                                    <div className='flex flex-col'>
-                                                        <dt className='flex text-center gap-x-3 text-base font-semibold leading-7'>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" className='w-6 h-6 text-blue-600'><path fillRule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clipRule="evenodd"></path></svg>
-                                                            SSL certificates
-                                                        </dt>
-                                                        <dd className='mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600'>
-                                                            <p className='flex-auto'>
-                                                                Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.
-                                                            </p>
-                                                            <p className='mt-6'>
-                                                                <a href="/" className='text-sm font-semibold leading-6 text-blue-700'>
-                                                                    Learn more
-                                                                    <span> →</span>
-                                                                </a>
-                                                            </p>
-                                                        </dd>
-                                                    </div>
-                                                    <div className='flex flex-col'>
-                                                        <dt className='flex text-center gap-x-3 text-base font-semibold leading-7'>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" className='w-6 h-6 text-blue-600'><path fillRule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clipRule="evenodd"></path></svg>
-                                                            Simple queues
-                                                        </dt>
-                                                        <dd className='mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600'>
-                                                            <p className='flex-auto'>
-                                                                Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.
-                                                            </p>
-                                                            <p className='mt-6'>
-                                                                <a href="/" className='text-sm font-semibold leading-6 text-blue-700'>
-                                                                    Learn more
-                                                                    <span> →</span>
-                                                                </a>
-                                                            </p>
-                                                        </dd>
-                                                    </div>
-                                                </dl>
-                                            </div>
-                                        </div>
+                                    <section className='bg-white border rounded-2x'>
+                                        feature
                                     </section>
                                 ) : (
                                     <div>code</div>
@@ -185,75 +118,8 @@ const Hero = () => {
 
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab2 === 0 ? (
-                                    <section className='bg-white py-24 border rounded-2xl sm:py-32'>
-                                        <div className='mx-auto grid max-w-7xl px-6 lg:px-8 lg:grid-cols-2'>
-                                            <div className='mx-auto md:max-w-2xl lg:max-w-lg text-left'>
-                                                <h2 className='text-base font-semibold leading-7 text-blue-700'>
-                                                    Deploy faster
-                                                </h2>
-                                                <p className='mt-2 text-3xl font-bold tracking-[-0.025em] text-gray-900 sm:text-4xl'>
-                                                    Everything you need to deploy your app
-                                                </p>
-                                                <p className='mt-6 text-lg leading-8 text-gray-600'>
-                                                    Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.
-                                                </p>
-                                            </div>
-                                            <div className='mx-auto mt-16 lg:px-10 max-w-2xl lg:mt-0 lg:max-w-none'>
-                                                <dl className='grid gap-y-12 lg:grid-rows-3'>
-                                                    <div className='flex flex-col'>
-                                                        <dt className='flex text-center gap-x-3 text-base font-semibold leading-7'>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" className='w-6 h-6 text-blue-600'><path fillRule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clipRule="evenodd"></path></svg>
-                                                            Push to deploy
-                                                        </dt>
-                                                        <dd className='mt-4 flex flex-col text-base leading-7 text-gray-600'>
-                                                            <p className='flex-auto'>
-                                                                Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.
-                                                            </p>
-                                                            <p className='mt-3'>
-                                                                <a href="/" className='text-sm font-semibold leading-6 text-blue-700'>
-                                                                    Learn more
-                                                                    <span> →</span>
-                                                                </a>
-                                                            </p>
-                                                        </dd>
-                                                    </div>
-                                                    <div className='flex flex-col'>
-                                                        <dt className='flex text-center gap-x-3 text-base font-semibold leading-7'>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" className='w-6 h-6 text-blue-600'><path fillRule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clipRule="evenodd"></path></svg>
-                                                            SSL certificates
-                                                        </dt>
-                                                        <dd className='mt-4 flex flex-col text-base leading-7 text-gray-600'>
-                                                            <p className='flex-auto'>
-                                                                Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.
-                                                            </p>
-                                                            <p className='mt-3'>
-                                                                <a href="/" className='text-sm font-semibold leading-6 text-blue-700'>
-                                                                    Learn more
-                                                                    <span> →</span>
-                                                                </a>
-                                                            </p>
-                                                        </dd>
-                                                    </div>
-                                                    <div className='flex flex-col'>
-                                                        <dt className='flex text-center gap-x-3 text-base font-semibold leading-7'>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" className='w-6 h-6 text-blue-600'><path fillRule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clipRule="evenodd"></path></svg>
-                                                            Simple queues
-                                                        </dt>
-                                                        <dd className='mt-4 flex flex-col text-base leading-7 text-gray-600'>
-                                                            <p className='flex-auto'>
-                                                                Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.
-                                                            </p>
-                                                            <p className='mt-3'>
-                                                                <a href="/" className='text-sm font-semibold leading-6 text-blue-700'>
-                                                                    Learn more
-                                                                    <span> →</span>
-                                                                </a>
-                                                            </p>
-                                                        </dd>
-                                                    </div>
-                                                </dl>
-                                            </div>
-                                        </div>
+                                    <section className='bg-white border rounded-2x'>
+                                        feature
                                     </section>
                                 ) : (
                                     <div>code</div>
@@ -300,75 +166,8 @@ const Hero = () => {
 
                             <div className='col-span-2 row-start-2 min-w-0 mt-3 '>
                                 {activeTab3 === 0 ? (
-                                    <section className='bg-white py-24 border rounded-2xl sm:py-32'>
-                                        <div className='mx-auto max-w-7xl px-6 lg:px-8'>
-                                            <div className='max-w-2xl text-left'>
-                                                <h2 className='text-base font-semibold leading-7 text-blue-700'>
-                                                    Deploy faster
-                                                </h2>
-                                                <p className='mt-2 text-3xl font-bold tracking-[-0.025em] text-gray-900 sm:text-4xl'>
-                                                    Everything you need to deploy your app
-                                                </p>
-                                                <p className='mt-6 text-lg leading-8 text-gray-600'>
-                                                    Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.
-                                                </p>
-                                            </div>
-                                            <div className='mx-auto mt-10 max-w-2xl sm:mt-12 lg:mt-16 lg:max-w-none'>
-                                                <dl className='mx-auto grid md:max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3'>
-                                                    <div className='p-4 bg-gray-100/40 rounded-2xl shadow-lg flex flex-col border'>
-                                                        <dt className='flex text-center gap-x-3 text-base font-semibold leading-7'>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" className='w-6 h-6 text-blue-600'><path fillRule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clipRule="evenodd"></path></svg>
-                                                            Push to deploy
-                                                        </dt>
-                                                        <dd className='mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600'>
-                                                            <p className='flex-auto'>
-                                                                Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.
-                                                            </p>
-                                                            <p className='mt-6'>
-                                                                <a href="/" className='text-sm font-semibold leading-6 text-blue-700'>
-                                                                    Learn more
-                                                                    <span> →</span>
-                                                                </a>
-                                                            </p>
-                                                        </dd>
-                                                    </div>
-                                                    <div className='p-4 bg-gray-100/40 rounded-2xl shadow-lg flex flex-col border'>
-                                                        <dt className='flex text-center gap-x-3 text-base font-semibold leading-7'>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" className='w-6 h-6 text-blue-600'><path fillRule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clipRule="evenodd"></path></svg>
-                                                            SSL certificates
-                                                        </dt>
-                                                        <dd className='mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600'>
-                                                            <p className='flex-auto'>
-                                                                Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.
-                                                            </p>
-                                                            <p className='mt-6'>
-                                                                <a href="/" className='text-sm font-semibold leading-6 text-blue-700'>
-                                                                    Learn more
-                                                                    <span> →</span>
-                                                                </a>
-                                                            </p>
-                                                        </dd>
-                                                    </div>
-                                                    <div className='p-4 bg-gray-100/40 rounded-2xl shadow-lg flex flex-col border'>
-                                                        <dt className='flex text-center gap-x-3 text-base font-semibold leading-7'>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" className='w-6 h-6 text-blue-600'><path fillRule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clipRule="evenodd"></path></svg>
-                                                            Simple queues
-                                                        </dt>
-                                                        <dd className='mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600'>
-                                                            <p className='flex-auto'>
-                                                                Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.
-                                                            </p>
-                                                            <p className='mt-6'>
-                                                                <a href="/" className='text-sm font-semibold leading-6 text-blue-700'>
-                                                                    Learn more
-                                                                    <span> →</span>
-                                                                </a>
-                                                            </p>
-                                                        </dd>
-                                                    </div>
-                                                </dl>
-                                            </div>
-                                        </div>
+                                    <section className='bg-white border rounded-2x'>
+                                        feature
                                     </section>
                                 ) : (
                                     <div>code</div>
