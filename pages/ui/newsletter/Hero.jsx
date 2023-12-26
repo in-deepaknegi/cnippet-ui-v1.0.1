@@ -5,6 +5,7 @@ const Hero = () => {
     const [activeTab1, setActiveTab1] = useState(0);
     const [activeTab2, setActiveTab2] = useState(0);
     const [activeTab3, setActiveTab3] = useState(0);
+    const [activeTab4, setActiveTab4] = useState(0);
 
     const changeTab1 = (index) => {
         setActiveTab1(index);
@@ -14,6 +15,9 @@ const Hero = () => {
     };
     const changeTab3 = (index) => {
         setActiveTab3(index);
+    };
+    const changeTab4 = (index) => {
+        setActiveTab4(index);
     };
 
     return (
@@ -231,6 +235,77 @@ const Hero = () => {
                                                         <label htmlFor='email-address' className='sr-only'>Email address</label>
                                                         <input id='email-address' name='email' type='email' autoComplete='email' required className='min-w-0 flex-auto rounded-lg border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/70 sm:text-sm sm:leading-6' placeholder='Enter your email' />
                                                         <button type='submit' className='flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500'>Subscribe</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </section>
+                                ) : (
+                                    <div>code</div>
+                                )}
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id='newsletter-3'>
+                        <div className='grid grid-cols-[1fr,auto] items-center'>
+                            <div className='flex min-w-0'>
+                                <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
+                                    <a href="">
+                                        Simple navbar with menu of left and button on right
+                                    </a>
+                                </h2>
+                                <p className='ml-3 hidden whitespace-nowrap rounded-lg bg-slate-100 px-2 py-0.5 text-xs font-semibold leading-6 text-slate-700 lg:block'>
+                                    Requires JS
+                                </p>
+                            </div>
+                            <div className='ml-6 flex items-center'>
+                                <div className='flex space-x-1 rounded-lg bg-slate-100 p-0.5'>
+                                    <button
+                                        onClick={() => changeTab4(0)}
+                                        className={`flex items-center rounded-md py-[0.45rem] pl-2 pr-2 text-sm font-semibold lg:pr-3 ${activeTab4 === 0 ? 'bg-white shadow' : ''}`}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0950f6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" /><circle cx="12" cy="12" r="3" /></svg>
+                                        <span className='sr-only lg:not-sr-only lg:ml-2 text-stone-900'>Preview</span>
+                                    </button>
+                                    <button
+                                        onClick={() => changeTab4(1)}
+                                        className={`flex items-center rounded-md py-[0.45rem] pl-2 pr-2 text-sm font-semibold lg:pr-3 ${activeTab4 === 1 ? 'bg-white shadow' : ''}`}>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3e75f4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg>
+                                        <span className='sr-only lg:not-sr-only lg:ml-2 text-stone-900'>Code</span>
+                                    </button>
+                                </div>
+                                <div className='ml-6 mr-3 hidden h-5 w-px bg-slate-900 sm:block'></div>
+                                <div className='relative hidden sm:block text-slate-900 font-medium sm:text-sm pl-3.5 pr-[1.875rem]'>
+                                    NextJs
+                                </div>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9c9c9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2" /><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" /></svg>
+                                </button>
+                            </div>
+
+                            <div className='col-span-2 row-start-2 min-w-0 mt-3'>
+                                {activeTab4 === 0 ? (
+                                    <section className='relative isolate overflow-hidden rounded-2xl'
+                                        style={{
+                                            backgroundImage: "url('/hero4.jpg')",
+                                            backgroundPosition: 'center',
+                                            backgroundSize: 'cover',
+                                            // backgroundAttachment: 'fixed',
+                                        }}
+                                    >
+                                        <div className="absolute w-full h-full z-[-10] bg-gradient-to-b from-black/10 via-black/30 to-black/90">
+                                        </div>
+                                        <div className="mx-auto max-w-7xl px-6 py-16 lg:py-24 lg:px-8">
+                                            <div className="relative isolate overflow-hidden sm:px-24">
+                                                <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-wide text-white sm:text-4xl">
+                                                    Get the Latest Hiking Updates
+                                                </h2>
+                                                <p className="mt-4 mx-auto max-w-xl text-center text-sm text-gray-100 sm:text-base">Subscribe to our newsletter today and be the first to receive expert hiking tips, exciting outdoor adventures, and exclusive offers that you won&apos;t find anywhere else!</p>
+                                                <form className="mt-6 mx-auto max-w-md col-span-5 lg:py-2" action="">
+                                                    <div className="flex gap-x-3">
+                                                        <label for="email-address" className="sr-only">Email address</label>
+                                                        <input id="email-address" type="email" autocomplete="email" required="" className="min-w-0 flex-auto rounded-lg border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/70 sm:text-sm sm:leading-6" placeholder="Enter your email" name="email" />
+                                                        <button type="submit" className="flex-none rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-600">Subscribe</button>
                                                     </div>
                                                 </form>
                                             </div>
