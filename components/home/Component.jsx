@@ -67,7 +67,7 @@ const Components = () => {
                 </ul>
             </div>
             <div className="pointer-events-none relative z-10 -mt-5 flex justify-center">
-                <a className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-primary text-black pointer-events-auto" href="/components">
+                <a className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-primary text-black pointer-events-auto" href="#">
                     <span>Show more...</span>
                 </a>
             </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar2 = () => {
     return (
-        <header className='border rounded-2xl'>
+        <header className='relative isolate'>
             <nav className="flex items-center justify-between lg:py-5 lg:px-8">
                 <div className="flex lg:flex-none">
                     <a href="/" className="-m-1.5 p-1.5 text-2xl font-medium">

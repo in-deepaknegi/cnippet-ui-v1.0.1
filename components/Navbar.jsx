@@ -19,14 +19,14 @@ const Navbar = () => {
                             English
                         </div>
                         <div className='flex-1 items-center lg:flex-none'>
-                            <a href="/" className='text-gray-200 text-sm'>
+                            <a href="#" className='text-gray-200 text-sm'>
                                 Get free delivery on orders over $100
                             </a>
                         </div>
                         <div className='hidden lg:flex lg:flex-1 lg:gap-2 lg:items-center lg:justify-end'>
-                            <a href="/" className='text-gray-100 text-sm'>Sign In</a>
+                            <a href="#" className='text-gray-100 text-sm'>Sign In</a>
                             <span className='h-4 w-[1px] bg-gray-200 mx-2'></span>
-                            <a href="/" className='text-gray-100 text-sm'>Create an account</a>
+                            <a href="#" className='text-gray-100 text-sm'>Create an account</a>
                         </div>
                     </div>
                 </div>
@@ -59,20 +59,19 @@ const Navbar = () => {
                             </button>
                         )}
 
-
                     </div>
                     <div className="hidden lg:flex lg:gap-x-12 ml-10">
-                        <a href="/components" className="text-sm font-semibold leading-6 text-gray-900">Components</a>
-                        <a href="/features" className="text-sm font-semibold leading-6 text-gray-900">Templates</a>
-                        <a href="/contact" className="text-sm font-semibold leading-6 text-gray-900">Contacts</a>
-                        <a href="/about" className="text-sm font-semibold leading-6 text-gray-900">About</a>
+                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Components</a>
+                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Templates</a>
+                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Contacts</a>
+                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">About</a>
                     </div>
                     <div className="hidden lg:ml-8 lg:flex lg:flex-none lg:gap-4 lg:items-center lg:pl-8">
-                        <a href="/login" className='text-gray-700'>Search</a>
-                        <a href="/help" className='text-gray-700'>Help</a>
+                        <a href="#" className='text-gray-700'>Search</a>
+                        <a href="#" className='text-gray-700'>Help</a>
                         <span className='h-5 w-[1px] bg-gray-500'></span>
                         <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" className='w-6 h-6 text-gray-400'><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" className='w-6 h-6 text-gray-600'><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path></svg>
                         </a>
                     </div>
                 </div>
@@ -90,10 +89,10 @@ const Navbar = () => {
                         <div className='mt-6 flow-root'>
                             <div className='-my-6 divide-y divide-gray-500/10'>
                                 <div className='space-y-2 py-6'>
-                                    <a href='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Product</a>
-                                    <a href='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Features</a>
-                                    <a href='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Marketplace</a>
-                                    <a href='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Company</a>
+                                    <a href='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Components</a>
+                                    <a href='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Templates</a>
+                                    <a href='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Contacts</a>
+                                    <a href='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>About</a>
                                 </div>
                                 <div className='py-6'>
                                     <a href='#' className='-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Log in</a>

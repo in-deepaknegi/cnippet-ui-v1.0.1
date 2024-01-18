@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar3 = () => {
     return (
-        <header className='relative z-10 border rounded-2xl overflow-hidden'>
+        <header className='relative overflow-hidden'>
             <nav>
                 <div className='bg-black'>
                     <div className='mx-auto flex h-10 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8'>
