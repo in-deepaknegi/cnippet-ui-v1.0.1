@@ -91,7 +91,7 @@ const Components = () => {
                         </li>
                     ))}
 
-                    {/* <div className="pointer-events-none absolute -inset-x-2.5 -bottom-2.5 h-[16.6%] bg-gradient-to-t from-white to-white/25 sm:h-[33.3%]"></div> */}
+                    <div className="pointer-events-none absolute -inset-x-2.5 -bottom-2.5 h-[16.6%] bg-gradient-to-t from-white to-white/25 sm:h-[33.3%]"></div>
                 </ul>
             </div>
             <div className="pointer-events-none relative z-10 -mt-5 flex justify-center">
