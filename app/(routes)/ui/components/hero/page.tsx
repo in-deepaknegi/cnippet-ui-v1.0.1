@@ -1,16 +1,16 @@
 import React from 'react'
-import Hero from '@/components/ui/navbar/Hero'
+import Hero from '@/components/ui/hero/Hero'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'UI - Navbar',
-    description: 'Navbar page',
+    title: 'UI - Hero',
+    description: 'Hero page',
 }
 
-const page = () => {
-    return (
+const page = () => { 
+    return ( 
         <>
             <Navbar />
             <Hero />

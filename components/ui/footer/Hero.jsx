@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import Navbar1 from "@/ui/navbar/C1";
-import Navbar2 from "@/ui/navbar/C2";
-import Navbar3 from "@/ui/navbar/C3";
+import C1 from "@/ui/footer/C1";
+import C2 from "@/ui/footer/C2";
 
 const components = [
     {
@@ -15,34 +14,21 @@ const components = [
         title: "Simple navbar with menu in center and button in right",
         color: "#3e75f4",
     },
-    {
-        id: "3",
-        title: "Simple navbar with menu in center and button in right",
-        color: "#3e75f4",
-    },
+
 ];
 
 const getComponent = (id) => {
     switch (id) {
         case "1":
-            return <Navbar1 />;
+            return <C1 />;
         case "2":
-            return <Navbar2 />;
-        case "3":
-            return <Navbar3 />;
+            return <C2 />;
+
         default:
             return null;
     }
 };
-// const getCode = (id) => {
-//     switch (id) {
-//         case "1":
-//             return <Code1 />;
 
-//         default:
-//             return null;
-//     }
-// };
 
 const Hero = () => {
 
@@ -59,7 +45,7 @@ const Hero = () => {
             <div className="relative mx-auto w-full px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col">
                     <h1 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900">
-                        Navbars
+                        Footers
                     </h1>
                     <nav className="order-first flex space-x-2 text-base font-semibold">
                         <a href="/" className="text-slate-500 hover:text-slate-600">
@@ -67,7 +53,7 @@ const Hero = () => {
                         </a>
                         <div className="select-none text-slate-400">/</div>
                         <a href="/" className="text-slate-500 hover:text-slate-600">
-                            Navbars
+                            Footers
                         </a>
                     </nav>
                 </div>
@@ -136,7 +122,8 @@ const Hero = () => {
                                     {activeTab[index] === 0 ? (
                                         getComponent(component.id)
                                     ) : (
-                                        <pre>code</pre>
+                                                                                <pre>code</pre>
+
                                     )}
                                 </div>
                             </div>
