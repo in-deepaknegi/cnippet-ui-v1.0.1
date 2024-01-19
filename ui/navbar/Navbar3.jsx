@@ -10,14 +10,14 @@ const Navbar3 = () => {
                             English
                         </div>
                         <div className='flex-1 items-center lg:flex-none'>
-                            <a href="/" className='text-gray-200 text-sm'>
+                            <a href="#" className='text-gray-200 text-sm'>
                                 Get free delivery on orders over $100
                             </a>
                         </div>
                         <div className='hidden lg:flex lg:flex-1 lg:gap-2 lg:items-center lg:justify-end'>
-                            <a href="/" className='text-gray-100 text-sm'>Sign In</a>
+                            <a href="#" className='text-gray-100 text-sm'>Sign In</a>
                             <span className='h-4 w-[1px] bg-gray-200 mx-2'></span>
-                            <a href="/" className='text-gray-100 text-sm'>Create an account</a>
+                            <a href="#" className='text-gray-100 text-sm'>Create an account</a>
                         </div>
                     </div>
                 </div>

@@ -10,30 +10,6 @@ const components = [
         id: "1",
         title: "Simple navbar with menu and button on right",
         color: "#0950f6",
-        code: (<pre className="bg-gray-900 text-sm leading-5 px-6 py-2 text-blue-50 ">
-        <code>
-  {`<header className="relative isolate">
-      <nav className="flex items-center justify-between py-5 lg:px-8">
-          <div className="flex">
-              <a href="/" className="-m-1.5 p-1.5 text-2xl font-medium">
-                  Cnippet
-              </a>
-          </div>
-          <div className="hidden lg:flex lg:gap-x-12">
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Components</a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Templates</a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">About</a>
-          </div>
-          <div className="hidden lg:ml-8 lg:flex lg:items-center lg:pl-8">
-              <a href="#">Sign in</a>
-              <a href="#" className="inline-flex justify-center rounded-lg text-sm font-semibold py-2 px-4 bg-slate-900 text-white hover:bg-slate-700 -my-2.5 ml-8">
-                  <span>Get pro <span aria-hidden="true">→</span></span>
-              </a>
-          </div>
-      </nav>
-  </header>`}
-        </code>
-      </pre>)
     },
     {
         id: "2",
@@ -86,9 +62,9 @@ const Hero = () => {
                     <h1 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900">
                         Navbars
                     </h1>
-                    <nav className="order-first flex space-x-2 text-sm font-semibold">
+                    <nav className="order-first flex space-x-2 text-base font-semibold">
                         <a href="/" className="text-slate-500 hover:text-slate-600">
-                            Application UI
+                            UI
                         </a>
                         <div className="select-none text-slate-400">/</div>
                         <a href="/" className="text-slate-500 hover:text-slate-600">
@@ -98,7 +74,7 @@ const Hero = () => {
                 </div>
                 <div className="mt-10 space-y-28 pb-px">
                     {components.map((component, index) => (
-                        <section key={component.id} id="footer-1">
+                        <section key={component.id} id={`footer${component.id}`}>
                             <div className="grid grid-cols-[1fr,auto] items-center">
                                 <div className="flex min-w-0">
                                     <h2 className="truncate text-base font-medium leading-7 text-slate-900">
@@ -161,7 +137,7 @@ const Hero = () => {
                                     {activeTab[index] === 0 ? (
                                         getComponent(component.id)
                                     ) : (
-                                        component.code
+                                        getCode(component.id)
                                     )}
                                 </div>
                             </div>
