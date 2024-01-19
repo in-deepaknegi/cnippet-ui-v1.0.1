@@ -6,8 +6,7 @@ import Hero3 from '@/public/images/Hero/hero7.jpg'
 import Hero4 from '@/public/images/Hero/hero8.jpg'
 import Hero5 from '@/public/images/Hero/hero9.jpg'
 
-
-const C2 = () => {
+const C3 = () => {
     return (
         <section>
             Cnippet
@@ -15,4 +14,4 @@ const C2 = () => {
     )
 }
 
-export default C2
+export default C3

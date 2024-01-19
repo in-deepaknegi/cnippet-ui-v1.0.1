@@ -1,9 +1,13 @@
 import React from 'react'
+import Image from 'next/image'
+import Hero1 from '@/public/images/Hero/hero4.jpg'
 
-const Hero1 = () => {
+const C1 = () => {
     return (
-        <div>Hero1</div>
+        <section>
+            Cnippet
+        </section>
     )
 }
 
-export default Hero1
+export default C1
