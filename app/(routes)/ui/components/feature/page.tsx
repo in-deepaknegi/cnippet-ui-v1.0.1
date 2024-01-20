@@ -7,7 +7,7 @@ import C2 from "@/ui/feature/C2";
 import Layout from '@/components/Layout'
 
 export const metadata: Metadata = {
-    title: 'Ui - Feature',
+    title: 'UI - Feature',
     description: 'Feature page',
 }
 
