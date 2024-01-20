@@ -45,6 +45,12 @@ const component = [
         imageURL: Feedback,
         number: "3 components",
     },
+    {
+        name: "Article",
+        source: "ui/components/article",
+        imageURL: Feedback,
+        number: "2 components",
+    },
 ];
 
 const Components = () => {
