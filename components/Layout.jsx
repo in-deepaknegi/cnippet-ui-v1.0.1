@@ -16,6 +16,7 @@ const Layout = ({ components }) => {
                 <section key={component.id} id={`feature-list${component.id}`}>
                     <div className="grid grid-cols-[1fr,auto] items-center">
                         <div className="flex min-w-0">
+                            <div className="my-auto text-base font-semibold">#{component.id}&nbsp;</div>
                             <h2 className="truncate text-base font-medium leading-7 text-slate-900">
                                 {component.title}
                             </h2>

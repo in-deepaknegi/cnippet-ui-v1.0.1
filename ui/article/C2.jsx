@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image";
+import Hero1 from '@/public/images/Hero/hero8.jpg'
 import Profile1 from "@/public/images/profile/profile5.jpg";
 
 const C2 = () => {
@@ -45,6 +46,13 @@ const C2 = () => {
                             Today the day — we just published the first development preview
                             of just in time for your holiday hacking sessions.
                         </p>
+                        <div className='max-w-3xl mx-auto'>
+                            <Image
+                                src={Hero1}
+                                alt='featured-image'
+                                className='aspect-[16/9] object-cover object-center rounded-xl'
+                            />
+                        </div>
                         <p>
                             <strong>Catalyst</strong> is our first fully-componentized,
                             batteries-included application UI kit — real React components
@@ -152,7 +160,6 @@ const C2 = () => {
 
                             <div className='flex'>
                                 <h2 className='my-auto text-sm font-semibold'>Connect with me</h2>
-
                                 <div className='ml-auto flex gap-x-2'>
                                     <a href="#">
                                         <span className='sr-only'>Facebook</span>

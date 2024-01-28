@@ -1,81 +1,83 @@
-import React from 'react'
+import React from "react";
 import Image from "next/image";
-import Hero1 from '@/public/images/Hero/hero8.jpg'
+import Hero1 from "@/public/images/Hero/hero8.jpg";
 import Profile1 from "@/public/images/profile/profile5.jpg";
 
 const C3 = () => {
     return (
-        <main className='antialiased'>
-            <div className='mx-auto pt-8 max-w-7xl text-center lg:px-8 px-6 lg:pt-16 bg-gradient-to-b from-gray-200'>
-                <h1 className="text-2xl font-extrabold text-slate-900 md:text-4xl ">
-                    Introducing Catalyst: A modern UI kit for&nbsp;React
-                </h1>
-                <div className="text-sm mt-6">
-                    <dl>
-                        <dt className="sr-only">Date</dt>
-                        <dd className=" text-slate-700">
-                            <time dateTime="2023-12-20T20:00:00.000Z">
-                                Thursday, December 21, 2023
-                            </time>
-                        </dd>
-                    </dl>
-                </div>
-                <div className='max-w-3xl mx-auto mt-10'>
-                    <Image
-                        src={Hero1}
-                        alt='featured-image'
-                        className='aspect-[16/9] object-cover object-center rounded-xl'
-                    />
-                </div>
-            </div>
-            <div className="mt-8 max-w-5xl lg:px-8 px-6 mx-auto">
-                <ul className="-mx-5 -mt-6 flex flex-wrap text-sm leading-6">
-                    <li className="mt-6 flex items-center gap-4 whitespace-nowrap px-5 font-medium">
+        <main className="antialiased">
+            <div className="pb-8 border-b-2 border-gray-200 bg-gradient-to-b from-gray-200 px-6 pt-8 text-center lg:px-8 lg:pt-16">
+                <div className="mx-auto max-w-5xl space-y-6">
+                    <h1 className="text-2xl font-extrabold text-slate-900 md:text-4xl ">
+                        Introducing Catalyst: A modern UI kit for&nbsp;React
+                    </h1>
+                    <div className="text-sm">
+                        <dl>
+                            <dt className="sr-only">Date</dt>
+                            <dd className=" text-slate-800">
+                                <time dateTime="2023-12-20T20:00:00.000Z">
+                                    Thursday, December 21, 2023
+                                </time>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div className="mx-auto max-w-3xl">
                         <Image
-                            src={Profile1}
-                            alt="id-1"
-                            className="h-8 w-8 rounded-full bg-gray-50 object-cover" />
-                        <div className="text-sm leading-4">
-                            <div className="text-slate-900 ">Adam Wathan</div>
-                            <div className="mt-1">
-                                <a
-                                    href="https://twitter.com/adamwathan"
-                                    className="text-sky-500 hover:text-sky-600 dark:text-sky-400">
-                                    @adamwathan
-                                </a>
+                            src={Hero1}
+                            alt="featured-image"
+                            className="aspect-[16/9] rounded-xl object-cover object-center"
+                        />
+                    </div>
+                    <ul className="flex flex-wrap text-sm leading-6">
+                        <li className="mt-6 flex items-center gap-4 whitespace-nowrap md:px-5 font-medium">
+                            <Image
+                                src={Profile1}
+                                alt="id-1"
+                                className="h-8 w-8 rounded-full bg-gray-50 object-cover"
+                            />
+                            <div className="text-sm leading-4">
+                                <div className="text-slate-900 ">Adam Wathan</div>
+                                <div className="mt-1">
+                                    <a
+                                        href="https://twitter.com/adamwathan"
+                                        className="text-sky-500 hover:text-sky-600 dark:text-sky-400"
+                                    >
+                                        @adamwathan
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div className='mx-auto mt-8 flex max-w-6xl border-t-2 border-sky-400 justify-between px-4 lg:px-0'>
-                <article className="relative max-w-2xl mx-auto pt-10">
-                    <div className="mt-4 flex flex-col gap-y-6 text-gray-800 font-sans">
-                        <p className='text-lg'>
-                            Today the day — we just published the first development preview
-                            of just in time for your holiday hacking sessions.
+            <div className="mx-auto mt-8 flex max-w-6xl justify-between px-4 lg:px-0">
+                <article className="relative mx-auto max-w-2xl pt-10">
+                    <div className="flex flex-col gap-y-6 font-sans text-gray-800">
+                        <p className="text-lg">
+                            Today the day — we just published the first development preview of
+                            just in time for your holiday hacking sessions.
                         </p>
                         <p>
                             <strong>Catalyst</strong> is our first fully-componentized,
-                            batteries-included application UI kit — real React components
-                            with thoughtfully designed APIs that build on each other to
-                            create a real component architecture, the same way we&apos;d do
-                            it in a real application
+                            batteries-included application UI kit — real React components with
+                            thoughtfully designed APIs that build on each other to create a
+                            real component architecture, the same way we&apos;d do it in a
+                            real application
                         </p>
                         <p>
-                            Check out the read the and if you&apos;re a Tailwind UI
-                            All-Access customer
+                            Check out the read the and if you&apos;re a Tailwind UI All-Access
+                            customer
                         </p>
                         <h2 className="text-lg font-semibold text-slate-900 md:text-2xl">
                             Your components, not ours
                         </h2>
                         <p>
                             <strong>Catalyst</strong> is our first fully-componentized,
-                            batteries-included application UI kit — real React components
-                            with thoughtfully designed APIs that build on each other to
-                            create a real component architecture, the same way we&apos;d do
-                            it in a real application
+                            batteries-included application UI kit — real React components with
+                            thoughtfully designed APIs that build on each other to create a
+                            real component architecture, the same way we&apos;d do it in a
+                            real application
                         </p>
 
                         <p>
@@ -123,8 +125,8 @@ const C3 = () => {
                         </p>
                         <div className="inset-0 z-10 overflow-y-auto">
                             <div className="min-h-full p-0 text-center sm:items-center">
-                                <div className="relative ml-1 overflow-hidden rounded-lg border ring-1 ring-sky-600 bg-white shadow-lg shadow-sky-100 transition-all sm:my-8 sm:w-full sm:max-w-lg">
-                                    <div className="  p-3">
+                                <div className="relative ml-1 overflow-hidden rounded-lg border border-sky-600   bg-white shadow-lg shadow-sky-100 transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                                    <div className="p-3">
                                         <div className="text-center sm:ml-4 sm:mt-0 sm:text-left">
                                             <h3
                                                 className="text-base font-semibold leading-6 text-gray-900"
@@ -133,9 +135,9 @@ const C3 = () => {
                                             </h3>
                                             <div className="mt-2">
                                                 <p className="text-sm text-gray-700">
-                                                    Are you sure you want to deactivate your account?
-                                                    All of your data will be permanently removed. This
-                                                    action cannot be undone.
+                                                    Are you sure you want to deactivate your account? All
+                                                    of your data will be permanently removed. This action
+                                                    cannot be undone.
                                                 </p>
                                             </div>
                                         </div>
@@ -145,27 +147,38 @@ const C3 = () => {
                         </div>
                     </div>
                 </article>
-                <aside className='hidden pt-10 lg:block lg:w-72'>
-                    <div className='sticky top-6'>
-                        <div className='rounded-2xl border p-6 shadow-xl'>
-                            <h3 className='font-semibold text-lg mb-4 border-b'>Related articles</h3>
+                <aside className="hidden pt-10 lg:block lg:w-72">
+                    <div className="sticky top-6">
+                        <div className="rounded-2xl border p-6 shadow-xl">
+                            <h3 className="mb-4 border-b text-lg font-semibold">
+                                Related articles
+                            </h3>
 
                             <a href="#">
-                                <div className="text-blue-600 text-base font-semibold">Enterprise design tips</div>
-                                <p className='mb-4 text-sm text-slate-900 line-clamp-2'>
-                                    Over the past year, Volosoft has undergone many changes! After months of preparation.
+                                <div className="text-base font-semibold text-blue-600">
+                                    Enterprise design tips
+                                </div>
+                                <p className="mb-4 line-clamp-2 text-sm text-slate-900">
+                                    Over the past year, Volosoft has undergone many changes! After
+                                    months of preparation.
                                 </p>
                             </a>
                             <a href="#">
-                                <div className="text-blue-600 text-base font-semibold">We partnered up with Google</div>
-                                <p className='mb-4 text-sm text-slate-900 line-clamp-2'>
-                                    Over the past year, Volosoft has undergone many changes! After months of preparation.
+                                <div className="text-base font-semibold text-blue-600">
+                                    We partnered up with Google
+                                </div>
+                                <p className="mb-4 line-clamp-2 text-sm text-slate-900">
+                                    Over the past year, Volosoft has undergone many changes! After
+                                    months of preparation.
                                 </p>
                             </a>
-                            <a href="#" >
-                                <div className="text-blue-600 text-base font-semibold">Our first project with React</div>
-                                <p className='mb-0 text-sm text-slate-900 line-clamp-2'>
-                                    Over the past year, Volosoft has undergone many changes! After months of preparation.
+                            <a href="#">
+                                <div className="text-base font-semibold text-blue-600">
+                                    Our first project with React
+                                </div>
+                                <p className="mb-0 line-clamp-2 text-sm text-slate-900">
+                                    Over the past year, Volosoft has undergone many changes! After
+                                    months of preparation.
                                 </p>
                             </a>
                         </div>
@@ -173,7 +186,7 @@ const C3 = () => {
                 </aside>
             </div>
         </main>
-    )
-}
+    );
+};
 
-export default C3
+export default C3;

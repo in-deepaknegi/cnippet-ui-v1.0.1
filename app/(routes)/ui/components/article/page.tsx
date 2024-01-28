@@ -20,12 +20,12 @@ const components = [
     },
     {
         id: "2",
-        title: "SSimple article with contents in the middle",
+        title: "Simple article with contents in the middle",
         component: <C2 />,
     },
     {
         id: "3",
-        title: "SSimple article with contents in the middle",
+        title: "Simple article with contents in the middle",
         component: <C3 />,
     },
 ];
