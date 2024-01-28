@@ -5,12 +5,12 @@ import Layout from '@/components/Layout'
 
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import C1 from "@/ui/feedback/C1";
-import C2 from "@/ui/feedback/C2";
+import C1 from "@/ui/footer/C1";
+import C2 from "@/ui/footer/C2";
 
 export const metadata: Metadata = {
-    title: 'UI - Feadback',
-    description: 'Feadback page',
+    title: 'UI - Footer',
+    description: 'Footer page',
 }
 
 const components = [
@@ -24,7 +24,6 @@ const components = [
         title: "Simple navbar with menu in center and button in right",
         component: <C2 />,
     },
-
 ];
 
 const page = () => {
@@ -36,7 +35,7 @@ const page = () => {
                     <div className="relative mx-auto w-full px-4 sm:px-6 lg:px-8">
                         <div className="flex flex-col">
                             <h1 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900">
-                                Feedbacks
+                                Footer
                             </h1>
                             <nav className="order-first flex space-x-2 text-base font-semibold">
                                 <a href="/" className="text-slate-500 hover:text-slate-600">
@@ -44,13 +43,12 @@ const page = () => {
                                 </a>
                                 <div className="select-none text-slate-400">/</div>
                                 <a href="/" className="text-slate-500 hover:text-slate-600">
-                                    Feedbacks
+                                    Footer
                                 </a>
                             </nav>
                         </div>
 
                         <Layout components={components} />
-
                     </div>
                 </section>
             </main>
