@@ -1,57 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Navbar from "@/public/images/components/navbar.png";
-import Footer from '@/public/images/components/footer.png';
-import Hero from '@/public/images/components/hero.png';
-import Feature from '@/public/images/components/feature.png';
-import FeatureList from '@/public/images/components/feature-list.png';
-import Feedback from '@/public/images/components/feedback.png';
-
-
-const component = [
-    {
-        name: "Navbar",
-        source: "ui/components/navbar",
-        imageURL: Navbar,
-        number: "3 components",
-    },
-    {
-        name: "Footer",
-        source: "ui/components/footer",
-        imageURL: Footer,
-        number: "3 components",
-    },
-    {
-        name: "Hero",
-        source: "ui/components/hero",
-        imageURL: Hero,
-        number: "3 components",
-    },
-    {
-        name: "Feature",
-        source: "ui/components/feature",
-        imageURL: Feature,
-        number: "3 components",
-    },
-    {
-        name: "Feature List",
-        source: "ui/components/feature-list",
-        imageURL: FeatureList,
-        number: "3 components",
-    },
-    {
-        name: "Feedback",
-        source: "ui/components/feedback",
-        imageURL: Feedback,
-        number: "3 components",
-    },
-    {
-        name: "Article",
-        source: "ui/components/article",
-        imageURL: Feedback,
-        number: "2 components",
-    },
-];
+import component from '@/data/components';
 
 const Components = () => {
     return (
@@ -101,7 +50,7 @@ const Components = () => {
                 </ul>
             </div>
             <div className="pointer-events-none relative z-10 -mt-5 flex justify-center">
-                <a className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-primary text-black pointer-events-auto" href="#">
+                <a className="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-primary text-black pointer-events-auto" href="/ui/components">
                     <span>Show more...</span>
                 </a>
             </div>

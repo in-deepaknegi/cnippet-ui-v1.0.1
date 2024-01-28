@@ -31,7 +31,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className='bg-white border-b border-gray-300 flex items-center justify-between py-4 px-6 lg:px-8'>
+                <div className='bg-white border-b border-gray-100 flex items-center justify-between py-4 px-6 lg:px-8'>
                     <div className="flex lg:flex-none">
                         <a href="/" className="-m-1.5 p-1.5 text-2xl font-medium">
                             Cnippet
@@ -61,7 +61,7 @@ const Navbar = () => {
 
                     </div>
                     <div className="hidden lg:flex lg:gap-x-12 ml-10">
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Components</a>
+                        <a href="/ui/components" className="text-sm font-semibold leading-6 text-gray-900">Components</a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Templates</a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Contacts</a>
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">About</a>

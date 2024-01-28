@@ -6,12 +6,14 @@ import Footer from '@/components/Footer'
 
 const Home = () => {
   return (
-    <main>
+    <>
       <Navbar />
-      <Hero />
-      <Component />
+      <main>
+        <Hero />
+        <Component />
+      </main>
       <Footer />
-    </main>
+    </>
   )
 }
 
