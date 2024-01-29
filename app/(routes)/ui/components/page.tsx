@@ -10,7 +10,7 @@ const page = () => {
         <>
             <Navbar />
             <main>
-                <section className="relative isolate z-10 mx-auto w-full px-6 py-10 lg:px-8 lg:py-20">
+                <section className="relative isolate mx-auto w-full px-6 py-10 lg:px-8 lg:py-20">
                     <div className="max-w-2xl">
                         <h2 className="text-base font-semibold leading-7 text-indigo-600">
                             Components

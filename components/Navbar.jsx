@@ -1,6 +1,28 @@
 'use client'
-
 import React, { useState } from 'react'
+
+const links = [
+    {
+        id: 1,
+        title: 'Components',
+        url: '/ui/components',
+    },
+    {
+        id: 2,
+        title: 'Templates',
+        url: '#'
+    },
+    {
+        id: 3,
+        title: 'Contacts',
+        url: '#'
+    },
+    {
+        id: 4,
+        title: 'About',
+        url: '#'
+    }
+]
 
 const Navbar = () => {
 
@@ -61,11 +83,15 @@ const Navbar = () => {
 
                     </div>
                     <div className="hidden lg:flex lg:gap-x-12 ml-10">
-                        <a href="/ui/components" className="text-sm font-semibold leading-6 text-gray-900">Components</a>
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Templates</a>
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Contacts</a>
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">About</a>
+                        {links.map((link) => (
+                            <a key={link.id}
+                                href={link.url}
+                                className="text-sm font-semibold leading-6 text-gray-900">
+                                {link.title}
+                            </a>
+                        ))}
                     </div>
+
                     <div className="hidden lg:ml-8 lg:flex lg:flex-none lg:gap-4 lg:items-center lg:pl-8">
                         <a href="#" className='text-gray-700'>Search</a>
                         <a href="#" className='text-gray-700'>Help</a>
@@ -89,11 +115,16 @@ const Navbar = () => {
                         <div className='mt-6 flow-root'>
                             <div className='-my-6 divide-y divide-gray-500/10'>
                                 <div className='space-y-2 py-6'>
-                                    <a href='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Components</a>
-                                    <a href='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Templates</a>
-                                    <a href='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Contacts</a>
-                                    <a href='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>About</a>
+                                    {links.map((link) => (
+                                        <a
+                                            key={link.id}
+                                            href={link.url}
+                                            className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>
+                                            {link.title}
+                                        </a>
+                                    ))}
                                 </div>
+
                                 <div className='py-6'>
                                     <a href='#' className='-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Log in</a>
                                 </div>
