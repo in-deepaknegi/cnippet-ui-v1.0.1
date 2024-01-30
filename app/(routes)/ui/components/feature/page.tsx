@@ -17,13 +17,13 @@ export const metadata: Metadata = {
 const components = [
     {
         id: "1",
-        title: "Simple navbar with menu and button on right",
+        title: "Simple feature section with features as list",
         component: <C1 />,
         code: <S1 />
     },
     {
         id: "2",
-        title: "Simple navbar with menu in center and button in right",
+        title: "Simple feature section with features in two columns with icons",
         component: <C2 />,
         code: <S2 />
     },

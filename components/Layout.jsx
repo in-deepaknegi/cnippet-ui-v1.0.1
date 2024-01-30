@@ -20,8 +20,11 @@ const Layout = ({ components }) => {
                             <h2 className="truncate text-base font-medium leading-7 text-slate-900">
                                 {component.title}
                             </h2>
-                            <p className="ml-3 hidden whitespace-nowrap rounded-lg bg-slate-100 px-2 py-0.5 text-xs font-semibold leading-6 text-slate-700 lg:block">
+                            <p className="ml-3 hidden whitespace-nowrap rounded-lg bg-slate-200 px-2 py-0.5 text-xs font-semibold leading-6 text-slate-700 lg:block">
                                 TailwindCss
+                            </p>
+                            <p className="ml-3 hidden whitespace-nowrap rounded-lg bg-slate-700 px-2 py-0.5 text-xs font-semibold leading-6 text-slate-100 lg:block">
+                                React
                             </p>
                         </div>
                         <div className="ml-6 flex items-center">
