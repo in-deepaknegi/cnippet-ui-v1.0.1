@@ -77,7 +77,11 @@ const Layout = ({ components }) => {
                             {activeTab[index] === 0 ? (
                                 component.component
                             ) : (
-                                <pre>code</pre>
+                                <pre className="text-sm overflow-y-auto break-words">
+                                    <code>
+                                        {component.code}
+                                    </code>
+                                </pre>
                             )}
                         </div>
                     </div>

@@ -6,7 +6,7 @@ import Profile1 from "@/public/images/profile/profile5.jpg";
 const C3 = () => {
     return (
         <main className="antialiased">
-            <div className="pb-8 border-b-2 border-gray-200 bg-gradient-to-b from-gray-200 px-6 pt-8 text-center lg:px-8 lg:pt-16">
+            <div className="border-b-2 border-gray-200 bg-gradient-to-b from-gray-200 px-6 pb-8 pt-8 text-center lg:px-8 lg:pt-16">
                 <div className="mx-auto max-w-5xl space-y-6">
                     <h1 className="text-2xl font-extrabold text-slate-900 md:text-4xl ">
                         Introducing Catalyst: A modern UI kit for&nbsp;React
@@ -29,7 +29,7 @@ const C3 = () => {
                         />
                     </div>
                     <ul className="flex flex-wrap text-sm leading-6">
-                        <li className="mt-6 flex items-center gap-4 whitespace-nowrap md:px-5 font-medium">
+                        <li className="mt-6 flex items-center gap-4 whitespace-nowrap font-medium md:px-5">
                             <Image
                                 src={Profile1}
                                 alt="id-1"
@@ -39,7 +39,7 @@ const C3 = () => {
                                 <div className="text-slate-900 ">Adam Wathan</div>
                                 <div className="mt-1">
                                     <a
-                                        href="https://twitter.com/adamwathan"
+                                        href="#"
                                         className="text-sky-500 hover:text-sky-600 dark:text-sky-400"
                                     >
                                         @adamwathan
@@ -130,7 +130,8 @@ const C3 = () => {
                                         <div className="text-center sm:ml-4 sm:mt-0 sm:text-left">
                                             <h3
                                                 className="text-base font-semibold leading-6 text-gray-900"
-                                                id="modal-title">
+                                                id="modal-title"
+                                            >
                                                 Note
                                             </h3>
                                             <div className="mt-2">

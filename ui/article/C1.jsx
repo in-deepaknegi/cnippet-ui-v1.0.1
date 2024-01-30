@@ -4,7 +4,7 @@ import Profile1 from "@/public/images/profile/profile5.jpg";
 
 const C1 = () => {
     return (
-        <section className="relative isolate antialiased py-10 md:py-16">
+        <section className="relative isolate py-10 antialiased md:py-16">
             <div className="px-4 sm:px-6 md:px-8">
                 <div className="mx-auto max-w-3xl">
                     <article className="relative pt-10">
@@ -27,13 +27,15 @@ const C1 = () => {
                                     <Image
                                         src={Profile1}
                                         alt="id-1"
-                                        className="h-8 w-8 rounded-full bg-gray-50 object-cover" />
+                                        className="h-8 w-8 rounded-full bg-gray-50 object-cover"
+                                    />
                                     <div className="text-sm leading-4">
                                         <div className="text-slate-900 ">Adam Wathan</div>
                                         <div className="mt-1">
                                             <a
-                                                href="https://twitter.com/adamwathan"
-                                                className="text-sky-500 hover:text-sky-600 dark:text-sky-400">
+                                                href="#"
+                                                className="text-sky-500 hover:text-sky-600 dark:text-sky-400"
+                                            >
                                                 @adamwathan
                                             </a>
                                         </div>
@@ -42,7 +44,7 @@ const C1 = () => {
                             </ul>
                         </div>
                         <div className="mt-12 flex flex-col gap-y-6 text-gray-700">
-                            <p className='text-lg'>
+                            <p className="text-lg">
                                 Today the day — we just published the first development preview
                                 of just in time for your holiday hacking sessions.
                             </p>
@@ -112,12 +114,13 @@ const C1 = () => {
                             </p>
                             <div className="inset-0 z-10 overflow-y-auto">
                                 <div className="min-h-full p-0 text-center sm:items-center">
-                                    <div className="relative ml-1 overflow-hidden rounded-lg border ring-1 ring-sky-600 bg-white shadow-lg shadow-sky-100 transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                                    <div className="relative ml-1 overflow-hidden rounded-lg border bg-white shadow-lg shadow-sky-100 ring-1 ring-sky-600 transition-all sm:my-8 sm:w-full sm:max-w-lg">
                                         <div className="  p-3">
                                             <div className="text-center sm:ml-4 sm:mt-0 sm:text-left">
                                                 <h3
                                                     className="text-base font-semibold leading-6 text-gray-900"
-                                                    id="modal-title">
+                                                    id="modal-title"
+                                                >
                                                     Note
                                                 </h3>
                                                 <div className="mt-2">

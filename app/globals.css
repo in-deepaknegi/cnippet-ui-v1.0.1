@@ -5,7 +5,7 @@
 @layer base {
   ::-webkit-scrollbar {
     width: 8px; /* width of the scrollbar */
-    height: 12px; /* height of the scrollbar */
+    height: 8px; /* height of the scrollbar */
   }
 
   ::-webkit-scrollbar-thumb {
