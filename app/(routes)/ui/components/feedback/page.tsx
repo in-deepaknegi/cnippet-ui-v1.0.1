@@ -39,11 +39,11 @@ const page = () => {
                                 Feedbacks
                             </h1>
                             <nav className="order-first flex space-x-2 text-base font-semibold">
-                                <a href="/" className="text-slate-500 hover:text-slate-600">
-                                    UI
+                                <a href="/ui/components" className="text-slate-500 hover:text-slate-600">
+                                    Ui - Components
                                 </a>
                                 <div className="select-none text-slate-400">/</div>
-                                <a href="/" className="text-slate-500 hover:text-slate-600">
+                                <a href="/ui/components/feeback" className="text-slate-500 hover:text-slate-600">
                                     Feedbacks
                                 </a>
                             </nav>
