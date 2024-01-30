@@ -7,17 +7,18 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './ui/**/*.{js,ts,jsx,tsx,mdx}'
   ],
+   
+  plugins: [require('tailwind-highlightjs'),  require('@tailwindcss/aspect-ratio'),],
+  safelist: [
+    {
+      pattern: /hljs+/,
+    },
+  ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+    hljs: {
+      theme: 'github-dark',
     },
   },
-  plugins: [
-    require('@tailwindcss/aspect-ratio'),
-  ],
+
 }
 export default config
