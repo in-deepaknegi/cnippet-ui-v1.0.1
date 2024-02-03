@@ -6,9 +6,10 @@ import Footer from "@/components/Footer";
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Components - Cnippet',
-    description: 'Ui page',
+    title: 'Templates - Cnippet',
+    description: 'Templates page',
 }
+
 
 const page = () => {
     return (
@@ -18,7 +19,7 @@ const page = () => {
                 <section className="relative isolate mx-auto w-full px-6 py-10 lg:px-8 lg:py-20">
                     <div className="max-w-2xl">
                         <h2 className="text-base font-semibold leading-7 text-indigo-600">
-                            Components
+                            Templates
                         </h2>
                         <p className="mt-4 text-4xl font-extrabold tracking-tight text-slate-900">
                             Beautifully crafted UI components, ready for your next project.

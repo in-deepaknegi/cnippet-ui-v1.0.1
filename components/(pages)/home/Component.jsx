@@ -23,7 +23,7 @@ const Components = () => {
 
             <div className="relative mt-10 md:mt-8">
                 <ul className="grid-cols-[repeat(auto-fill,minmax(12rem, 1fr))] grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                    {component.map((component) => (
+                    {component.slice(0,8).map((component) => (
                         <li key={component.name}>
                             <div className="group relative before:absolute before:-inset-2.5 before:rounded-[20px] before:bg-gray-50 before:opacity-0 hover:before:opacity-100">
                                 <div className="relative aspect-[2/1] overflow-hidden rounded-lg bg-gray-100 ring-1 ring-gray-900/10">

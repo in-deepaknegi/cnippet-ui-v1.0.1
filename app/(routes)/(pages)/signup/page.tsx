@@ -1,12 +1,12 @@
 import React from 'react'
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
-import Form from '@/components/(pages)/contact/Form'
+import Hero from '@/components/(pages)/signup/Hero'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Contacts  - Cnippet',
-    description: 'Contact Us page',
+    title: 'Sign Up - Cnippet',
+    description: 'Sign Up page',
 }
 
 const page = () => {
@@ -14,7 +14,7 @@ const page = () => {
         <>
             <Navbar />
             <main>
-                <Form />
+                <Hero />
             </main>
             <Footer />
         </>

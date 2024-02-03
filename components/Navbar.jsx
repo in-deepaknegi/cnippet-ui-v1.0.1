@@ -10,7 +10,7 @@ const links = [
     {
         id: 2,
         title: 'Templates',
-        url: '#'
+        url: '/templates'
     },
     {
         id: 3,
@@ -20,7 +20,7 @@ const links = [
     {
         id: 4,
         title: 'About',
-        url: '#'
+        url: '/about'
     }
 ]
 
@@ -46,18 +46,18 @@ const Navbar = () => {
                             </a>
                         </div>
                         <div className='hidden lg:flex lg:flex-1 lg:gap-2 lg:items-center lg:justify-end'>
-                            <a href="#" className='text-gray-100 text-sm'>Sign In</a>
+                            <a href="/login" className='text-gray-100 text-sm'>Sign In</a>
                             <span className='h-4 w-[1px] bg-gray-200 mx-2'></span>
-                            <a href="#" className='text-gray-100 text-sm'>Create an account</a>
+                            <a href="/signup" className='text-gray-100 text-sm'>Create an account</a>
                         </div>
                     </div>
                 </div>
 
                 <div className='bg-white border-b border-gray-100 flex items-center justify-between py-4 px-6 lg:px-8'>
                     <div className="flex lg:flex-none">
-                        <a href="/" className="-m-1.5 p-1.5 text-2xl font-medium">
-                            Cnippet
-                            <span className="">UI</span>
+                        <a href="/" className="-m-1.5 p-1.5 text-2xl">
+                            Cnippet {" "}
+                            <span className="text-base">Ui.</span>
                         </a>
                     </div>
                     <div className='flex lg:hidden'>
