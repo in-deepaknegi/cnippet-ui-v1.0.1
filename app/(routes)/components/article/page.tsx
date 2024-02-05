@@ -1,30 +1,33 @@
 import React from 'react'
 import { Metadata } from 'next'
-
-import Layout from '@/components/Layout'
-
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import C1 from "@/ui/feature-list/C1";
-import C2 from "@/ui/feature-list/C2";
+import C1 from "@/ui/article/C1";
+import C2 from "@/ui/article/C2";
+import C3 from "@/ui/article/C3";
+import Layout from '@/components/Layout'
 
 export const metadata: Metadata = {
-    title: 'UI - Feature list',
-    description: 'Feature list page',
+    title: 'UI - Article',
+    description: 'Article page',
 }
 
 const components = [
     {
         id: "1",
-        title: "Simple navbar with menu and button on right",
+        title: "Simple article with contents in the middle",
         component: <C1 />,
     },
     {
         id: "2",
-        title: "Simple navbar with menu in center and button in right",
+        title: "Simple article with contents in the middle",
         component: <C2 />,
     },
-
+    {
+        id: "3",
+        title: "Simple article with contents in the middle",
+        component: <C3 />,
+    },
 ];
 
 const page = () => {
@@ -36,15 +39,15 @@ const page = () => {
                     <div className="relative mx-auto w-full px-4 sm:px-6 lg:px-8">
                         <div className="flex flex-col">
                             <h1 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900">
-                                Feature List Sections
+                                Article Sections
                             </h1>
                             <nav className="order-first flex space-x-2 text-base font-semibold">
-                                <a href="/ui/components" className="text-slate-500 hover:text-slate-600">
+                                <a href="/components" className="text-slate-500 hover:text-slate-600">
                                 Ui - Components
                                 </a>
                                 <div className="select-none text-slate-400">/</div>
-                                <a href="/ui/components/feature-list" className="text-slate-500 hover:text-slate-600">
-                                    Feature List Sections
+                                <a href="/components/article" className="text-slate-500 hover:text-slate-600">
+                                    Article Sections
                                 </a>
                             </nav>
                         </div>

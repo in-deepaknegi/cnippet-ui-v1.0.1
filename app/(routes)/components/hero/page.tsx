@@ -1,28 +1,37 @@
 import React from 'react'
 import { Metadata } from 'next'
 
-import Layout from '@/components/Layout'
-
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import C1 from "@/ui/footer/C1";
-import C2 from "@/ui/footer/C2";
+import C1 from "@/ui/hero/C1";
+import C2 from "@/ui/hero/C2";
+import C3 from "@/ui/hero/C3";
+
+import Layout from '@/components/Layout'
 
 export const metadata: Metadata = {
-    title: 'UI - Footer',
-    description: 'Footer page',
+    title: 'UI - Hero',
+    description: 'Hero page',
 }
 
 const components = [
     {
         id: "1",
         title: "Simple navbar with menu and button on right",
+        color: "#0950f6",
         component: <C1 />,
     },
     {
         id: "2",
         title: "Simple navbar with menu in center and button in right",
+        color: "#3e75f4",
         component: <C2 />,
+    },
+    {
+        id: "3",
+        title: "Simple navbar with menu in center and button in right",
+        color: "#3e75f4",
+        component: <C3 />,
     },
 ];
 
@@ -35,20 +44,21 @@ const page = () => {
                     <div className="relative mx-auto w-full px-4 sm:px-6 lg:px-8">
                         <div className="flex flex-col">
                             <h1 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900">
-                                Footer
+                                Hero Sections
                             </h1>
                             <nav className="order-first flex space-x-2 text-base font-semibold">
-                                <a href="/ui/components" className="text-slate-500 hover:text-slate-600">
+                                <a href="/components" className="text-slate-500 hover:text-slate-600">
                                 Ui - Components
                                 </a>
                                 <div className="select-none text-slate-400">/</div>
-                                <a href="/ui/components/footer" className="text-slate-500 hover:text-slate-600">
-                                    Footer
+                                <a href="/components/hero" className="text-slate-500 hover:text-slate-600">
+                                    Hero Sections
                                 </a>
                             </nav>
                         </div>
 
                         <Layout components={components} />
+
                     </div>
                 </section>
             </main>

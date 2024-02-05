@@ -1,33 +1,29 @@
 import React from 'react'
 import { Metadata } from 'next'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import C1 from "@/ui/feature/C1";
-import C2 from "@/ui/feature/C2";
-import S1 from '@/ui/feature/S1.mdx'
-import S2 from '@/ui/feature/S2.mdx'
 
 import Layout from '@/components/Layout'
 
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import C1 from "@/ui/footer/C1";
+import C2 from "@/ui/footer/C2";
+
 export const metadata: Metadata = {
-    title: 'UI - Feature',
-    description: 'Feature page',
+    title: 'UI - Footer',
+    description: 'Footer page',
 }
 
 const components = [
     {
         id: "1",
-        title: "Simple feature section with features as list",
+        title: "Simple navbar with menu and button on right",
         component: <C1 />,
-        code: <S1 />
     },
     {
         id: "2",
-        title: "Simple feature section with features in two columns with icons",
+        title: "Simple navbar with menu in center and button in right",
         component: <C2 />,
-        code: <S2 />
     },
-
 ];
 
 const page = () => {
@@ -39,21 +35,20 @@ const page = () => {
                     <div className="relative mx-auto w-full px-4 sm:px-6 lg:px-8">
                         <div className="flex flex-col">
                             <h1 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900">
-                                Feature Sections
+                                Footer
                             </h1>
                             <nav className="order-first flex space-x-2 text-base font-semibold">
-                                <a href="/ui/components" className="text-slate-500 hover:text-slate-600">
-                                    Ui - Components
+                                <a href="/components" className="text-slate-500 hover:text-slate-600">
+                                Ui - Components
                                 </a>
                                 <div className="select-none text-slate-400">/</div>
-                                <a href="/ui/components/feature" className="text-slate-500 hover:text-slate-600">
-                                    Feature Sections
+                                <a href="/components/footer" className="text-slate-500 hover:text-slate-600">
+                                    Footer
                                 </a>
                             </nav>
                         </div>
 
                         <Layout components={components} />
-
                     </div>
                 </section>
             </main>
