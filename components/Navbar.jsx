@@ -5,7 +5,7 @@ const links = [
     {
         id: 1,
         title: 'Components',
-        url: '/ui/components',
+        url: '/components',
     },
     {
         id: 2,
