@@ -20,7 +20,7 @@ const features = [
         title: "Simple queues",
         para: "Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.",
         href: "#",
-        svg: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className='w-6 h-6 text-blue-600'><path d="M3 3v18h18"/><rect width="4" height="7" x="7" y="10" rx="1"/><rect width="4" height="12" x="15" y="5" rx="1"/></svg>)
+        svg: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className='w-6 h-6 text-blue-600'><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>)
     },
 ]
 
@@ -32,7 +32,7 @@ const List1 = () => {
                     <h2 className='text-base font-semibold leading-7 text-blue-700'>
                         Deploy faster
                     </h2>
-                    <p className='mt-2 text-3xl font-bold tracking-[-0.025em] text-gray-900 sm:text-4xl'>
+                    <p className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
                         Everything you need to deploy your app
                     </p>
                     <p className='mt-6 text-lg leading-8 text-gray-600'>
