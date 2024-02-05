@@ -7,8 +7,10 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import C1 from "@/ui/feature-list/C1";
 import C2 from "@/ui/feature-list/C2";
+import C3 from "@/ui/feature-list/C3";
 import S1 from "@/ui/feature-list/S1.mdx";
 import S2 from "@/ui/feature-list/S2.mdx";
+import S3 from "@/ui/feature-list/S3.mdx";
 
 export const metadata: Metadata = {
     title: 'UI - Feature list',
@@ -28,7 +30,12 @@ const components = [
         component: <C2 />,
         code: <S2 />
     },
-
+    {
+        id: "3",
+        title: "Simple navbar with menu in center and button in right",
+        component: <C3 />,
+        code: <S3 />
+    },
 ];
 
 const page = () => {
