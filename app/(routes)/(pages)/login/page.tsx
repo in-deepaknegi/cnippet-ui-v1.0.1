@@ -12,11 +12,9 @@ export const metadata: Metadata = {
 const page = () => {
     return (
         <>
-            <Navbar />
             <main>
                 <Hero />
             </main>
-            <Footer />
         </>
     )
 }
