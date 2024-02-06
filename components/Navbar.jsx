@@ -41,8 +41,8 @@ const Navbar = () => {
                             English
                         </div>
                         <div className='flex-1 items-center lg:flex-none'>
-                            <a href="#" className='text-gray-200 text-sm'>
-                                Get free delivery on orders over $100
+                            <a href="/pro" className='text-gray-200 text-sm'>
+                                Get all pro components (first month free) <span aria-hidden="true">→</span>
                             </a>
                         </div>
                         <div className='hidden lg:flex lg:flex-1 lg:gap-2 lg:items-center lg:justify-end'>
