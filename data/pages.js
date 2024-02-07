@@ -4,13 +4,13 @@ import About from '@/public/images/pages/about.png'
 const pages = [
     {
         name: "Home Page",
-        source: "/templates/homepage",
+        source: "/templates/home-page",
         imageURL: Homepage,
         number: "3 examples",
     },
     {
         name: "About Page",
-        source: "/templates/about",
+        source: "/templates/about-page",
         imageURL: About,
         number: "3 examples",
     },
