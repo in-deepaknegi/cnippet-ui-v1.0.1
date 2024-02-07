@@ -8,6 +8,7 @@ import Footer from '@/components/Footer'
 import C1 from "@/ui/header/C1";
 import C2 from "@/ui/header/C2";
 import C3 from "@/ui/header/C3";
+import S1 from "@/ui/header/S1.mdx";
 
 export const metadata: Metadata = {
     title: 'UI - Header',
@@ -19,6 +20,7 @@ const components = [
         id: "1",
         title: "Simple navbar with menu and button on right",
         component: <C1 />,
+        code: <S1 />
     },
     {
         id: "2",
