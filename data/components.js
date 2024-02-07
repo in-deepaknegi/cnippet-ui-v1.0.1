@@ -1,6 +1,7 @@
 import Navbar from "@/public/images/components/navbar.png";
 import Footer from '@/public/images/components/footer.png';
 import Hero from '@/public/images/components/hero.png';
+import Header from '@/public/images/components/header.png';
 import Feature from '@/public/images/components/feature.png';
 import FeatureList from '@/public/images/components/feature-list.png';
 import Feedback from '@/public/images/components/feedback.png';
@@ -24,6 +25,12 @@ const component = [
         name: "Hero",
         source: "/components/hero",
         imageURL: Hero,
+        number: "3 components",
+    },
+    {
+        name: "Header",
+        source: "/components/header",
+        imageURL: Header,
         number: "3 components",
     },
     {
