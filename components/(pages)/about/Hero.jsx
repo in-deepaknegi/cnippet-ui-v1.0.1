@@ -4,14 +4,16 @@ import Hero1 from "@/public/images/Hero/hero8.jpg";
 
 const features = [
     {
-        name: "Push to deploy.",
-        description:
-            "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
+        id: 1,
+        description: "Customize your website easily using Cnippet Ui's flexible components.",
     },
     {
-        name: "SSL certificates.",
-        description:
-            "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
+        id: 2,
+        description: "Make your website stand out with CnippetUi's visually stunning components.",
+    },
+    {
+        id: 3,
+        description: "Boost your website's performance with CnippetUi's optimized components."
     },
 ];
 
@@ -22,16 +24,14 @@ const Hero = () => {
                 <div className="mx-auto grid grid-cols-12 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none">
                     <div className="col-span-12 lg:col-span-7 lg:py-4 lg:pr-8">
                         <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                            Everything you need to deploy your app
+                            Building the Future of Website Development
                         </h2>
-                        <p className="mt-6 text-base text-gray-700 md:text-lg">
-                            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-                            Suspendisse eget egestas a elementum pulvinar et feugiat blandit
-                            at. In mi viverra elit nunc.
+                        <p className="mt-6 text-base text-gray-800 md:text-lg">
+                            At <strong>Cnippet Ui</strong>, we are dedicated to revolutionizing website development by providing high-quality components, templates, and layouts. Our mission is to empower developers and designers with the tools they need to create stunning and functional websites.
                         </p>
-                        <ul className="ml-5 mt-10 max-w-xl text-base leading-7 text-gray-700 lg:max-w-none">
+                        <ul className="ml-5 mt-6 max-w-xl text-base leading-7 text-gray-800 lg:max-w-none">
                             {features.map((feature) => (
-                                <li key={feature.name} className="list-disc">
+                                <li key={feature.id} className="list-disc">
                                     {feature.description}
                                 </li>
                             ))}
