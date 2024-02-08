@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react'
+import { signIn, signOut, useSession } from 'next-auth/react'
 
 const links = [
     {
@@ -31,6 +32,12 @@ const Navbar = () => {
     const toggleMobileMenu = () => {
         setMobileMenu(!mobilemenu);
     }
+    const { status, data: session } = useSession();
+
+    const handleLogin = () => {
+        signIn("google");
+    }
+
 
     return (
         <header className='relative z-10 overflow-hidden'>
@@ -46,9 +53,26 @@ const Navbar = () => {
                             </a>
                         </div>
                         <div className='hidden lg:flex lg:flex-1 lg:gap-2 lg:items-center lg:justify-end'>
-                            <a href="/login" className='text-gray-100 text-sm'>Sign In</a>
-                            <span className='h-4 w-[1px] bg-gray-200 mx-2'></span>
-                            <a href="/signup" className='text-gray-100 text-sm'>Create an account</a>
+                            {status === 'authenticated' ? (
+                                <>
+                                    <span className='text-gray-100 text-sm'>
+                                        Welcome {session.user.name}
+                                    </span>
+                                    <span className='h-4 w-[1px] bg-gray-200 mx-2'></span>
+                                    <button
+                                    onClick={()=> signOut()}
+                                    className='text-gray-100 text-sm'>
+                                        Sign Out
+                                    </button>
+                                </>
+                            ) : (
+                                <>
+                                    <a href="/login" className='text-gray-100 text-sm'>Sign In</a>
+                                    <span className='h-4 w-[1px] bg-gray-200 mx-2'></span>
+                                    <a href="/signup" className='text-gray-100 text-sm'>Create an account</a>
+                                </>
+                            )}
+
                         </div>
                     </div>
                 </div>

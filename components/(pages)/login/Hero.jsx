@@ -1,8 +1,28 @@
-import React from "react";
+"use client"
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import GoogleLogo from "@/public/google-logo.svg";
+import { signIn, signOut, useSession } from 'next-auth/react'
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
+
+    const { status, data: session } = useSession();
+    const [loading, setLoading] = useState(false);
+    const router = useRouter();
+
+    const handleLogin = async () => {
+        setLoading(true);
+
+        await signIn("google");
+    }
+
+    useEffect(() => {
+        if (status === "authenticated") {
+            router.push('/');
+        }
+    });
+
     return (
         <section className="relative flex flex-1 flex-col overflow-hidden px-4 py-1 sm:px-6 lg:px-8">
             <div className="relative mx-10 mt-10 w-10">
@@ -30,7 +50,13 @@ const Hero = () => {
                 </a>
 
                 <div className="w-full max-w-sm">
-                    <button className="inline-flex w-full justify-center rounded-lg border px-4 py-2.5 text-base">
+                    <button
+                        onClick={handleLogin}
+                        className="inline-flex w-full justify-center rounded-lg border px-4 py-2.5 text-base">
+                        {loading && (
+                            <span className="loader mr-2"></span>
+                        )}
+
                         <Image
                             src={GoogleLogo}
                             alt="google-logo"
