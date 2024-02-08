@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { signIn, signOut, useSession } from 'next-auth/react'
 
 const links = [
@@ -34,9 +34,13 @@ const Navbar = () => {
     }
     const { status, data: session } = useSession();
 
-    const handleLogin = () => {
-        signIn("google");
-    }
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false)
+        }, 4000);
+    })
 
 
     return (
@@ -53,26 +57,31 @@ const Navbar = () => {
                             </a>
                         </div>
                         <div className='hidden lg:flex lg:flex-1 lg:gap-2 lg:items-center lg:justify-end'>
-                            {status === 'authenticated' ? (
-                                <>
-                                    <span className='text-gray-100 text-sm'>
-                                        Welcome {session.user.name}
-                                    </span>
-                                    <span className='h-4 w-[1px] bg-gray-200 mx-2'></span>
-                                    <button
-                                    onClick={()=> signOut()}
-                                    className='text-gray-100 text-sm'>
-                                        Sign Out
-                                    </button>
-                                </>
+                            {loading ? (
+                                <span className="ldr mb-4 mr-20"></span>
                             ) : (
                                 <>
-                                    <a href="/login" className='text-gray-100 text-sm'>Sign In</a>
-                                    <span className='h-4 w-[1px] bg-gray-200 mx-2'></span>
-                                    <a href="/signup" className='text-gray-100 text-sm'>Create an account</a>
+                                    {status === 'authenticated' ? (
+                                        <>
+                                            <span className='text-gray-100 text-sm'>
+                                                Welcome {session.user.name}
+                                            </span>
+                                            <span className='h-4 w-[1px] bg-gray-200 mx-2'></span>
+                                            <button
+                                                onClick={() => signOut()}
+                                                className='text-gray-100 text-sm'>
+                                                Sign Out
+                                            </button>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <a href="/login" className='text-gray-100 text-sm'>Sign In</a>
+                                            <span className='h-4 w-[1px] bg-gray-200 mx-2'></span>
+                                            <a href="/signup" className='text-gray-100 text-sm'>Create an account</a>
+                                        </>
+                                    )}
                                 </>
                             )}
-
                         </div>
                     </div>
                 </div>

@@ -56,7 +56,6 @@ const Hero = () => {
                         {loading && (
                             <span className="loader mr-2"></span>
                         )}
-
                         <Image
                             src={GoogleLogo}
                             alt="google-logo"
@@ -64,7 +63,7 @@ const Hero = () => {
                             height={20}
                             className="mx-3"
                         />
-                        Log in with Google
+                        {status==='authenticated'? `Welcome back ${session.user.name}`: 'Log in with Google'}
                     </button>
                 </div>
                 <div className="my-4 flex  max-w-sm items-center">
