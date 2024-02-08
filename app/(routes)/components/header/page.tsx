@@ -8,6 +8,9 @@ import Footer from '@/components/Footer'
 import C1 from "@/ui/header/C1";
 import C2 from "@/ui/header/C2";
 import C3 from "@/ui/header/C3";
+import S1 from '@/ui/header/S1.mdx'
+import S2 from '@/ui/header/S2.mdx'
+import S3 from '@/ui/header/S3.mdx'
 
 export const metadata: Metadata = {
     title: 'UI - Header',
@@ -17,18 +20,21 @@ export const metadata: Metadata = {
 const components = [
     {
         id: "1",
-        title: "Simple navbar with menu and button on right",
+        title: "Simple header with heading and para in center",
         component: <C1 />,
+        code: <S1 />
     },
     {
         id: "2",
-        title: "Simple navbar with menu in center and button in right",
+        title: "Simple header with heading and para in columns",
         component: <C2 />,
+        code: <S2 />
     },
     {
         id: "3",
-        title: "Simple navbar with menu in center and button in right",
+        title: "Simple header with heading and para in columns with a backgroud image",
         component: <C3 />,
+        code: <S3 />
     },
 ];
 
@@ -45,7 +51,7 @@ const page = () => {
                             </h1>
                             <nav className="order-first flex space-x-2 text-base font-semibold">
                                 <a href="/components" className="text-slate-500 hover:text-slate-600">
-                                Ui - Components
+                                    Ui - Components
                                 </a>
                                 <div className="select-none text-slate-400">/</div>
                                 <a href="/components/header" className="text-slate-500 hover:text-slate-600">
