@@ -1,0 +1,23 @@
+import React from 'react'
+
+const header1 = () => {
+    return (
+        <section className="bg-white px-6 py-16 lg:px-8 lg:py-24">
+            <div className="mx-auto max-w-2xl text-center">
+                <p className="text-base font-semibold leading-7 text-blue-700">
+                    Get the help you need
+                </p>
+                <h2 className="mt-3 text-4xl font-bold tracking-tight text-gray-900 md:text-6xl">
+                    Support center
+                </h2>
+                <p className="mt-6 text-base leading-8 text-gray-600 md:text-lg">
+                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
+                    cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
+                    aliqua.
+                </p>
+            </div>
+        </section>
+    )
+}
+
+export default header1

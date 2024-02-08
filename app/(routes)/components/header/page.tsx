@@ -5,14 +5,14 @@ import Layout from '@/components/Layout'
 
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import C1 from "@/ui/footer/C1";
-import C2 from "@/ui/footer/C2";
+import C1 from "@/ui/header/C1";
+import C2 from "@/ui/header/C2";
+import C3 from "@/ui/header/C3";
 
 export const metadata: Metadata = {
     title: 'UI - Header',
     description: 'Header page',
 }
-
 
 const components = [
     {
@@ -24,6 +24,11 @@ const components = [
         id: "2",
         title: "Simple navbar with menu in center and button in right",
         component: <C2 />,
+    },
+    {
+        id: "3",
+        title: "Simple navbar with menu in center and button in right",
+        component: <C3 />,
     },
 ];
 
