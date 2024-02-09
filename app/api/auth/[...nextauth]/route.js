@@ -1,8 +1,9 @@
+import { NextResponse } from "next/server";
 import NextAuth from "next-auth/next"
 import GoogleProvider from 'next-auth/providers/google'
 
-import connectDb from '@/library/mongo';
-import User from '@/models/googleUser';
+import connectDb from '@/modules/library/mongo';
+import User from '@/modules/models/googleUser';
 
 const authOptions = {
     providers: [
@@ -23,21 +24,13 @@ const authOptions = {
                     const userExists = await User.findOne({ email });
 
                     if (!userExists) {
-                        const URL = process.env.BASE_URL || 'http://localhost:3000';
-                        const res = await fetch(`${URL}/api/user`, {
-                            method: "POST",
-                            headers: {
-                                "Content-Type": "application/json",
-                                    },
-                            body: JSON.stringify({
-                                name,
-                                email,
-                            })
-                        });
-        
-                        if (res.ok) {
-                            return user;
-                        }
+                        await User.create({ name, email });
+
+                        return NextResponse.json({
+                            message: "User Registered"
+                        },
+                            { status: 201 }
+                        );
                     }
                 } catch (error) {
                     console.log(error);

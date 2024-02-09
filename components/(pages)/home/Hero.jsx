@@ -8,6 +8,7 @@ const Hero = () => {
             <Image
                 src={Hero1}
                 alt="hero-image"
+                priority={true}
                 className="absolute inset-0 z-[-10] h-full w-full rotate-180 object-cover"
             />
             <div className="absolute z-[-9] h-full w-full bg-gradient-to-b from-black/10 via-black/30 to-black"></div>
