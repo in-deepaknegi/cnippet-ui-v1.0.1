@@ -23,9 +23,8 @@ const authOptions = {
                     const userExists = await User.findOne({ email });
 
                     if (!userExists) {
-                        //  http://localhost:3000
-                        //  https://ui.cnippet.com
-                        const res = await fetch('https://ui.cnippet.com/api/user', {
+                        const URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+                        const res = await fetch(`${URL}/api/user`, {
                             method: "POST",
                             headers: {
                                 "Content-Type": "application/json",
