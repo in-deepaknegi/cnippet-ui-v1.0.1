@@ -23,7 +23,7 @@ const authOptions = {
                     const userExists = await User.findOne({ email });
 
                     if (!userExists) {
-                        const URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+                        const URL = process.env.BASE_URL || 'http://localhost:3000';
                         const res = await fetch(`${URL}/api/user`, {
                             method: "POST",
                             headers: {
