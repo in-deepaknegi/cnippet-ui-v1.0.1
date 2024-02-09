@@ -4,8 +4,6 @@ const urls = [
     'https://ui.cnippet.com/',
     'https://ui.cnippet.com/about',
     'https://ui.cnippet.com/contacts',
-    'https://ui.cnippet.com/login',
-    'https://ui.cnippet.com/signup',
     'https://ui.cnippet.com/templates',
     'https://ui.cnippet.com/ui/components',
     'https://ui.cnippet.com/ui/components/article',
