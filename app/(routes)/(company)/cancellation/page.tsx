@@ -36,12 +36,12 @@ const page = () => {
 
                     <h3 className="text-xl font-semibold mb-2">Refund Process:</h3>
                     <p className="mb-4">
-                        Refunds will be processed using the original payment method within [X] business days.
+                        Refunds will be processed using the original payment method within 5-7 business days.
                     </p>
 
                     <h3 className="text-xl font-semibold mb-2">Modifications:</h3>
                     <p className="mb-4">
-                        <strong>Cnippet</strong> understands that plans may change. If you need to modify your booking, please contact us at [<a href="mailto:ui@cnippet.com" className='text-blue-700'>office@cnippet.com</a> ] as soon as possible, and we will do our best to accommodate your request.
+                        <strong>Cnippet</strong> understands that plans may change. If you need to modify your booking, please contact us at [<a href="mailto:ui@cnippet.com" className='text-blue-700'>ui@cnippet.com</a> ] as soon as possible, and we will do our best to accommodate your request.
                     </p>
 
                     <h3 className="text-xl font-semibold mb-2">Exceptions:</h3>
@@ -51,7 +51,7 @@ const page = () => {
 
                     <h3 className="text-xl font-semibold mb-2">Contact Information:</h3>
                     <p className="mb-4">
-                        For any cancellation or modification requests, please contact us at [<a href="mailto:ui@cnippet.com" className='text-blue-700'>office@cnippet.com</a> ].
+                        For any cancellation or modification requests, please contact us at [<a href="mailto:ui@cnippet.com" className='text-blue-700'>ui@cnippet.com</a> ].
                     </p>
 
                     <h3 className="text-xl font-semibold mb-2">Policy Updates:</h3>

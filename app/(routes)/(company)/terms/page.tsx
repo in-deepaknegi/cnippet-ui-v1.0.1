@@ -58,7 +58,7 @@ const page = () => {
 
                     <h3 className="text-xl font-semibold mb-2">Contact Us:</h3>
                     <p className="mb-4">
-                        If you have any questions or concerns about our Terms and Conditions, please contact us at [<a href="mailto:ui@cnippet.com" className='text-blue-700'>office@cnippet.com</a> ].
+                        If you have any questions or concerns about our Terms and Conditions, please contact us at [<a href="mailto:ui@cnippet.com" className='text-blue-700'>ui@cnippet.com</a> ].
                     </p>
 
                     <p>
