@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import C1 from "@/ui/hero/C1";
 import C2 from "@/ui/hero/C2";
 import C3 from "@/ui/hero/C3";
+import C4 from "@/ui/hero/C4";
 
 import Layout from '@/components/Layout'
 
@@ -32,6 +33,12 @@ const components = [
         title: "Simple navbar with menu in center and button in right",
         color: "#3e75f4",
         component: <C3 />,
+    },
+    {
+        id: "4",
+        title: "Simple navbar with menu in center and button in right",
+        color: "#3e75f4",
+        component: <C4 />,
     },
 ];
 
