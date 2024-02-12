@@ -7,6 +7,8 @@ import C1 from "@/ui/hero/C1";
 import C2 from "@/ui/hero/C2";
 import C3 from "@/ui/hero/C3";
 import C4 from "@/ui/hero/C4";
+import S1 from "@/ui/hero/S1.mdx";
+
 
 import Layout from '@/components/Layout'
 
@@ -21,6 +23,7 @@ const components = [
         title: "Simple navbar with menu and button on right",
         color: "#0950f6",
         component: <C1 />,
+        code: <S1 />
     },
     {
         id: "2",

@@ -8,10 +8,9 @@ import Hero5 from "@/public/images/Hero/hero9.jpg";
 import Hero6 from "@/public/images/Hero/hero10.jpg";
 import Hero7 from "@/public/images/Hero/hero11.jpg";
 
-
 const C1 = () => {
     return (
-        <section className="relative isolate overflow-hidden mb-20">
+        <section className="relative isolate mb-20 overflow-hidden">
             <div className="mx-auto max-w-4xl px-6 py-16 lg:px-0 lg:py-20">
                 <h1 className="text-center text-5xl font-semibold tracking-tight text-black md:text-6xl">
                     The only source of knowledge is experience
@@ -50,15 +49,15 @@ const C1 = () => {
                 </div>
             </div>
 
-            <div className="relative mx-auto max-w-5xl px-6 md:px-8 flex flex-row items-center justify-center">
-                <div className="mt-10 flex justify-end sm:justify-start md:mt-16 gap-4 xl:mt-0">
-                    <div className="w-full lg:block hidden mt-16">
+            <div className="relative mx-auto flex max-w-5xl flex-row items-center justify-center px-6 md:px-8">
+                <div className="mt-10 flex justify-end gap-4 sm:justify-start md:mt-16 xl:mt-0">
+                    <div className="mt-16 hidden w-full lg:block">
                         <div className="relative">
                             <Image
                                 src={Hero1}
                                 alt="hero image 2"
                                 priority={false}
-                                className="rounded-2xl aspect-[2/2.25] bg-gray-50 object-cover shadow-xl"
+                                className="aspect-[2/2.25] rounded-2xl bg-gray-50 object-cover shadow-xl"
                             />
                         </div>
                     </div>
@@ -68,7 +67,7 @@ const C1 = () => {
                                 src={Hero2}
                                 alt="hero image 2"
                                 priority={false}
-                                className="rounded-2xl aspect-[3/2] bg-gray-50 object-cover shadow-xl"
+                                className="aspect-[3/2] rounded-2xl bg-gray-50 object-cover shadow-xl"
                             />
                         </div>
                         <div className="relative">
@@ -76,17 +75,17 @@ const C1 = () => {
                                 src={Hero3}
                                 alt="hero image 2"
                                 priority={false}
-                                className="mt-4 rounded-2xl aspect-[2/2.25] bg-gray-50 object-cover shadow-xl"
+                                className="mt-4 aspect-[2/2.25] rounded-2xl bg-gray-50 object-cover shadow-xl"
                             />
                         </div>
                     </div>
-                    <div className="md:block hidden w-full mt-16">
+                    <div className="mt-16 hidden w-full md:block">
                         <div className="relative">
                             <Image
                                 src={Hero4}
                                 alt="hero image 2"
                                 priority={false}
-                                className="rounded-2xl aspect-[2/2.25] bg-gray-50 object-cover shadow-xl"
+                                className="aspect-[2/2.25] rounded-2xl bg-gray-50 object-cover shadow-xl"
                             />
                         </div>
                     </div>
@@ -96,7 +95,7 @@ const C1 = () => {
                                 src={Hero5}
                                 alt="hero image 2"
                                 priority={false}
-                                className="rounded-2xl aspect-[3/2] bg-gray-50 object-cover shadow-xl"
+                                className="aspect-[3/2] rounded-2xl bg-gray-50 object-cover shadow-xl"
                             />
                         </div>
                         <div className="relative">
@@ -104,21 +103,20 @@ const C1 = () => {
                                 src={Hero6}
                                 alt="hero image 2"
                                 priority={false}
-                                className="mt-4 rounded-2xl aspect-[2/2.25] bg-gray-50 object-cover shadow-xl"
+                                className="mt-4 aspect-[2/2.25] rounded-2xl bg-gray-50 object-cover shadow-xl"
                             />
                         </div>
                     </div>
-                    <div className="w-full lg:block hidden mt-16">
+                    <div className="mt-16 hidden w-full lg:block">
                         <div className="relative">
                             <Image
                                 src={Hero7}
                                 alt="hero image 2"
                                 priority={false}
-                                className="rounded-2xl aspect-[2/2.25] bg-gray-50 object-cover shadow-xl"
+                                className="aspect-[2/2.25] rounded-2xl bg-gray-50 object-cover shadow-xl"
                             />
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
