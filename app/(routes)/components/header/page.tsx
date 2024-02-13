@@ -43,18 +43,18 @@ const page = () => {
         <>
             <Navbar />
             <main>
-                <section className="relative overflow-hidden pt-16">
+                <section className="relative overflow-hidden pt-16 dark:bg-black">
                     <div className="relative mx-auto w-full px-4 sm:px-6 lg:px-8">
                         <div className="flex flex-col">
-                            <h1 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900">
+                            <h1 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 dark:text-olive-200">
                                 Header Section
                             </h1>
                             <nav className="order-first flex space-x-2 text-base font-semibold">
-                                <a href="/components" className="text-slate-500 hover:text-slate-600">
+                                <a href="/components" className="text-slate-500 hover:text-slate-600 dark:text-olive-400 dark:hover:text-olive-200">
                                     Ui - Components
                                 </a>
                                 <div className="select-none text-slate-400">/</div>
-                                <a href="/components/header" className="text-slate-500 hover:text-slate-600">
+                                <a href="/components/header" className="text-slate-500 hover:text-slate-600 dark:text-olive-400 dark:hover:text-olive-200">
                                     Header Section
                                 </a>
                             </nav>
