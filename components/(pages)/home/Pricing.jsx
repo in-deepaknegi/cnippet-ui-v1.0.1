@@ -2,22 +2,22 @@ import React from 'react'
 
 const Pricing = () => {
     return (
-        <section className="bg-white dark:bg-black py-24 sm:py-32">
+        <section className="bg-white  py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl sm:text-center">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-olive-100 sm:text-4xl">
+                    <h2 className="text-3xl font-bold tracking-tight text-gray-900  sm:text-4xl">
                         Simple no-tricks pricing
                     </h2>
-                    <p className="mt-6 text-lg leading-8 text-slate-800 dark:text-olive-400">
+                    <p className="mt-6 text-lg leading-8 text-slate-800 ">
                         Begin with our professional components, which are valid for a duration of 1 year from the date of purchase.
                     </p>
                 </div>
-                <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 dark:ring-olive-600 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200  sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
                     <div className="p-8 sm:p-10 lg:flex-auto">
-                        <h3 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-olive-200">
+                        <h3 className="text-2xl font-bold tracking-tight text-gray-900 ">
                             Yearly membership
                         </h3>
-                        <p className="mt-6 text-base leading-7 text-slate-800 dark:text-olive-400">
+                        <p className="mt-6 text-base leading-7 text-slate-800 ">
                             Start using our exceptional and reliable services today and take your business to the next level of success and growth.
                         </p>
                         <div className="mt-10 flex items-center gap-x-4">
@@ -28,7 +28,7 @@ const Pricing = () => {
                         </div>
                         <ul
                             role="list"
-                            className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-slate-800 dark:text-olive-400 sm:grid-cols-2 sm:gap-6"
+                            className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-slate-800  sm:grid-cols-2 sm:gap-6"
                         >
                             <li className="flex gap-x-3">
                                 <svg
@@ -93,16 +93,16 @@ const Pricing = () => {
                         </ul>
                     </div>
                     <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-                        <div className="rounded-2xl bg-gray-50 dark:bg-olive-900 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+                        <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
                             <div className="mx-auto max-w-xs px-8">
-                                <p className="text-base font-semibold text-slate-800 dark:text-olive-400">
+                                <p className="text-base font-semibold text-slate-800 ">
                                     Pay once, and it&apos;s yours for a whole year.
                                 </p>
                                 <p className="mt-6 flex items-baseline justify-center gap-x-2">
-                                    <span className="text-5xl font-bold tracking-tight text-gray-900 dark:text-olive-200">
+                                    <span className="text-5xl font-bold tracking-tight text-gray-900 ">
                                         ₹999
                                     </span>
-                                    <span className="text-sm font-semibold leading-6 tracking-wide text-slate-800 dark:text-olive-200">
+                                    <span className="text-sm font-semibold leading-6 tracking-wide text-slate-800 ">
                                         Rupee
                                     </span>
                                 </p>
@@ -112,7 +112,7 @@ const Pricing = () => {
                                 >
                                     Get access
                                 </a>
-                                <p className="mt-6 text-xs leading-5 text-slate-800 dark:text-olive-400">
+                                <p className="mt-6 text-xs leading-5 text-slate-800 ">
                                     Invoices and receipts available for easy company reimbursement
                                 </p>
                             </div>

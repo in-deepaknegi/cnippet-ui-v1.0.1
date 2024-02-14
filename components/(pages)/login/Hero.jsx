@@ -52,7 +52,7 @@ const Hero = () => {
                 <div className="w-full max-w-sm">
                     <button
                         onClick={handleLogin}
-                        className="inline-flex w-full justify-center rounded-lg border px-4 py-2.5 text-base hover:bg-olive-800 hover:text-white">
+                        className="inline-flex w-full justify-center rounded-lg border px-4 py-2.5 text-base hover:bg-olive-800 hover:text-white focus:bg-black focus:text-white">
                         {loading && (
                             <span className="loader mr-2"></span>
                         )}

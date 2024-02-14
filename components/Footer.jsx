@@ -30,20 +30,19 @@ const links = [
 ];
 
 const Footer = () => {
-
     return (
-        <footer className="bg-white pt-20 dark:bg-black">
+        <footer className="bg-white pt-20">
             <div className="py-10 ">
                 <div className="px-6 sm:flex sm:items-center sm:justify-between lg:px-8">
-                    <a href="/" className="-m-1.5 p-1.5 text-2xl dark:text-olive-100">
+                    <a href="/" className="-m-1.5 p-1.5 text-2xl text-black">
                         Cnippet <span className="text-base">Ui.</span>
                     </a>
-                    <ul className="mb-6 flex flex-wrap items-center text-sm font-medium  sm:mb-0 ">
+                    <ul className="mb-6 flex flex-wrap items-center text-sm font-medium  sm:mb-0">
                         {links.map((link) => (
                             <li key={link.id}>
                                 <a
                                     href={link.href}
-                                    className="me-4 text-gray-700 hover:text-gray-800 dark:text-olive-400  dark:hover:text-olive-200 md:me-6"
+                                    className="me-4 text-gray-700 hover:text-gray-800 md:me-6"
                                 >
                                     {link.title}
                                 </a>
@@ -55,14 +54,14 @@ const Footer = () => {
 
                 <div className="flex justify-between px-6 lg:px-8">
                     <div>
-                        <span className="block text-sm text-gray-700 dark:text-olive-400">
+                        <span className="block text-sm text-gray-700 ">
                             Designed by:{" "}
                             <a target="_blank" href="https://www.deepaknegi.in/">
                                 Deepak Negi
                             </a>
                         </span>
 
-                        <span className="mt-2 block text-sm text-gray-700  dark:text-olive-400 sm:text-center">
+                        <span className="mt-2 block text-sm text-gray-700   sm:text-center">
                             © 2024{" "}
                             <a href="/" className="hover:underline">
                                 CnippetUi™
