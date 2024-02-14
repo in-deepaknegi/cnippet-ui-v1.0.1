@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import useTheme from "@/modules/library/theme";
+import ThemeSwitch from "@/modules/library/theme";
 
 const links = [
     {
@@ -31,7 +31,8 @@ const links = [
 ];
 
 const Footer = () => {
-    const { theme, handleLightMode, handleDarkMode } = useTheme();
+    const { theme, handleLightMode, handleDarkMode } = ThemeSwitch();
+
 
     return (
         <footer className="bg-white pt-20 dark:bg-black">
@@ -76,7 +77,7 @@ const Footer = () => {
                     <div className="my-auto flex gap-1 rounded-3xl border p-[0.15rem] dark:border-olive-500">
                         <button
                             onClick={handleLightMode}
-                            className={`rounded-full p-1.5 ${theme === "light" ? "bg-gray-200" : ""}`}
+                            className="rounded-full p-1.5 bg-gray-200 dark:bg-black"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +89,7 @@ const Footer = () => {
                                 strokeWidth="2"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                                className={`${theme === "dark" ? "text-gray-300" : "text-gray-800"} transition-all ease-in duration-300`}
+                                className="dark:text-gray-300 text-gray-800 transition-all ease-in duration-300"
                             >
                                 <circle cx="12" cy="12" r="4" />
                                 <path d="M12 2v2" />
@@ -103,7 +104,7 @@ const Footer = () => {
                         </button>
                         <button
                             onClick={handleDarkMode}
-                            className={`rounded-full p-1.5 ${theme === "dark" ? "bg-olive-700" : ""} transition-all ease-in duration-300`}
+                            className="rounded-full p-1.5 bg-white dark:bg-olive-700"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +116,7 @@ const Footer = () => {
                                 strokeWidth="2"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                                className={`${theme === "dark" ? "text-gray-300" : "text-gray-800"}`}
+                                className="dark:text-gray-300 text-gray-800 transition-all ease-in duration-300"
                             >
                                 <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
                             </svg>

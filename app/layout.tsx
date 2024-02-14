@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { NextAuthProvider } from '@/modules/context/authProvider';
+import { DarkProvider } from '@/modules/context/themeProvider';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,10 +17,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <NextAuthProvider>
-          {children}
+          <DarkProvider>
+            {children}
+          </DarkProvider>
         </NextAuthProvider>
       </body>
     </html>
