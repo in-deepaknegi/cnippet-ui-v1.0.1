@@ -12,6 +12,7 @@ const Hero = () => {
                 className="absolute inset-0 z-[-10] h-full w-full rotate-180 object-cover"
             />
             <div className="absolute z-[-9] h-full w-full bg-gradient-to-b from-black/10 via-black/30 to-black"></div>
+            
             <div className="mx-auto max-w-4xl px-6 py-16 lg:px-0 lg:py-32">
                 <div className="hidden sm:mb-8 sm:flex">
                     <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-200 ring-1 ring-gray-100/10 hover:ring-gray-100">

@@ -7,7 +7,7 @@ import C2 from "@/ui/feature/C2";
 import S1 from '@/ui/feature/S1.mdx'
 import S2 from '@/ui/feature/S2.mdx'
 
-import Layout from '@/components/Layout'
+import Layout from '@/components/Doodle'
 
 export const metadata: Metadata = {
     title: 'UI - Feature',

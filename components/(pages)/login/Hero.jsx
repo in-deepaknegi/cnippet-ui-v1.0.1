@@ -52,7 +52,7 @@ const Hero = () => {
                 <div className="w-full max-w-sm">
                     <button
                         onClick={handleLogin}
-                        className="inline-flex w-full justify-center rounded-lg border px-4 py-2.5 text-base">
+                        className="inline-flex w-full justify-center rounded-lg border px-4 py-2.5 text-base hover:bg-olive-800 hover:text-white">
                         {loading && (
                             <span className="loader mr-2"></span>
                         )}
@@ -73,6 +73,7 @@ const Hero = () => {
                 </div>
 
                 <form action="/login" className="form w-full max-w-sm">
+                    <p className="text-sm text-center">Email Auth is disabled as of this moment.</p>
                     <div className="mb-6">
                         <label htmlFor="email">Email address</label>
                         <input
@@ -80,7 +81,8 @@ const Hero = () => {
                             id="email"
                             placeholder="email"
                             autoComplete="on"
-                            required="" />
+                            required=""
+                            disabled />
                     </div>
                     <div className="mb-6 ">
                         <label htmlFor="password">Password</label>
@@ -90,6 +92,7 @@ const Hero = () => {
                             placeholder="password"
                             autoComplete="on"
                             required=""
+                            disabled
                         />
                     </div>
                     <button

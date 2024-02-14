@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 import C1 from "@/ui/navbar/C1";
 import C2 from "@/ui/navbar/C2";
 import C3 from "@/ui/navbar/C3";
-import Layout from '@/components/Layout'
+import Layout from '@/components/Doodle'
 
 export const metadata: Metadata = {
     title: 'UI - Navbar',

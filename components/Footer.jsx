@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import ThemeSwitch from "@/modules/library/theme";
 
 const links = [
     {
@@ -31,8 +30,6 @@ const links = [
 ];
 
 const Footer = () => {
-    const { theme, handleLightMode, handleDarkMode } = ThemeSwitch();
-
 
     return (
         <footer className="bg-white pt-20 dark:bg-black">
@@ -74,7 +71,7 @@ const Footer = () => {
                         </span>
                     </div>
 
-                    <div className="my-auto flex gap-1 rounded-3xl border p-[0.15rem] dark:border-olive-500">
+                    {/* <div className="my-auto flex gap-1 rounded-3xl border p-[0.15rem] dark:border-olive-500">
                         <button
                             onClick={handleLightMode}
                             className="rounded-full p-1.5 bg-gray-200 dark:bg-black"
@@ -121,7 +118,7 @@ const Footer = () => {
                                 <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
                             </svg>
                         </button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </footer>

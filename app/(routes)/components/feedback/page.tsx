@@ -1,7 +1,7 @@
 import React from 'react'
 import { Metadata } from 'next'
 
-import Layout from '@/components/Layout'
+import Layout from '@/components/Doodle'
 
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -32,7 +32,7 @@ const page = () => {
         <>
             <Navbar />
             <main>
-                <section className="relative overflow-hidden pt-16 bg-black">
+                <section className="relative overflow-hidden pt-16">
                     <div className="relative mx-auto w-full px-4 sm:px-6 lg:px-8">
                         <div className="flex flex-col">
                             <h1 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 dark:text-olive-200">
