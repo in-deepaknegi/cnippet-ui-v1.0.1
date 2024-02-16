@@ -1,13 +1,14 @@
 import React from 'react'
 import { Metadata } from 'next'
 
-import Layout from '@/components/Doodle'
+import Layout from '@/components/Layout'
 
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import C1 from "@/ui/feedback/C1";
 import C2 from "@/ui/feedback/C2";
 import C3 from "@/ui/feedback/C3";
+import C4 from "@/ui/feedback/C4";
 
 export const metadata: Metadata = {
     title: 'UI - Feadback',
@@ -29,6 +30,11 @@ const components = [
         id: "3",
         title: "Simple feeback section with large profile picture",
         component: <C3 />,
+    },
+    {
+        id: "4",
+        title: "Simple feeback section with swiping feature",
+        component: <C4 />,
     },
 ];
 
