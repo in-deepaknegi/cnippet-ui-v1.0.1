@@ -37,8 +37,8 @@ const Feedback1 = () => {
                                 <div className="text-lg font-semibold">Judith Black</div>
                                 <div className="text-gray-700">CEO of CodeCnippet</div>
                             </div>
-                            <div className="mx-3 my-auto h-10 w-[1px] bg-gray-400"></div>
-                            <div className="my-auto flex">
+                            <div className="mx-3 my-auto h-10 w-[1px] bg-gray-400 md:block hidden"></div>
+                            <div className="my-auto hidden md:flex">
                                 {[...Array(4).keys()].map((index) => (
                                     <div key={index}>
                                         <svg
