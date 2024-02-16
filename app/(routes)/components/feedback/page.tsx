@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import C1 from "@/ui/feedback/C1";
 import C2 from "@/ui/feedback/C2";
+import C3 from "@/ui/feedback/C3";
 
 export const metadata: Metadata = {
     title: 'UI - Feadback',
@@ -16,15 +17,19 @@ export const metadata: Metadata = {
 const components = [
     {
         id: "1",
-        title: "Simple navbar with menu and button on right",
+        title: "Simple feedback section with items in center",
         component: <C1 />,
     },
     {
         id: "2",
-        title: "Simple navbar with menu in center and button in right",
+        title: "Simple feeback section with large profile picture",
         component: <C2 />,
     },
-
+    {
+        id: "3",
+        title: "Simple feeback section with large profile picture",
+        component: <C3 />,
+    },
 ];
 
 const page = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Profile1 from "@/public/images/profile/profile1.jpg";
+import Profile1 from "@/public/images/profile/profile5.jpg";
 
 const Feedback1 = () => {
     return (
