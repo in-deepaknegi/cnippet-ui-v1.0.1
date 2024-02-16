@@ -41,9 +41,9 @@ const Feedback2 = () => {
                                 <div className='text-lg font-semibold'>
                                     Judith Black
                                 </div>
-                                <div className='text-gray-700'>
-                                    CEO of CodeCnippet
-                                </div>
+                                <a href="#" className='text-sm tracking-wide font-semibold text-blue-600'>
+                                    @judithblack
+                                </a>
                             </div>
                         </figcaption>
                     </div>
