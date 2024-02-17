@@ -7,7 +7,7 @@ import C1 from "@/ui/newsletter/C1";
 import C2 from "@/ui/newsletter/C2";
 import C3 from "@/ui/newsletter/C3";
 
-import Layout from '@/components/Doodle'
+import Layout from '@/components/Layout'
 
 export const metadata: Metadata = {
     title: 'UI - Newsletter',
