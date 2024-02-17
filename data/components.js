@@ -37,7 +37,7 @@ const component = [
         name: "Feature",
         source: "/components/feature",
         imageURL: Feature,
-        number: "3 components",
+        number: "4 components",
     },
     {
         name: "Feature List",

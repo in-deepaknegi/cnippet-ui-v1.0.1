@@ -49,13 +49,13 @@ const Navbar = () => {
                         <div className="hidden text-sm text-white lg:block lg:flex-1">
                             English
                         </div>
-                        <div className="flex-1 items-center lg:flex-none">
+                        <div className="hidden flex-1 items-center md:flex lg:flex-none">
                             <a href="/pro" className="text-sm text-gray-200">
                                 Get all pro components (first month free){" "}
                                 <span aria-hidden="true">→</span>
                             </a>
                         </div>
-                        <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:gap-2">
+                        <div className="flex lg:flex-1 ml-auto lg:items-center lg:justify-end lg:gap-2">
                             {loading ? (
                                 <span className="ldr mb-4 mr-20"></span>
                             ) : (
