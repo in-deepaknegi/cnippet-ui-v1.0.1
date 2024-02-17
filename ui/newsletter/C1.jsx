@@ -2,7 +2,7 @@ import React from "react";
 
 const Newsletter1 = () => {
     return (
-        <div className="relative isolate overflow-hidden bg-white py-16 sm:py-24 lg:py-32">
+        <section className="relative isolate overflow-hidden bg-white py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                     <div className="max-w-xl lg:max-w-lg">
@@ -13,7 +13,7 @@ const Newsletter1 = () => {
                             Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing
                             velit quis. Duis tempor incididunt dolore.
                         </p>
-                        <div className="mt-6 flex max-w-md gap-x-4">
+                        <div className="news mt-6 flex max-w-md gap-x-4">
                             <label htmlFor="email-address" className="sr-only">
                                 Email address
                             </label>
@@ -23,7 +23,7 @@ const Newsletter1 = () => {
                                 type="email"
                                 autoComplete="email"
                                 required
-                                className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-olive-800 focus:ring-1 focus:ring-inset focus:ring-olive-800 sm:text-sm sm:leading-6"
+                                className=""
                                 placeholder="Enter your email"
                             />
                             <button
@@ -86,7 +86,7 @@ const Newsletter1 = () => {
                     </dl>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

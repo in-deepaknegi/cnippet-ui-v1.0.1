@@ -20,13 +20,11 @@
   ::-webkit-scrollbar-corner {
     background: #f1f1f1; /* color of the scrollbar corner */
   }
-  .form label {
-    @apply block mb-2 text-sm font-medium text-gray-900;
+
+  .news input {
+    @apply min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-olive-800 focus:ring-1 focus:ring-inset focus:ring-olive-800 sm:text-sm sm:leading-6
   }
-  .form input,
-  textarea {
-    @apply shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5;
-  }
+
   .lds-spinner {
     color: official;
     display: inline-block;
