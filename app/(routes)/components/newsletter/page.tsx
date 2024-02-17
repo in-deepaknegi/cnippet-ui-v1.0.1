@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import C1 from "@/ui/newsletter/C1";
 import C2 from "@/ui/newsletter/C2";
+import C3 from "@/ui/newsletter/C3";
 
 import Layout from '@/components/Doodle'
 
@@ -23,6 +24,11 @@ const components = [
         id: "2",
         title: "Simple navbar with menu in center and button in right",
         component: <C2 />,
+    },
+    {
+        id: "3",
+        title: "Simple navbar with menu in center and button in right",
+        component: <C3 />,
     },
 ];
 
