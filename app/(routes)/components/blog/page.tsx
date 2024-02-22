@@ -4,6 +4,8 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import C1 from "@/ui/blog/C1";
 import C2 from "@/ui/blog/C2";
+import C3 from "@/ui/blog/C3";
+import S3 from '@/ui/blog/S3.mdx'
 
 import Layout from '@/components/Doodle'
 
@@ -15,15 +17,20 @@ export const metadata: Metadata = {
 const components = [
     {
         id: "1",
-        title: "Simple feature section with features as list",
+        title: "Simple blog section with three-column",
         component: <C1 />,
     },
     {
         id: "2",
-        title: "Simple feature section with features in two columns with icons",
+        title: "Simple blog section with three-column and images",
         component: <C2 />,
     },
-
+    {
+        id: "3",
+        title: "Simple blog section with three-column and background images",
+        component: <C3 />,
+        code: <S3 />,
+    },
 ];
 
 const page = () => {
