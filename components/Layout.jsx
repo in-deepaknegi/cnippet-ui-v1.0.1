@@ -210,7 +210,7 @@ const Layout = ({ components }) => {
                     />
                     <div className="absolute z-[-9] h-full w-full bg-gradient-to-b from-black/10 via-black/30 to-black"></div>
                     <h2 className="px-8 pt-10 text-white">
-                        `Login to view the components`
+                        `Login to view all the components`
                     </h2>
                     <div className="h-full w-full py-12">
                         <div className="relative flex flex-1 flex-col items-center justify-center">

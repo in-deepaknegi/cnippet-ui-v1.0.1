@@ -18,12 +18,12 @@ const Blog3 = () => {
                     {posts.map((post) => (
                         <article
                             key={post.id}
-                            className="relative isolate flex transform flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-80 duration-300 ease-in-out hover:scale-105 sm:pt-48 lg:pt-80"
+                            className="group relative isolate flex transform flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
                         >
                             <Image
                                 src={post.img}
                                 alt="post-img"
-                                className="absolute inset-0 -z-10 h-full w-full object-cover "
+                                className="absolute inset-0 -z-10 h-full w-full object-cover duration-300 ease-in-out hover:scale-105 group-hover:scale-110 "
                             />
                             <div className="absolute inset-0 z-[-10] bg-gradient-to-t from-black/70"></div>
 
@@ -34,9 +34,7 @@ const Blog3 = () => {
                                 </a>
                             </h3>
                             <div className="mt-3 flex flex-wrap justify-between gap-x-4 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-                                <time dateTime={post.datetime} className="my-auto">
-                                    {post.date}
-                                </time>
+
                                 <div className="flex items-center gap-x-4">
                                     <div className="flex gap-x-3">
                                         <Image
@@ -47,6 +45,9 @@ const Blog3 = () => {
                                         <div className="my-auto">{post.author.name}</div>
                                     </div>
                                 </div>
+                                <time dateTime={post.datetime} className="my-auto">
+                                    {post.date}
+                                </time>
                             </div>
                         </article>
                     ))}

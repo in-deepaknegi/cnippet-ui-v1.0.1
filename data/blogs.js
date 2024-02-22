@@ -13,8 +13,8 @@ const posts = [
         img: Hero1,
         description:
             "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        date: "Mar 16, 2020",
-        datetime: "2020-03-16",
+        date: "Feb 16, 2024",
+        datetime: "2024-02-16",
         category: { title: "Marketing", href: "#" },
         author: {
             name: "Michael Foster",
@@ -30,8 +30,8 @@ const posts = [
         img: Hero2,
         description:
             "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde.",
-        date: "Mar 16, 2020",
-        datetime: "2020-03-16",
+        date: "Feb 12, 2024",
+        datetime: "2024-02-12",
         category: { title: "Marketing", href: "#" },
         author: {
             name: "Lindsay Walton",
@@ -47,8 +47,8 @@ const posts = [
         img: Hero3,
         description:
             "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-        date: "Mar 16, 2020",
-        datetime: "2020-03-16",
+        date: "Feb 14, 2024",
+        datetime: "2024-02-14",
         category: { title: "Marketing", href: "#" },
         author: {
             name: "Cathy Mueller",
