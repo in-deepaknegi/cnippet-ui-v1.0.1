@@ -1,50 +1,66 @@
 "use client"
-import Image from 'next/image';
 import React, { useState } from 'react'
-import Product1 from '@/public/product/product1.jpg';
-import Product2 from '@/public/product/product2.jpg';
-import Product3 from '@/public/product/product3.jpg';
-import Product4 from '@/public/product/product4.jpg';
+import Image from 'next/image';
+import Hero1 from '@/public/hero1.jpg';
+import Hero2 from '@/public/hero2.jpg';
+import Hero3 from '@/public/hero3.jpg';
+import Author1 from '@/public/profile3.jpg';
+import Author2 from '@/public/profile5.jpg';
+import Author3 from '@/public/profile6.jpg';
 
-
-const products = [
+const posts = [
     {
         id: 1,
-        name: 'Bag#1',
+        title: 'Boost your conversion rate',
         href: '#',
-        imageSrc: Product1,
-        imageAlt: "Front of men's Bag#4",
-        price: '$35',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+        img: Hero1,
+        description:
+            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+        date: 'Mar 16, 2020',
+        datetime: '2020-03-16',
+        category: { title: 'Marketing', href: '#' },
+        author: {
+            name: 'Michael Foster',
+            role: 'Co-Founder / CTO',
+            href: '#',
+            imageUrl: Author1,
+        },
     },
     {
         id: 2,
-        name: 'Bag#2',
+        title: 'How to use search engine optimization to drive sales',
         href: '#',
-        imageSrc: Product2,
-        imageAlt: "Front of men's Bag#4",
-        price: '$35',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+        img: Hero2,
+        description:
+            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde.',
+        date: 'Mar 16, 2020',
+        datetime: '2020-03-16',
+        category: { title: 'Marketing', href: '#' },
+        author: {
+            name: 'Lindsay Walton',
+            role: 'Front-end Developer',
+            href: '#',
+            imageUrl: Author2,
+        },
     },
     {
         id: 3,
-        name: 'Bag#3 ',
+        title: 'Improve your customer experience',
         href: '#',
-        imageSrc: Product3,
-        imageAlt: "Front of men's Bag#4",
-        price: '$35',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+        img: Hero3,
+        description:
+            'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+        date: 'Mar 16, 2020',
+        datetime: '2020-03-16',
+        category: { title: 'Marketing', href: '#' },
+        author: {
+            name: 'Cathy Mueller',
+            role: 'Director of Product',
+            href: '#',
+            imageUrl: Author3,
+        },
     },
-    {
-        id: 4,
-        name: 'Bag#4 ',
-        href: '#',
-        imageSrc: Product4,
-        imageAlt: "Front of men's Bag",
-        price: '$35',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    },
-    // More products...
+    // More posts...
 ]
 
 const Hero = () => {
@@ -66,19 +82,19 @@ const Hero = () => {
         <section className='relative overflow-hidden pt-[5.75rem]'>
             <div className='relative mx-auto mt-20 w-full px-4 sm:px-6 lg:px-8'>
                 <div className='flex flex-col'>
-                    <h1 className='mt-3 text-3xl font-extrabold tracking-tight text-slate-900'>Product Overview</h1>
+                    <h1 className='mt-3 text-3xl font-extrabold tracking-tight text-slate-900'>Heros</h1>
                     <nav className='order-first flex space-x-2 text-sm font-semibold'>
                         <a href="/" className='text-slate-500 hover:text-slate-600'>
-                            Ecommerce
+                            Application UI
                         </a>
                         <div className='select-none text-slate-400'>/</div>
                         <a href="/" className='text-slate-500 hover:text-slate-600'>
-                            Product Overview
+                            Heros
                         </a>
                     </nav>
                 </div>
                 <div className='mt-10 space-y-28 pb-px'>
-                    <section id='list-1'>
+                    <section id='hero-1'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -117,36 +133,51 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab1 === 0 ? (
                                     <>
-                                        <section className='relative isolate overflow-hidden border rounded-2xl'>
-                                            <div className="bg-white">
-                                                <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-                                                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
-
-                                                    <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-                                                        {products.map((product) => (
-                                                            <div key={product.id} className="group relative">
-                                                                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                                                                    <Image
-                                                                        src={product.imageSrc}
-                                                                        alt={product.imageAlt}
-                                                                        className="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                                                                    />
-                                                                </div>
-                                                                <div className="mt-4 flex justify-between">
-                                                                    <div>
-                                                                        <h3 className="text-sm text-gray-700">
-                                                                            <a href={product.href}>
-                                                                                <span aria-hidden="true" className="absolute inset-0" />
-                                                                                {product.name}
-                                                                            </a>
-                                                                        </h3>
-                                                                        <p className="mt-1 text-sm text-gray-500">{product.desc}</p>
-                                                                    </div>
-                                                                    <p className="text-sm font-medium text-gray-900">{product.price}</p>
+                                        <section className="bg-white py-24 border rounded-2xl sm:py-32">
+                                            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                                                <div className="mx-auto max-w-2xl lg:mx-0">
+                                                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
+                                                    <p className="mt-2 text-lg leading-8 text-gray-600">
+                                                        Learn how to grow your business with our expert advice.
+                                                    </p>
+                                                </div>
+                                                <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                                                    {posts.map((post) => (
+                                                        <article key={post.id} className="flex max-w-xl flex-col items-start justify-between">
+                                                            <div className="flex items-center gap-x-4 text-xs">
+                                                                <time dateTime={post.datetime} className="text-gray-500">
+                                                                    {post.date}
+                                                                </time>
+                                                                <a
+                                                                    href={post.category.href}
+                                                                    className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                                                                >
+                                                                    {post.category.title}
+                                                                </a>
+                                                            </div>
+                                                            <div className="group relative">
+                                                                <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                                                                    <a href={post.href}>
+                                                                        <span className="absolute inset-0" />
+                                                                        {post.title}
+                                                                    </a>
+                                                                </h3>
+                                                                <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{post.description}</p>
+                                                            </div>
+                                                            <div className="relative mt-8 flex items-center gap-x-4">
+                                                                <Image src={post.author.imageUrl} alt='id-1' className="h-10 w-10 rounded-full object-cover bg-gray-50" />
+                                                                <div className="text-sm leading-6">
+                                                                    <p className="font-semibold text-gray-900">
+                                                                        <a href={post.author.href}>
+                                                                            <span className="absolute inset-0" />
+                                                                            {post.author.name}
+                                                                        </a>
+                                                                    </p>
+                                                                    <p className="text-gray-600">{post.author.role}</p>
                                                                 </div>
                                                             </div>
-                                                        ))}
-                                                    </div>
+                                                        </article>
+                                                    ))}
                                                 </div>
                                             </div>
                                         </section>
@@ -158,7 +189,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section id='list-2'>
+                    <section id='hero-2'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -197,44 +228,61 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab2 === 0 ? (
                                     <>
-                                        <section className='relative isolate overflow-hidden border rounded-2xl'>
-                                            <div className="bg-white">
-                                                <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-                                                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
-
-                                                    <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-                                                        {products.map((product) => (
-                                                            <div key={product.id} className=' pointer-events-none' >
-                                                                <div className='relative'>
-                                                                    <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80">
-                                                                        <Image
-                                                                            src={product.imageSrc}
-                                                                            alt={product.imageAlt}
-                                                                            className="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                                                                        />
-                                                                    </div>
-                                                                    <div className="mt-4">
-                                                                        <div className='flex justify-between'>
-                                                                            <h3 className="text-sm text-gray-700">
-                                                                                <a href={product.href}>
-                                                                                    <span aria-hidden="true" className="absolute inset-0" />
-                                                                                    {product.name}
-                                                                                </a>
-                                                                            </h3>
-                                                                            <p className="text-sm font-medium text-gray-900">{product.price}</p>
-                                                                        </div>
-                                                                        <p className="mt-4 text-sm text-gray-500">{product.desc}</p>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div className='mt-4'>
-                                                                    <a href="/" className='relative flex items-center justify-center bg-gray-100 py-2 rounded-lg pointer-events-auto text-sm font-medium hover:bg-gray-200'>
-                                                                        Add to bag
+                                        <section className="bg-white py-24 border rounded-2xl sm:py-32">
+                                            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                                                <div className="mx-auto max-w-2xl text-center">
+                                                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
+                                                    <p className="mt-2 text-lg leading-8 text-gray-600">
+                                                        Learn how to grow your business with our expert advice.
+                                                    </p>
+                                                </div>
+                                                <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                                                    {posts.map((post) => (
+                                                        <article key={post.id} className="flex flex-col items-start">
+                                                            <div className='relative w-full'>
+                                                                <Image
+                                                                    src={post.img}
+                                                                    alt='post-img'
+                                                                    className='aspect-video w-full rounded-2xl object-cover sm:aspect-[2/1] lg:aspect-[3/2]'
+                                                                />
+                                                                <div className='absolute inset-0 rounded-2xl shadow-xl ring-inset ring-gray-100'></div>
+                                                            </div>
+                                                            <div className='mt-10 max-w-xl'>
+                                                                <div className="flex items-center gap-x-4 text-xs">
+                                                                    <time dateTime={post.datetime} className="text-gray-500">
+                                                                        {post.date}
+                                                                    </time>
+                                                                    <a
+                                                                        href={post.category.href}
+                                                                        className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                                                                    >
+                                                                        {post.category.title}
                                                                     </a>
                                                                 </div>
+                                                                <div className="relative">
+                                                                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                                                                        <a href={post.href}>
+                                                                            <span className="absolute inset-0" />
+                                                                            {post.title}
+                                                                        </a>
+                                                                    </h3>
+                                                                    <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{post.description}</p>
+                                                                </div>
+                                                                <div className="relative mt-8 flex items-center gap-x-4">
+                                                                    <Image src={post.author.imageUrl} alt='id-1' className="h-10 w-10 rounded-full object-cover bg-gray-50" />
+                                                                    <div className="text-sm leading-6">
+                                                                        <p className="font-semibold text-gray-900">
+                                                                            <a href={post.author.href}>
+                                                                                <span className="absolute inset-0" />
+                                                                                {post.author.name}
+                                                                            </a>
+                                                                        </p>
+                                                                        <p className="text-gray-600">{post.author.role}</p>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                        ))}
-                                                    </div>
+                                                        </article>
+                                                    ))}
                                                 </div>
                                             </div>
                                         </section>
@@ -246,7 +294,7 @@ const Hero = () => {
                         </div>
                     </section>
 
-                    <section id='list-3'>
+                    <section id='hero-3'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -285,9 +333,52 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab3 === 0 ? (
                                     <>
-                                        <footer className='border rounded-2xl'>
-                                            footer
-                                        </footer>
+                                        <section className="bg-white py-24 border rounded-2xl sm:py-32">
+                                            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                                                <div className="mx-auto max-w-2xl text-center">
+                                                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
+                                                    <p className="mt-2 text-lg leading-8 text-gray-600">
+                                                        Learn how to grow your business with our expert advice.
+                                                    </p>
+                                                </div>
+                                                <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                                                    {posts.map((post) => (
+                                                        <article key={post.id} className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+                                                            <Image
+                                                                src={post.img}
+                                                                alt='post-img'
+                                                                className='absolute inset-0 -z-10 w-full h-full object-cover'
+                                                            />
+                                                            <div className='absolute inset-0 z-[-10] bg-gradient-to-t from-[#111827] 
+                                                            to-[#ffffff00]
+                                                            '></div>
+
+                                                            <h3 className="text-lg font-semibold leading-6 text-gray-300 ">
+                                                                <a href={post.href}>
+                                                                    <span className="absolute inset-0" />
+                                                                    {post.title}
+                                                                </a>
+                                                            </h3>
+                                                            <div className='mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 overflow-hidden leading-6 text-sm text-gray-300'>
+                                                                <time dateTime={post.datetime} className="">
+                                                                    {post.date}
+                                                                </time>
+                                                                <div className='flex items-center gap-x-4'>
+                                                                    <div className='flex gap-x-3'>
+                                                                        <Image src={post.author.imageUrl} alt='id-1' className="h-10 w-10 rounded-full object-cover bg-gray-50" />
+                                                                        <div className='my-auto'>
+                                                                            {post.author.name}
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </article>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        </section>
                                     </>
                                 ) : (
                                     <div>code</div>
