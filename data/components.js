@@ -7,6 +7,7 @@ import FeatureList from '@/public/images/components/feature-list.png';
 import Feedback from '@/public/images/components/feedback.png';
 import Newsletter from '@/public/images/components/newsletter.png';
 import Article from '@/public/images/components/article.png';
+import Blogs from '@/public/images/components/blogs.png'
 
 const component = [
     {
@@ -55,6 +56,12 @@ const component = [
         name: "Newsletter",
         source: "/components/newsletter",
         imageURL: Newsletter,
+        number: "3 components",
+    },
+    {
+        name: "Blog",
+        source: "/components/blog",
+        imageURL: Blogs,
         number: "3 components",
     },
     {

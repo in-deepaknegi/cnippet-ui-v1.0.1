@@ -14,6 +14,7 @@ const urls = [
     'https://ui.cnippet.com/components/header',
     'https://ui.cnippet.com/components/hero',
     'https://ui.cnippet.com/components/navbar',
+    'https://ui.cnippet.com/components/newsletter',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
