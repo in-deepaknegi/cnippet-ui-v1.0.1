@@ -1,9 +1,9 @@
-import Hero1 from "@/public/images/Hero/hero8.jpg";
-import Hero2 from "@/public/images/Hero/hero8.jpg";
-import Hero3 from "@/public/images/Hero/hero8.jpg";
+import Hero1 from "@/public/images/Hero/hero11.jpg";
+import Hero2 from "@/public/images/Hero/hero9.jpg";
+import Hero3 from "@/public/images/Hero/hero10.jpg";
 import Author1 from "@/public/images/profile/profile5.jpg";
-import Author2 from "@/public/images/profile/profile5.jpg";
-import Author3 from "@/public/images/profile/profile5.jpg";
+import Author2 from "@/public/images/profile/profile3.jpg";
+import Author3 from "@/public/images/profile/profile2.jpg";
 
 const posts = [
     {
