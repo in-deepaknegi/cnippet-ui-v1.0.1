@@ -5,6 +5,7 @@ import Footer from '@/components/Footer'
 import C1 from "@/ui/blog/C1";
 import C2 from "@/ui/blog/C2";
 import C3 from "@/ui/blog/C3";
+import S1 from '@/ui/blog/S1.mdx'
 import S3 from '@/ui/blog/S3.mdx'
 
 import Layout from '@/components/Doodle'
@@ -19,6 +20,7 @@ const components = [
         id: "1",
         title: "Simple blog section with three-column",
         component: <C1 />,
+        code: <S1 />,
     },
     {
         id: "2",

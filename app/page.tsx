@@ -4,6 +4,7 @@ import Hero from '@/components/(pages)/home/Hero'
 import Component from '@/components/(pages)/home/Component'
 import Pricing from '@/components/(pages)/home/Pricing'
 import Footer from '@/components/Footer'
+import Newsletter from '@/components/Newsletter'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Hero />
         <Component />
         <Pricing />
+        <Newsletter />
       </main>
       <Footer />
     </>
