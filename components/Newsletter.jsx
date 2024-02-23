@@ -64,7 +64,6 @@ const Newsletter = () => {
                             type="email"
                             autoComplete="email"
                             required
-
                             placeholder="Enter your email"
                         />
                         <button

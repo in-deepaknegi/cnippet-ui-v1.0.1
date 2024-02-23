@@ -65,6 +65,12 @@ const component = [
         number: "3 components",
     },
     {
+        name: "Pricing",
+        source: "/components/pricing",
+        imageURL: Blogs,
+        number: "3 components",
+    },
+    {
         name: "Article",
         source: "/components/article",
         imageURL: Article,
