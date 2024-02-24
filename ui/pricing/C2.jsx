@@ -88,7 +88,7 @@ const Pricing2 = () => {
                     {packages.map((pack, index) => (
                         <div
                             key={index}
-                            className="rounded-3xl p-8 shadow-md ring-1 ring-gray-200 lg:p-10"
+                            className="rounded-3xl p-8 shadow-md ring-1 ring-gray-200 lg:p-10 hover:ring-2 hover:ring-indigo-500 hover:scale-105 transition-all ease-in-out duration-300"
                         >
                             <h3 className="text-lg font-semibold leading-8 text-gray-900">
                                 {pack.name}
@@ -105,7 +105,7 @@ const Pricing2 = () => {
                                 </span>
                             </p>
                             <a
-                                href=""
+                                href="#"
                                 className="mt-6 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-xl"
                             >
                                 Buy plan
