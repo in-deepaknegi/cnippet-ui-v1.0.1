@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import C1 from "@/ui/faq/C1";
 import C2 from "@/ui/faq/C2";
+import S1 from '@/ui/faq/S1.mdx';
 
 import Layout from '@/components/Doodle'
 
@@ -17,6 +18,7 @@ const components = [
         id: "1",
         title: "Simple feature section with features as list",
         component: <C1 />,
+        code: <S1 />
     },
     {
         id: "2",
