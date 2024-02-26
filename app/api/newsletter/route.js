@@ -21,7 +21,7 @@ export async function POST(req) {
         }
 
         //create a new record if the email does not exist
-        await NewsletterModel.create({ email, });
+        await NewsletterModel.create({ email });
 
         return NextResponse.json({
             msg: ['🚀Email subscribed successfully. Welcome aboard!'],
