@@ -1,3 +1,4 @@
+```tsx
 import React from "react";
 import Link from "next/link";
 
@@ -24,16 +25,16 @@ const links = [
     },
 ]
 
-const Navbar1 = () => {
+const Navbar = () => {
     return (
         <header className="relative isolate bg-white overflow-hidden">
-            <nav className="flex items-center justify-between px-6 py-5 lg:px-8">
+            <nav className="flex flex-1 items-center justify-between px-6 py-5 lg:px-8">
                 <div className="flex">
                     <Link href="/" className="-m-1.5 p-1.5 text-2xl">
                         Cnippet <span className="text-sm">Ui.</span>
                     </Link>
                 </div>
-                <div className="hidden lg:flex lg:gap-x-12">
+                <div className="hidden lg:flex ml-auto lg:gap-x-12">
                     {links.map((link) => (
                         <Link
                             key={link.id}
@@ -44,7 +45,7 @@ const Navbar1 = () => {
                         </Link>
                     ))}
                 </div>
-                <div className="hidden lg:ml-8 lg:flex lg:items-center lg:pl-8">
+                <div className="hidden lg:ml-4 lg:flex lg:items-center lg:pl-4 border-l border-gray-700">
                     <Link href="#">Sign in</Link>
                     <Link
                         href="#"
@@ -79,4 +80,5 @@ const Navbar1 = () => {
     );
 };
 
-export default Navbar1;
+export default Navbar;
+```

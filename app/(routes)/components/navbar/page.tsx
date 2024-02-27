@@ -6,6 +6,11 @@ import Footer from '@/components/Footer'
 import C1 from "@/ui/navbar/C1";
 import C2 from "@/ui/navbar/C2";
 import C3 from "@/ui/navbar/C3";
+import S1 from "@/ui/navbar/S1.mdx";
+import S2 from "@/ui/navbar/S2.mdx";
+import S3 from "@/ui/navbar/S3.mdx";
+
+
 import Layout from '@/components/Doodle'
 
 export const metadata: Metadata = {
@@ -18,16 +23,19 @@ const components = [
         id: "1",
         title: "Simple navbar with menu and button on right",
         component: <C1 />,
+        code: <S1 />
     },
     {
         id: "2",
         title: "Simple navbar with menu in center and button in right",
         component: <C2 />,
+        code: <S2 />
     },
     {
         id: "3",
         title: "Simple navbar with menu in center and button in right",
         component: <C3 />,
+        code: <S3 />
     },
 ];
 
@@ -44,7 +52,7 @@ const page = () => {
                             </h1>
                             <nav className="order-first flex space-x-2 text-base font-semibold">
                                 <a href="/components" className="text-slate-500 hover:text-slate-600">
-                                Ui - Components
+                                    Ui - Components
                                 </a>
                                 <div className="select-none text-slate-400">/</div>
                                 <a href="/components/navbar" className="text-slate-500 hover:text-slate-600">
@@ -57,6 +65,8 @@ const page = () => {
 
                     </div>
                 </section>
+
+                {/* add a related blogs section here */}
             </main>
             <Footer />
         </>
