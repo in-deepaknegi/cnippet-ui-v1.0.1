@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import posts from '@/data/blogs';
+import posts from '@/data/(json)/blogs';
 
 const Blog1 = () => {
     return (

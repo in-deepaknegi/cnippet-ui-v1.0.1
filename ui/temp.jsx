@@ -1,22 +1,50 @@
 "use client"
+import Image from 'next/image';
 import React, { useState } from 'react'
+import Product1 from '@/public/product/product1.jpg';
+import Product2 from '@/public/product/product2.jpg';
+import Product3 from '@/public/product/product3.jpg';
+import Product4 from '@/public/product/product4.jpg';
 
-const Data = [
+
+const products = [
     {
         id: 1,
-        question: "What's the best thing about Switzerland",
-        answer: "You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        name: 'Bag#1',
+        href: '#',
+        imageSrc: Product1,
+        imageAlt: "Front of men's Bag#4",
+        price: '$35',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
     },
     {
         id: 2,
-        question: "What do you call someone with no body and no nose?",
-        answer: "Nobody knows. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        name: 'Bag#2',
+        href: '#',
+        imageSrc: Product2,
+        imageAlt: "Front of men's Bag#4",
+        price: '$35',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
     },
     {
         id: 3,
-        question: "Why do you never see elephants hiding in trees?",
-        answer: "Because they're so good at it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
-    }
+        name: 'Bag#3 ',
+        href: '#',
+        imageSrc: Product3,
+        imageAlt: "Front of men's Bag#4",
+        price: '$35',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    },
+    {
+        id: 4,
+        name: 'Bag#4 ',
+        href: '#',
+        imageSrc: Product4,
+        imageAlt: "Front of men's Bag",
+        price: '$35',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    },
+    // More products...
 ]
 
 const Hero = () => {
@@ -34,34 +62,23 @@ const Hero = () => {
         setActiveTab3(index);
     };
 
-    const [active, setActive] = useState(null);
-    const [active1, setActive1] = useState(null);
-
-    const toggleActive = (index) => {
-        setActive(active === index ? null : index)
-    }
-    const toggleActive1 = (i) => {
-        setActive1(active1 === i ? null : i)
-    }
-
-
     return (
         <section className='relative overflow-hidden pt-[5.75rem]'>
             <div className='relative mx-auto mt-20 w-full px-4 sm:px-6 lg:px-8'>
                 <div className='flex flex-col'>
-                    <h1 className='mt-3 text-3xl font-extrabold tracking-tight text-slate-900'>FAQs</h1>
+                    <h1 className='mt-3 text-3xl font-extrabold tracking-tight text-slate-900'>Product Overview</h1>
                     <nav className='order-first flex space-x-2 text-sm font-semibold'>
                         <a href="/" className='text-slate-500 hover:text-slate-600'>
-                            Application UI
+                            Ecommerce
                         </a>
                         <div className='select-none text-slate-400'>/</div>
                         <a href="/" className='text-slate-500 hover:text-slate-600'>
-                            FAQs
+                            Product Overview
                         </a>
                     </nav>
                 </div>
                 <div className='mt-10 space-y-28 pb-px'>
-                    <section id='faq-1'>
+                    <section id='list-1'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -100,46 +117,48 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab1 === 0 ? (
                                     <>
-                                        <section className='border rounded-2xl'>
-                                            <div className='mx-auto max-w-7xl px-6 py-16 sm:pt-24 lg:px-8 lg:py-20'>
-                                                <div className='lg:grid lg:grid-cols-12 lg:gap-8'>
-                                                    <div className='col-span-5'>
-                                                        <h2 className='text-2xl font-bold leading-10 text-gray-800'>Frequently asked questions</h2>
-                                                        <p className='mt-4 leading-7 text-gray-500'>
-                                                            Can&apos;t find the answer you&apos;re looking for? Reach out to our
-                                                            <a href="/contact" className='text-blue-600'> customer support </a>
-                                                            team.
-                                                        </p>
-                                                    </div>
-                                                    <div className='mt-10 col-span-7 lg:mt-0'>
-                                                        <dl className='space-y-9'>
-                                                            {Data.map((item) => (
-                                                                <div key={item.id}>
-                                                                    <dt className='text-base font-semibold leading-7 text-gray-900'>
-                                                                        {item.question}
-                                                                    </dt>
-                                                                    <dd className='mt-2 text-base leading-7 text-gray-600'>
-                                                                        {item.answer}
-                                                                    </dd>
+                                        <section className='relative isolate overflow-hidden border rounded-2xl'>
+                                            <div className="bg-white">
+                                                <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+                                                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
+
+                                                    <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                                                        {products.map((product) => (
+                                                            <div key={product.id} className="group relative">
+                                                                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                                                                    <Image
+                                                                        src={product.imageSrc}
+                                                                        alt={product.imageAlt}
+                                                                        className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                                                                    />
                                                                 </div>
-                                                            ))}
-                                                        </dl>
+                                                                <div className="mt-4 flex justify-between">
+                                                                    <div>
+                                                                        <h3 className="text-sm text-gray-700">
+                                                                            <a href={product.href}>
+                                                                                <span aria-hidden="true" className="absolute inset-0" />
+                                                                                {product.name}
+                                                                            </a>
+                                                                        </h3>
+                                                                        <p className="mt-1 text-sm text-gray-500">{product.desc}</p>
+                                                                    </div>
+                                                                    <p className="text-sm font-medium text-gray-900">{product.price}</p>
+                                                                </div>
+                                                            </div>
+                                                        ))}
                                                     </div>
                                                 </div>
                                             </div>
                                         </section>
                                     </>
                                 ) : (
-                                    <div>
-                                        code
-                                    </div>
+                                    <div>code</div>
                                 )}
                             </div>
-
                         </div>
                     </section>
 
-                    <section id='faq-2'>
+                    <section id='list-2'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -178,60 +197,56 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab2 === 0 ? (
                                     <>
-                                        <section className='col-span-2 row-start-2 min-w-0 mt-3 border rounded-2xl'>
-                                            <div className='mx-auto max-w-4xl px-6 py-16 sm:pt-24 lg:px-8 lg:py-20'>
-                                                <div className=''>
-                                                    <div className='border-b border-gray-300 pb-3'>
-                                                        <h2 className='text-2xl font-bold leading-10 text-gray-800'>Frequently asked questions</h2>
-                                                        <p className='mt-2 leading-7 text-gray-500'>
-                                                            Can&apos;t find the answer you&apos;re looking for? Reach out to our
-                                                            <a href="/contact" className='text-blue-600'> customer support </a>
-                                                            team.
-                                                        </p>
-                                                    </div>
-                                                    <div className='mt-8 lg:mt-10'>
-                                                        <dl className='space-y-9'>
-                                                            {Data.map((item, index) => (
-                                                                <div key={item.id}>
-                                                                    <dt>
-                                                                        <button
-                                                                            onClick={() => toggleActive(index)}
-                                                                            className='flex w-full items-start justify-between text-left'>
-                                                                            <span className='text-base font-semibold leading-7 text-gray-900'>
-                                                                                {item.question}
-                                                                            </span>
-                                                                            <span>
-                                                                                {active === index ? (
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /></svg>
-                                                                                ) : (
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="M12 5v14" /></svg>
-                                                                                )}
-                                                                            </span>
-                                                                        </button>
-                                                                    </dt>
-                                                                    {active === index && (
-                                                                        <dd className='mt-2 text-base leading-7 text-gray-600'>
-                                                                            {item.answer}
-                                                                        </dd>
-                                                                    )}
+                                        <section className='relative isolate overflow-hidden border rounded-2xl'>
+                                            <div className="bg-white">
+                                                <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+                                                    <h2 className="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
+
+                                                    <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                                                        {products.map((product) => (
+                                                            <div key={product.id} className=' pointer-events-none' >
+                                                                <div className='relative'>
+                                                                    <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80">
+                                                                        <Image
+                                                                            src={product.imageSrc}
+                                                                            alt={product.imageAlt}
+                                                                            className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                                                                        />
+                                                                    </div>
+                                                                    <div className="mt-4">
+                                                                        <div className='flex justify-between'>
+                                                                            <h3 className="text-sm text-gray-700">
+                                                                                <a href={product.href}>
+                                                                                    <span aria-hidden="true" className="absolute inset-0" />
+                                                                                    {product.name}
+                                                                                </a>
+                                                                            </h3>
+                                                                            <p className="text-sm font-medium text-gray-900">{product.price}</p>
+                                                                        </div>
+                                                                        <p className="mt-4 text-sm text-gray-500">{product.desc}</p>
+                                                                    </div>
                                                                 </div>
-                                                            ))}
-                                                        </dl>
+
+                                                                <div className='mt-4'>
+                                                                    <a href="/" className='relative flex items-center justify-center bg-gray-100 py-2 rounded-lg pointer-events-auto text-sm font-medium hover:bg-gray-200'>
+                                                                        Add to bag
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        ))}
                                                     </div>
                                                 </div>
                                             </div>
                                         </section>
                                     </>
                                 ) : (
-                                    <div>
-                                        code
-                                    </div>
+                                    <div>code</div>
                                 )}
                             </div>
                         </div>
                     </section>
 
-                    <section id='faq-3'>
+                    <section id='list-3'>
                         <div className='grid grid-cols-[1fr,auto] items-center'>
                             <div className='flex min-w-0'>
                                 <h2 className='truncate text-base font-medium leading-7 text-slate-900'>
@@ -270,49 +285,9 @@ const Hero = () => {
                             <div className='col-span-2 row-start-2 min-w-0 mt-3'>
                                 {activeTab3 === 0 ? (
                                     <>
-                                        <section className='border rounded-2xl'>
-                                            <div className='mx-auto max-w-7xl px-6 py-16 sm:pt-24 lg:px-8 lg:py-20'>
-                                                <div className='lg:grid lg:grid-cols-12 lg:gap-8'>
-                                                    <div className='col-span-5'>
-                                                        <h2 className='text-2xl font-bold leading-10 text-gray-800'>Frequently asked questions</h2>
-                                                        <p className='mt-4 leading-7 text-gray-500'>
-                                                            Can&apos;t find the answer you&apos;re looking for? Reach out to our
-                                                            <a href="/contact" className='text-blue-600'> customer support </a>
-                                                            team.
-                                                        </p>
-                                                    </div>
-                                                    <div className='col-span-7 mt-8 lg:mt-0'>
-                                                        <dl className='space-y-9'>
-                                                            {Data.map((item, i) => (
-                                                                <div key={i}>
-                                                                    <dt>
-                                                                        <button
-                                                                            onClick={() => toggleActive1(i)}
-                                                                            className='flex w-full items-start justify-between text-left'>
-                                                                            <span className='text-base font-semibold leading-7 text-gray-900'>
-                                                                                {item.question}
-                                                                            </span>
-                                                                            <span>
-                                                                                {active1 === i ? (
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /></svg>
-                                                                                ) : (
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="M12 5v14" /></svg>
-                                                                                )}
-                                                                            </span>
-                                                                        </button>
-                                                                    </dt>
-                                                                    {active1 === i && (
-                                                                        <dd className='mt-2 text-base leading-7 text-gray-600'>
-                                                                            {item.answer}
-                                                                        </dd>
-                                                                    )}
-                                                                </div>
-                                                            ))}
-                                                        </dl>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
+                                        <footer className='border rounded-2xl'>
+                                            footer
+                                        </footer>
                                     </>
                                 ) : (
                                     <div>code</div>
