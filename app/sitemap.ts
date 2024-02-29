@@ -21,7 +21,7 @@ const urls = [
     'https://ui.cnippet.com/components/pricing',
 
     'https://ui.cnippet.com/ecommerce/product-list',
-
+    'https://ui.cnippet.com/ecommerce/product-overview',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

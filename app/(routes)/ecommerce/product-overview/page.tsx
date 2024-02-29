@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import C1 from "@/ui/(ecommerce)/overview/C1";
+import C2 from "@/ui/(ecommerce)/overview/C2";
 
 import Layout from '@/components/Layout'
 
@@ -20,7 +21,7 @@ const components = [
     {
         id: "2",
         title: "Simple Product Overview with contents in the middle",
-        component: <C1 />,
+        component: <C2 />,
     },
 ];
 
@@ -36,8 +37,8 @@ const page = () => {
                                 Product Overview Sections
                             </h1>
                             <nav className="order-first flex space-x-2 text-base font-semibold">
-                                <a href="/components" className="text-slate-500 hover:text-slate-600">
-                                Ui - Components
+                                <a href="/ecommerce" className="text-slate-500 hover:text-slate-600">
+                                Ecommerce
                                 </a>
                                 <div className="select-none text-slate-400">/</div>
                                 <a href="/ecommerce/product-overview" className="text-slate-500 hover:text-slate-600">

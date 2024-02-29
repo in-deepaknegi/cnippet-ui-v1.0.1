@@ -37,8 +37,8 @@ const page = () => {
                                 Product List Sections
                             </h1>
                             <nav className="order-first flex space-x-2 text-base font-semibold">
-                                <a href="/components" className="text-slate-500 hover:text-slate-600">
-                                Ui - Components
+                                <a href="/ecommerce" className="text-slate-500 hover:text-slate-600">
+                                Ecommerce
                                 </a>
                                 <div className="select-none text-slate-400">/</div>
                                 <a href="/ecommerce/product-list" className="text-slate-500 hover:text-slate-600">

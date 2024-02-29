@@ -53,7 +53,7 @@ const Components = () => {
             <div className="pointer-events-none relative z-10 -mt-5 flex justify-center">
                 <a
                     className="bg-primary pointer-events-auto inline-flex justify-center rounded-lg px-4 py-3 text-sm font-semibold text-black "
-                    href="/components"
+                    href="/ecommerce"
                 >
                     <span>Show more...</span>
                 </a>
