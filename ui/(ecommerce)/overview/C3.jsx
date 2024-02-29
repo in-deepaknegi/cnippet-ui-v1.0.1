@@ -6,6 +6,15 @@ import Product2 from "@/public/images/product/product2.jpg";
 import Product3 from "@/public/images/product/product3.jpg";
 import Product4 from "@/public/images/product/product4.jpg";
 
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { EffectFade, Autoplay, Navigation, Pagination } from "swiper/modules";
+
+
 const items = [
     {
         title: "Featurs",
@@ -66,12 +75,13 @@ const images = [
     },
 ];
 
-const Overview2 = () => {
+const Overview3 = () => {
     const [active, setActive] = useState(null);
 
     const toggleActive = (index) => {
         setActive(active === index ? null : index);
     };
+
     const [selectedImage, setSelectedImage] = useState(Product1);
 
     const handleImageClick = (image) => {
@@ -79,40 +89,10 @@ const Overview2 = () => {
     };
 
     return (
-        <section className="relative isolate bg-white">
+        <section className="relative isolate">
             <div className="mx-auto max-w-2xl px-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
                 <div className="lg:grid lg:grid-cols-12 lg:items-start lg:gap-x-8">
-                    <div className="col-span-7 flex space-x-6">
-                        <div className="mx-auto hidden w-full max-w-[8rem] sm:block">
-                            <div className="grid grid-rows-4 gap-6">
-                                {images.map((image) => (
-                                    <button
-                                        key={image.id}
-                                        onClick={() => handleImageClick(image.src)}
-                                        className="relative flex h-32 cursor-pointer items-center justify-center rounded-md "
-                                    >
-                                        <span className="absolute inset-0 overflow-hidden rounded-md">
-                                            <Image
-                                                src={image.src}
-                                                alt="Product1"
-                                                className="h-full w-full object-cover object-center"
-                                            />
-                                        </span>
-                                    </button>
-                                ))}
-                            </div>
-                        </div>
-                        <div className="relative w-full">
-                            <div className="absolute inset-0 h-full w-full">
-                                <Image
-                                    src={selectedImage}
-                                    alt="hero1"
-                                    className="h-full w-full overflow-clip rounded-lg object-cover object-center"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="ms:px-0 col-span-5 mt-10 px-4 sm:mt-16 lg:mt-0">
+                    <div className="ms:px-0 col-span-6 mt-10 px-4 sm:mt-16 lg:mt-0">
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900">
                             Zip Tote Screen
                         </h2>
@@ -123,11 +103,37 @@ const Overview2 = () => {
                         <div className="mt-3">
                             <h3 className="sr-only absolute">Reviews</h3>
                             <div className="flex items-center">
-                            {[...Array(4)].map((_, index) => (
-                                    <svg key={index} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" className='w-5 h-5 text-blue-600'><path fillRule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clipRule="evenodd"></path></svg>
+                                {[...Array(4)].map((_, index) => (
+                                    <svg
+                                        key={index}
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                        className="h-5 w-5 text-blue-600"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                                            clipRule="evenodd"
+                                        ></path>
+                                    </svg>
                                 ))}
                                 {[...Array(1)].map((_, index) => (
-                                    <svg key={index} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" className='w-5 h-5 text-gray-300'><path fillRule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clipRule="evenodd"></path></svg>
+                                    <svg
+                                        key={index}
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                        className="h-5 w-5 text-gray-300"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                                            clipRule="evenodd"
+                                        ></path>
+                                    </svg>
                                 ))}
                             </div>
                         </div>
@@ -226,10 +232,39 @@ const Overview2 = () => {
                             ))}
                         </div>
                     </div>
+                    <div className="col-span-6 flex space-x-8">
+                        <div className="w-full h-full">
+                            <Swiper
+                                spaceBetween={30}
+                                effect={"coverflow"}
+                                speed={1500}
+                                autoplay={{
+                                    delay: 2000,
+                                    disableOnInteraction: false,
+                                }}
+                                pagination={true}
+                                loop={true}
+                                modules={[Autoplay, EffectFade, Navigation, Pagination]}
+                                className="rounded-2xl"
+                            >
+                                {images.map((image) => (
+                                    <SwiperSlide key={image.id}>
+                                        <Image
+                                            src={image.src}
+                                            alt={image.alt}
+                                            quality={100}
+                                            loading="eager"
+                                            className="w-full h-auto md:h-[40rem] rounded-2xl object-cover object-center brightness-110"
+                                        />
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     );
 };
 
-export default Overview2;
+export default Overview3;

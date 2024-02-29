@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import C1 from "@/ui/(ecommerce)/overview/C1";
 import C2 from "@/ui/(ecommerce)/overview/C2";
+import C3 from "@/ui/(ecommerce)/overview/C3";
 
 import Layout from '@/components/Layout'
 
@@ -22,6 +23,11 @@ const components = [
         id: "2",
         title: "Simple Product Overview with contents in the middle",
         component: <C2 />,
+    },
+    {
+        id: "3",
+        title: "Simple Product Overview with contents in the middle",
+        component: <C3 />,
     },
 ];
 

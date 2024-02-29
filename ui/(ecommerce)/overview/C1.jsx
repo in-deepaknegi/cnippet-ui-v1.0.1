@@ -73,7 +73,7 @@ const Overview1 = () => {
         setActive(active === index ? null : index)
     }
 
-    const [selectedImage, setSelectedImage] = useState(Product1); // Initial selected image is Product1
+    const [selectedImage, setSelectedImage] = useState(Product1);
 
     const handleImageClick = (image) => {
         setSelectedImage(image);
