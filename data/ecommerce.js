@@ -10,7 +10,7 @@ const component = [
     },
     {
         name: "Product Overview",
-        source: "/components/article",
+        source: "/ecommerce/product-overview",
         imageURL: Article,
         number: "3 components",
     },
