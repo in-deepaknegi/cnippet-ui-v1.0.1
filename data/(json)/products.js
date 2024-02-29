@@ -7,7 +7,7 @@ import Product4 from "@/public/images/product/product4.jpg";
 const products = [
     {
         id: 1,
-        name: "Bag 1",
+        name: "Green Bag",
         href: "#",
         imageSrc: Product1,
         imageAlt: "Front of men's Bag#4",
@@ -16,7 +16,7 @@ const products = [
     },
     {
         id: 2,
-        name: "Bag 2",
+        name: "Blue Bag",
         href: "#",
         imageSrc: Product2,
         imageAlt: "Front of men's Bag#4",
@@ -25,7 +25,7 @@ const products = [
     },
     {
         id: 3,
-        name: "Bag 3 ",
+        name: "Dark Green Bag",
         href: "#",
         imageSrc: Product3,
         imageAlt: "Front of men's Bag#4",
@@ -34,14 +34,13 @@ const products = [
     },
     {
         id: 4,
-        name: "Bag 4 ",
+        name: "Light Blue Bag",
         href: "#",
         imageSrc: Product4,
         imageAlt: "Front of men's Bag",
         price: "$35",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
     },
-    // More products...
 ];
 
 export default products

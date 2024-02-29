@@ -5,8 +5,11 @@ const urls = [
     'https://ui.cnippet.com/about',
     'https://ui.cnippet.com/contacts',
     'https://ui.cnippet.com/templates',
+
     'https://ui.cnippet.com/components',
     'https://ui.cnippet.com/components/article',
+    'https://ui.cnippet.com/components/blog',
+    'https://ui.cnippet.com/components/faq',
     'https://ui.cnippet.com/components/feature',
     'https://ui.cnippet.com/components/feature-list',
     'https://ui.cnippet.com/components/feedback',
@@ -15,6 +18,10 @@ const urls = [
     'https://ui.cnippet.com/components/hero',
     'https://ui.cnippet.com/components/navbar',
     'https://ui.cnippet.com/components/newsletter',
+    'https://ui.cnippet.com/components/pricing',
+
+    'https://ui.cnippet.com/ecommerce/product-list',
+
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

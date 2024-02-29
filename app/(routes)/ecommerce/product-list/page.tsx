@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import C1 from "@/ui/(ecommerce)/list/C1";
-
+import C2 from "@/ui/(ecommerce)/list/C2";
 
 import Layout from '@/components/Layout'
 
@@ -21,7 +21,7 @@ const components = [
     {
         id: "2",
         title: "Simple Product List with contents in the middle",
-        component: <C1 />,
+        component: <C2 />,
     },
 ];
 
