@@ -14,7 +14,7 @@ const Home = () => {
         <Hero />
         <Component />
         <Pricing />
-        <Newsletter />z
+        <Newsletter />
       </main>
       <Footer />
     </>

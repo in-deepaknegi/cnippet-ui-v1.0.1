@@ -11,7 +11,7 @@ import S2 from "@/ui/navbar/S2.mdx";
 import S3 from "@/ui/navbar/S3.mdx";
 
 
-import Layout from '@/components/Doodle'
+import Layout from '@/components/Layout'
 
 export const metadata: Metadata = {
     title: 'UI - Navbar',
