@@ -6,14 +6,12 @@ import Product2 from "@/public/images/product/product2.jpg";
 import Product3 from "@/public/images/product/product3.jpg";
 import Product4 from "@/public/images/product/product4.jpg";
 
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { EffectFade, Autoplay, Navigation, Pagination } from "swiper/modules";
-
 
 const items = [
     {
@@ -59,19 +57,19 @@ const items = [
 const images = [
     {
         id: 1,
-        src: Product1,
-    },
-    {
-        id: 2,
         src: Product2,
     },
     {
+        id: 2,
+        src: Product4,
+    },
+    {
         id: 3,
-        src: Product3,
+        src: Product1,
     },
     {
         id: 4,
-        src: Product4,
+        src: Product3,
     },
 ];
 
@@ -232,8 +230,8 @@ const Overview3 = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="col-span-6 flex space-x-8">
-                        <div className="w-full h-full">
+                    <div className="col-span-6 flex space-x-8 ">
+                        <div className="h-full w-full">
                             <Swiper
                                 spaceBetween={30}
                                 effect={"coverflow"}
@@ -254,7 +252,7 @@ const Overview3 = () => {
                                             alt={image.alt}
                                             quality={100}
                                             loading="eager"
-                                            className="w-full h-auto md:h-[40rem] rounded-2xl object-cover object-center brightness-110"
+                                            className="h-auto w-full rounded-2xl object-cover object-center brightness-110 md:h-[40rem]"
                                         />
                                     </SwiperSlide>
                                 ))}
