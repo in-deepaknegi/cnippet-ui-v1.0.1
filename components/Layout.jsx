@@ -14,14 +14,6 @@ const Layout = ({ components }) => {
         setActiveTab(newActiveTab);
     };
 
-    if (loading) {
-        return (
-            <div className=" mt-10 max-w-4xl">
-                <span className="text-xl">Loading ...</span>
-            </div>
-        );
-    }
-
     return (
         <div className="mt-10 space-y-28 bg-white pb-px">
                     {components.map((component, index) => (
