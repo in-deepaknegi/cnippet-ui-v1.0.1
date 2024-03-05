@@ -102,7 +102,7 @@ const Layout = ({ components }) => {
                                 </div>
                             </div>
                         </section>
-                    
+                     ))}
         </div>
     );
 };
